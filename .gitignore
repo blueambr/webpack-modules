@@ -1,0 +1,49 @@
+# npm and Yarn
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS or Editor folders
+*.sublime-grunt.cache
+*.sublime-project
+*.sublime-workspace
+._*
+.DS_Store
+.cache
+.idea
+.project
+.settings
+.tmproj
+.vscode
+Thumbs.db
+
+# Server settings
+.htaccess
+
+# Misc
+.CVS
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+.git
+.hg
+.pnp
+.pnp.js
+.svn
+bower_components
+
+# Numerous always-ignore extensions & files
+*.bak
+*.diff
+*.err
+*.exe
+*.log
+*.orig
+*.rej
+*.sass-cache
+*.swo
+*.swp
+*.vi
+*~

@@ -1,0 +1,46 @@
+{
+  "name": "@vgerasimovich/webpack-modules",
+  "version": "0.0.1",
+  "description": "Easy and robust webpack config to handle anything you can imagine, using the best practices",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vgerasimovich/webpack-modules.git"
+  },
+  "keywords": [
+    "webpack",
+    "modules",
+    "webpack-modules",
+    "builder",
+    "compiler",
+    "dev-server",
+    "loader",
+    "module-bundler",
+    "task-runner"
+  ],
+  "author": "Vlad Gerasimovich <vlad.gerasimovich.micro@outlook.com>",
+  "license": "ISC",
+  "bugs": "https://github.com/vgerasimovich/webpack-modules/issues",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js",
+    "start": "webpack serve --config webpack.dev.js"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
+  "devDependencies": {
+    "del": "^4.1.1",
+    "fs": "^0.0.1-security",
+    "html-loader": "^2.1.1",
+    "html-webpack-plugin": "^5.2.0",
+    "pug": "^3.0.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "workbox-webpack-plugin": "^6.1.1"
+  }
+}
