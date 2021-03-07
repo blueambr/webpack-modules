@@ -45,7 +45,6 @@ module.exports = {
             let result;
 
             try {
-              console.log(loaderContext.context);
               result = pug.render(content, {
                 basedir: path.resolve(__dirname, 'src'),
                 pretty: true,
