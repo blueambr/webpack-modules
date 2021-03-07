@@ -45,6 +45,7 @@ module.exports = {
             let result;
 
             try {
+              console.log(loaderContext.context);
               result = pug.render(content, {
                 basedir: path.resolve(__dirname, 'src'),
                 pretty: true,
@@ -65,7 +66,6 @@ module.exports = {
     ...pagesFilenames.map(
       (pageFilename) =>
         new HtmlWebpackPlugin({
-          alwaysWriteToDisk: true,
           // Get page
           template: path.resolve(__dirname, `src/pages/${pageFilename}.pug`),
           /**
