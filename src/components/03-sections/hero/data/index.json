@@ -1,0 +1,11 @@
+{
+  "homepage": {
+    "title": "Homepage"
+  },
+  "aboutPage": {
+    "title": "About page"
+  },
+  "contactPage": {
+    "title": "Contact page"
+  }
+}

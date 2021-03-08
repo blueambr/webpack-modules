@@ -1,5 +1,6 @@
 include /components/01-elements/title/index
-include ./00-data
+- const data = require('../components/03-sections/hero/data/index.json')
+- const content = data.aboutPage
 
 section.hero
-  +title(dataAboutPage.title)
+  +title(content.title)

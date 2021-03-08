@@ -8,7 +8,7 @@ module.exports = merge(common, {
   devtool: 'eval-cheap-module-source-map',
   devServer: {
     before: () => {
-      del(path.resolve(__dirname, 'dist/**/*.*'));
+      del(path.resolve(__dirname, 'dist'));
     },
     contentBase: path.resolve(__dirname, 'dist'),
     port: 3000,

@@ -1,4 +1,4 @@
-# Webpack Modules v.0.0.2
+# Webpack Modules v.0.0.3
 
 > "webpack": "^5.24.2"
 
@@ -42,12 +42,15 @@ You **should** `npx npm-check-updates -u && npm i` as _Webpack Modules_ will alw
 
 ```
 "devDependencies": {
+  "css-loader": "^5.1.1",
   "del": "^4.1.1",
   "fs": "^0.0.1-security",
   "html-loader": "^2.1.1",
   "html-webpack-plugin": "^5.2.0",
-  "pug": "^3.0.2",
-  "sass": "^1.32.8",
+  "mini-css-extract-plugin": "^1.3.9",
+  "node-sass": "^5.0.0",
+  "node-sass-glob-importer": "^5.3.2",
+  "pug3-loader": "^2.4.3",
   "sass-loader": "^11.0.1",
   "webpack": "^5.24.2",
   "webpack-cli": "^4.5.0",

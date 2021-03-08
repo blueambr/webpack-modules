@@ -1,3 +1,5 @@
+import '../../styles/global.scss';
+
 const About = () => {
   // Register SW
   // if ('serviceWorker' in navigator) {

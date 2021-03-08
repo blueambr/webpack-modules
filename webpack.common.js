@@ -1,7 +1,9 @@
 const fs = require('fs');
+const nodeSass = require('node-sass');
+const nodeSassGlob = require('node-sass-glob-importer');
 const path = require('path');
-const pug = require('pug');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // Helpers
 const filesIntoFilenamesArray = (files) => [...files].map((file) => file.replace(/\.[^/.]+$/, ''));
@@ -39,25 +41,28 @@ module.exports = {
     rules: [
       {
         test: /\.pug$/i,
-        loader: 'html-loader',
+        loader: 'pug3-loader',
         options: {
-          preprocessor: (content, loaderContext) => {
-            let result;
-
-            try {
-              result = pug.render(content, {
-                basedir: path.resolve(__dirname, 'src'),
-                pretty: true,
-              });
-            } catch (error) {
-              loaderContext.emitError(error);
-
-              return content;
-            }
-
-            return result;
-          },
+          basedir: path.resolve(__dirname, 'src'),
+          pretty: true,
+          root: path.resolve(__dirname, 'src'),
         },
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: nodeSass,
+              sassOptions: {
+                importer: nodeSassGlob(),
+              },
+            },
+          },
+        ],
       },
     ],
   },
@@ -76,5 +81,9 @@ module.exports = {
           filename: `../${substringBeforeChar(pageFilename) || pageFilename}.html`,
         })
     ),
+    new MiniCssExtractPlugin({
+      filename: '../styles/[name].css',
+      chunkFilename: '../styles/chunks/[id].css',
+    }),
   ],
 };
