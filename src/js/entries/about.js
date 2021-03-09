@@ -1,4 +1,6 @@
-import '../../styles/global.scss';
+const requireAll = (r) => r.keys().forEach(r);
+
+requireAll(require.context('../../components/', true, /\.scss$/));
 
 const About = () => {
   // Register SW

@@ -1,6 +1,4 @@
 const fs = require('fs');
-const nodeSass = require('node-sass');
-const nodeSassGlob = require('node-sass-glob-importer');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -50,19 +48,7 @@ module.exports = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              implementation: nodeSass,
-              sassOptions: {
-                importer: nodeSassGlob(),
-              },
-            },
-          },
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],
   },

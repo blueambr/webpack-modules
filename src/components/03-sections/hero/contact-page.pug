@@ -1,6 +1,7 @@
 include /components/01-elements/title/index
-- const data = require('../components/03-sections/hero/data/index.json')
-- const content = data.contactPage
 
 section.hero
-  +title(content.title)
+  .title
+    +title('Contact page')
+  .subtitle
+    h2 I use about.js file

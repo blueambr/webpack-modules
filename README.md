@@ -1,4 +1,4 @@
-# Webpack Modules v.0.0.3
+# Webpack Modules v.0.0.35
 
 > "webpack": "^5.24.2"
 
