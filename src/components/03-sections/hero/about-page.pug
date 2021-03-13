@@ -1,5 +1,8 @@
 include /components/01-elements/title/index
 
-section.hero
-  .title
-    +title('About page')
+- const heroD = require('../components/03-sections/hero/data/index.json')
+- const heroS = require('../components/03-sections/hero/styles/index.json')
+
+section(class=`${heroS.hero}`)
+  div(class=`${heroS.title}`)
+    +title(heroD.aboutPage.title)

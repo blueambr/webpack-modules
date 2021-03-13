@@ -106,14 +106,25 @@ eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*\n* lo
 
 /***/ }),
 
-/***/ 807:
+/***/ 707:
+/*!************************************************************!*\
+  !*** ./src/components/01-elements/title/styles/index.scss ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNzA3LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2NvbXBvbmVudHMvMDEtZWxlbWVudHMvdGl0bGUvc3R5bGVzL2luZGV4LnNjc3M/NGVlNiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibWFwcGluZ3MiOiI7QUFBQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///707\n");
+
+/***/ }),
+
+/***/ 868:
 /*!***********************************************************!*\
   !*** ./src/components/03-sections/hero/styles/index.scss ***!
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODA3LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2NvbXBvbmVudHMvMDMtc2VjdGlvbnMvaGVyby9zdHlsZXMvaW5kZXguc2Nzcz9mNDE0Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJtYXBwaW5ncyI6IjtBQUFBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///807\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODY4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2NvbXBvbmVudHMvMDMtc2VjdGlvbnMvaGVyby9zdHlsZXMvaW5kZXguc2Nzcz9mMDMzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJtYXBwaW5ncyI6IjtBQUFBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///868\n");
 
 /***/ }),
 
@@ -372,7 +383,8 @@ webpackContext.id = 461;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./03-sections/hero/styles/index.scss": 807
+	"./01-elements/title/styles/index.scss": 707,
+	"./03-sections/hero/styles/index.scss": 868
 };
 
 

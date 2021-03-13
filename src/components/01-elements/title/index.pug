@@ -1,2 +1,4 @@
+- const titleS = require('../components/01-elements/title/styles/index.json')
+
 mixin title(text='Title')
-  h1.title= text
+  h1(class=`${titleS.title}`)= text

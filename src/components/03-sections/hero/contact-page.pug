@@ -1,7 +1,9 @@
 include /components/01-elements/title/index
 
-section.hero
-  .title
-    +title('Contact page')
-  .subtitle
+- const heroD = require('../components/03-sections/hero/data/index.json')
+- const heroS = require('../components/03-sections/hero/styles/index.json')
+
+section(class=`${heroS.hero}`)
+  div(class=`${heroS.title}`)
+    +title(heroD.contactPage.title)
     h2 I use about.js file
