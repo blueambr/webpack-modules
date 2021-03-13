@@ -1,4 +1,4 @@
-# Webpack Modules v.0.0.35
+# Webpack Modules v.0.0.4
 
 > "webpack": "^5.24.2"
 
@@ -43,18 +43,18 @@ You **should** `npx npm-check-updates -u && npm i` as _Webpack Modules_ will alw
 ```
 "devDependencies": {
   "autoprefixer": "^10.2.5",
-  "css-loader": "^5.1.1",
-  "del": "^4.1.1",
+  "css-loader": "^5.1.2",
+  "del": "^6.0.0",
   "fs": "^0.0.1-security",
-  "html-webpack-plugin": "^5.2.0",
+  "html-webpack-plugin": "^5.3.1",
   "mini-css-extract-plugin": "^1.3.9",
-  "postcss": "^8.2.7",
-  "postcss-loader": "^5.1.0",
+  "postcss": "^8.2.8",
+  "postcss-loader": "^5.2.0",
   "postcss-modules": "^4.0.0",
   "pug3-loader": "^2.4.3",
   "sass": "^1.32.8",
   "sass-loader": "^11.0.1",
-  "webpack": "^5.24.2",
+  "webpack": "^5.25.0",
   "webpack-cli": "^4.5.0",
   "webpack-dev-server": "^3.11.2",
   "webpack-merge": "^5.7.3",
