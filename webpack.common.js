@@ -39,7 +39,6 @@ module.exports = {
   entry: entries(),
   output: {
     path: path.resolve(__dirname, 'dist/js'),
-    clean: true,
   },
   optimization: {
     moduleIds: 'deterministic',
@@ -68,6 +67,13 @@ module.exports = {
           'postcss-loader',
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: '../assets/images/[hash][ext][query]',
+        },
       },
       {
         test: /\.(eot|otf|ttf|woff|woff2)$/i,

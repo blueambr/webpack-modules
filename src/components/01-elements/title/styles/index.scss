@@ -1,8 +1,11 @@
 @import 'src/styles/includes/includes';
-$color-primary: blue;
 
 .title {
   @include font(700);
-  font-size: 24px;
+  font-size: rem(40);
   color: $color-title;
+
+  @include laptop {
+    font-size: rem(80);
+  }
 }

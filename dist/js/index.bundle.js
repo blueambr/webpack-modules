@@ -117,14 +117,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ 868:
-/*!***********************************************************!*\
-  !*** ./src/components/03-sections/hero/styles/index.scss ***!
-  \***********************************************************/
+/***/ 208:
+/*!****************************************************************!*\
+  !*** ./src/components/03-sections/jumbotron/styles/index.scss ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODY4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2NvbXBvbmVudHMvMDMtc2VjdGlvbnMvaGVyby9zdHlsZXMvaW5kZXguc2Nzcz9mMDMzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJtYXBwaW5ncyI6IjtBQUFBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///868\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjA4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2NvbXBvbmVudHMvMDMtc2VjdGlvbnMvanVtYm90cm9uL3N0eWxlcy9pbmRleC5zY3NzPzg5YjMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm1hcHBpbmdzIjoiO0FBQUE7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///208\n");
 
 /***/ }),
 
@@ -320,7 +320,7 @@ eval("\n\nvar log = __webpack_require__(/*! loglevel */ 43).getLogger('webpack-d
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("\n/* global WorkerGlobalScope self */\n\nvar _require = __webpack_require__(/*! ./log */ 935),\n    log = _require.log;\n\nfunction reloadApp(_ref, _ref2) {\n  var hotReload = _ref.hotReload,\n      hot = _ref.hot,\n      liveReload = _ref.liveReload;\n  var isUnloading = _ref2.isUnloading,\n      currentHash = _ref2.currentHash;\n\n  if (isUnloading || !hotReload) {\n    return;\n  }\n\n  if (hot) {\n    log.info('[WDS] App hot update...');\n\n    var hotEmitter = __webpack_require__(/*! webpack/hot/emitter */ 208);\n\n    hotEmitter.emit('webpackHotUpdate', currentHash);\n\n    if (typeof self !== 'undefined' && self.window) {\n      // broadcast update to window\n      self.postMessage(\"webpackHotUpdate\".concat(currentHash), '*');\n    }\n  } // allow refreshing the page only if liveReload isn't disabled\n  else if (liveReload) {\n      var rootWindow = self; // use parent window for reload (in case we're in an iframe with no valid src)\n\n      var intervalId = self.setInterval(function () {\n        if (rootWindow.location.protocol !== 'about:') {\n          // reload immediately if protocol is valid\n          applyReload(rootWindow, intervalId);\n        } else {\n          rootWindow = rootWindow.parent;\n\n          if (rootWindow.parent === rootWindow) {\n            // if parent equals current window we've reached the root which would continue forever, so trigger a reload anyways\n            applyReload(rootWindow, intervalId);\n          }\n        }\n      });\n    }\n\n  function applyReload(rootWindow, intervalId) {\n    clearInterval(intervalId);\n    log.info('[WDS] App updated. Reloading...');\n    rootWindow.location.reload();\n  }\n}\n\nmodule.exports = reloadApp;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNDI5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vbm9kZV9tb2R1bGVzL3dlYnBhY2stZGV2LXNlcnZlci9jbGllbnQvdXRpbHMvcmVsb2FkQXBwLmpzPzE1NjkiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuLyogZ2xvYmFsIFdvcmtlckdsb2JhbFNjb3BlIHNlbGYgKi9cblxudmFyIF9yZXF1aXJlID0gcmVxdWlyZSgnLi9sb2cnKSxcbiAgICBsb2cgPSBfcmVxdWlyZS5sb2c7XG5cbmZ1bmN0aW9uIHJlbG9hZEFwcChfcmVmLCBfcmVmMikge1xuICB2YXIgaG90UmVsb2FkID0gX3JlZi5ob3RSZWxvYWQsXG4gICAgICBob3QgPSBfcmVmLmhvdCxcbiAgICAgIGxpdmVSZWxvYWQgPSBfcmVmLmxpdmVSZWxvYWQ7XG4gIHZhciBpc1VubG9hZGluZyA9IF9yZWYyLmlzVW5sb2FkaW5nLFxuICAgICAgY3VycmVudEhhc2ggPSBfcmVmMi5jdXJyZW50SGFzaDtcblxuICBpZiAoaXNVbmxvYWRpbmcgfHwgIWhvdFJlbG9hZCkge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIGlmIChob3QpIHtcbiAgICBsb2cuaW5mbygnW1dEU10gQXBwIGhvdCB1cGRhdGUuLi4nKTtcblxuICAgIHZhciBob3RFbWl0dGVyID0gcmVxdWlyZSgnd2VicGFjay9ob3QvZW1pdHRlcicpO1xuXG4gICAgaG90RW1pdHRlci5lbWl0KCd3ZWJwYWNrSG90VXBkYXRlJywgY3VycmVudEhhc2gpO1xuXG4gICAgaWYgKHR5cGVvZiBzZWxmICE9PSAndW5kZWZpbmVkJyAmJiBzZWxmLndpbmRvdykge1xuICAgICAgLy8gYnJvYWRjYXN0IHVwZGF0ZSB0byB3aW5kb3dcbiAgICAgIHNlbGYucG9zdE1lc3NhZ2UoXCJ3ZWJwYWNrSG90VXBkYXRlXCIuY29uY2F0KGN1cnJlbnRIYXNoKSwgJyonKTtcbiAgICB9XG4gIH0gLy8gYWxsb3cgcmVmcmVzaGluZyB0aGUgcGFnZSBvbmx5IGlmIGxpdmVSZWxvYWQgaXNuJ3QgZGlzYWJsZWRcbiAgZWxzZSBpZiAobGl2ZVJlbG9hZCkge1xuICAgICAgdmFyIHJvb3RXaW5kb3cgPSBzZWxmOyAvLyB1c2UgcGFyZW50IHdpbmRvdyBmb3IgcmVsb2FkIChpbiBjYXNlIHdlJ3JlIGluIGFuIGlmcmFtZSB3aXRoIG5vIHZhbGlkIHNyYylcblxuICAgICAgdmFyIGludGVydmFsSWQgPSBzZWxmLnNldEludGVydmFsKGZ1bmN0aW9uICgpIHtcbiAgICAgICAgaWYgKHJvb3RXaW5kb3cubG9jYXRpb24ucHJvdG9jb2wgIT09ICdhYm91dDonKSB7XG4gICAgICAgICAgLy8gcmVsb2FkIGltbWVkaWF0ZWx5IGlmIHByb3RvY29sIGlzIHZhbGlkXG4gICAgICAgICAgYXBwbHlSZWxvYWQocm9vdFdpbmRvdywgaW50ZXJ2YWxJZCk7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgcm9vdFdpbmRvdyA9IHJvb3RXaW5kb3cucGFyZW50O1xuXG4gICAgICAgICAgaWYgKHJvb3RXaW5kb3cucGFyZW50ID09PSByb290V2luZG93KSB7XG4gICAgICAgICAgICAvLyBpZiBwYXJlbnQgZXF1YWxzIGN1cnJlbnQgd2luZG93IHdlJ3ZlIHJlYWNoZWQgdGhlIHJvb3Qgd2hpY2ggd291bGQgY29udGludWUgZm9yZXZlciwgc28gdHJpZ2dlciBhIHJlbG9hZCBhbnl3YXlzXG4gICAgICAgICAgICBhcHBseVJlbG9hZChyb290V2luZG93LCBpbnRlcnZhbElkKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICAgIH1cblxuICBmdW5jdGlvbiBhcHBseVJlbG9hZChyb290V2luZG93LCBpbnRlcnZhbElkKSB7XG4gICAgY2xlYXJJbnRlcnZhbChpbnRlcnZhbElkKTtcbiAgICBsb2cuaW5mbygnW1dEU10gQXBwIHVwZGF0ZWQuIFJlbG9hZGluZy4uLicpO1xuICAgIHJvb3RXaW5kb3cubG9jYXRpb24ucmVsb2FkKCk7XG4gIH1cbn1cblxubW9kdWxlLmV4cG9ydHMgPSByZWxvYWRBcHA7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///429\n");
+eval("\n/* global WorkerGlobalScope self */\n\nvar _require = __webpack_require__(/*! ./log */ 935),\n    log = _require.log;\n\nfunction reloadApp(_ref, _ref2) {\n  var hotReload = _ref.hotReload,\n      hot = _ref.hot,\n      liveReload = _ref.liveReload;\n  var isUnloading = _ref2.isUnloading,\n      currentHash = _ref2.currentHash;\n\n  if (isUnloading || !hotReload) {\n    return;\n  }\n\n  if (hot) {\n    log.info('[WDS] App hot update...');\n\n    var hotEmitter = __webpack_require__(/*! webpack/hot/emitter */ 979);\n\n    hotEmitter.emit('webpackHotUpdate', currentHash);\n\n    if (typeof self !== 'undefined' && self.window) {\n      // broadcast update to window\n      self.postMessage(\"webpackHotUpdate\".concat(currentHash), '*');\n    }\n  } // allow refreshing the page only if liveReload isn't disabled\n  else if (liveReload) {\n      var rootWindow = self; // use parent window for reload (in case we're in an iframe with no valid src)\n\n      var intervalId = self.setInterval(function () {\n        if (rootWindow.location.protocol !== 'about:') {\n          // reload immediately if protocol is valid\n          applyReload(rootWindow, intervalId);\n        } else {\n          rootWindow = rootWindow.parent;\n\n          if (rootWindow.parent === rootWindow) {\n            // if parent equals current window we've reached the root which would continue forever, so trigger a reload anyways\n            applyReload(rootWindow, intervalId);\n          }\n        }\n      });\n    }\n\n  function applyReload(rootWindow, intervalId) {\n    clearInterval(intervalId);\n    log.info('[WDS] App updated. Reloading...');\n    rootWindow.location.reload();\n  }\n}\n\nmodule.exports = reloadApp;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNDI5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vbm9kZV9tb2R1bGVzL3dlYnBhY2stZGV2LXNlcnZlci9jbGllbnQvdXRpbHMvcmVsb2FkQXBwLmpzPzE1NjkiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuLyogZ2xvYmFsIFdvcmtlckdsb2JhbFNjb3BlIHNlbGYgKi9cblxudmFyIF9yZXF1aXJlID0gcmVxdWlyZSgnLi9sb2cnKSxcbiAgICBsb2cgPSBfcmVxdWlyZS5sb2c7XG5cbmZ1bmN0aW9uIHJlbG9hZEFwcChfcmVmLCBfcmVmMikge1xuICB2YXIgaG90UmVsb2FkID0gX3JlZi5ob3RSZWxvYWQsXG4gICAgICBob3QgPSBfcmVmLmhvdCxcbiAgICAgIGxpdmVSZWxvYWQgPSBfcmVmLmxpdmVSZWxvYWQ7XG4gIHZhciBpc1VubG9hZGluZyA9IF9yZWYyLmlzVW5sb2FkaW5nLFxuICAgICAgY3VycmVudEhhc2ggPSBfcmVmMi5jdXJyZW50SGFzaDtcblxuICBpZiAoaXNVbmxvYWRpbmcgfHwgIWhvdFJlbG9hZCkge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIGlmIChob3QpIHtcbiAgICBsb2cuaW5mbygnW1dEU10gQXBwIGhvdCB1cGRhdGUuLi4nKTtcblxuICAgIHZhciBob3RFbWl0dGVyID0gcmVxdWlyZSgnd2VicGFjay9ob3QvZW1pdHRlcicpO1xuXG4gICAgaG90RW1pdHRlci5lbWl0KCd3ZWJwYWNrSG90VXBkYXRlJywgY3VycmVudEhhc2gpO1xuXG4gICAgaWYgKHR5cGVvZiBzZWxmICE9PSAndW5kZWZpbmVkJyAmJiBzZWxmLndpbmRvdykge1xuICAgICAgLy8gYnJvYWRjYXN0IHVwZGF0ZSB0byB3aW5kb3dcbiAgICAgIHNlbGYucG9zdE1lc3NhZ2UoXCJ3ZWJwYWNrSG90VXBkYXRlXCIuY29uY2F0KGN1cnJlbnRIYXNoKSwgJyonKTtcbiAgICB9XG4gIH0gLy8gYWxsb3cgcmVmcmVzaGluZyB0aGUgcGFnZSBvbmx5IGlmIGxpdmVSZWxvYWQgaXNuJ3QgZGlzYWJsZWRcbiAgZWxzZSBpZiAobGl2ZVJlbG9hZCkge1xuICAgICAgdmFyIHJvb3RXaW5kb3cgPSBzZWxmOyAvLyB1c2UgcGFyZW50IHdpbmRvdyBmb3IgcmVsb2FkIChpbiBjYXNlIHdlJ3JlIGluIGFuIGlmcmFtZSB3aXRoIG5vIHZhbGlkIHNyYylcblxuICAgICAgdmFyIGludGVydmFsSWQgPSBzZWxmLnNldEludGVydmFsKGZ1bmN0aW9uICgpIHtcbiAgICAgICAgaWYgKHJvb3RXaW5kb3cubG9jYXRpb24ucHJvdG9jb2wgIT09ICdhYm91dDonKSB7XG4gICAgICAgICAgLy8gcmVsb2FkIGltbWVkaWF0ZWx5IGlmIHByb3RvY29sIGlzIHZhbGlkXG4gICAgICAgICAgYXBwbHlSZWxvYWQocm9vdFdpbmRvdywgaW50ZXJ2YWxJZCk7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgcm9vdFdpbmRvdyA9IHJvb3RXaW5kb3cucGFyZW50O1xuXG4gICAgICAgICAgaWYgKHJvb3RXaW5kb3cucGFyZW50ID09PSByb290V2luZG93KSB7XG4gICAgICAgICAgICAvLyBpZiBwYXJlbnQgZXF1YWxzIGN1cnJlbnQgd2luZG93IHdlJ3ZlIHJlYWNoZWQgdGhlIHJvb3Qgd2hpY2ggd291bGQgY29udGludWUgZm9yZXZlciwgc28gdHJpZ2dlciBhIHJlbG9hZCBhbnl3YXlzXG4gICAgICAgICAgICBhcHBseVJlbG9hZChyb290V2luZG93LCBpbnRlcnZhbElkKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICAgIH1cblxuICBmdW5jdGlvbiBhcHBseVJlbG9hZChyb290V2luZG93LCBpbnRlcnZhbElkKSB7XG4gICAgY2xlYXJJbnRlcnZhbChpbnRlcnZhbElkKTtcbiAgICBsb2cuaW5mbygnW1dEU10gQXBwIHVwZGF0ZWQuIFJlbG9hZGluZy4uLicpO1xuICAgIHJvb3RXaW5kb3cubG9jYXRpb24ucmVsb2FkKCk7XG4gIH1cbn1cblxubW9kdWxlLmV4cG9ydHMgPSByZWxvYWRBcHA7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///429\n");
 
 /***/ }),
 
@@ -335,13 +335,13 @@ eval("\n/* global __resourceQuery WorkerGlobalScope self */\n// Send messages to
 
 /***/ }),
 
-/***/ 208:
+/***/ 979:
 /*!*********************************************!*\
   !*** ./node_modules/webpack/hot/emitter.js ***!
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var EventEmitter = __webpack_require__(/*! events */ 187);\nmodule.exports = new EventEmitter();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjA4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vbm9kZV9tb2R1bGVzL3dlYnBhY2svaG90L2VtaXR0ZXIuanM/OTNlMiJdLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgRXZlbnRFbWl0dGVyID0gcmVxdWlyZShcImV2ZW50c1wiKTtcbm1vZHVsZS5leHBvcnRzID0gbmV3IEV2ZW50RW1pdHRlcigpO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///208\n");
+eval("var EventEmitter = __webpack_require__(/*! events */ 187);\nmodule.exports = new EventEmitter();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiOTc5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vbm9kZV9tb2R1bGVzL3dlYnBhY2svaG90L2VtaXR0ZXIuanM/OTNlMiJdLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgRXZlbnRFbWl0dGVyID0gcmVxdWlyZShcImV2ZW50c1wiKTtcbm1vZHVsZS5leHBvcnRzID0gbmV3IEV2ZW50RW1pdHRlcigpO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///979\n");
 
 /***/ }),
 
@@ -387,7 +387,7 @@ webpackContext.id = 461;
 
 /***/ }),
 
-/***/ 425:
+/***/ 37:
 /*!***********************************************!*\
   !*** ./src/assets/fonts/Comfortaa-Bold.woff2 ***!
   \***********************************************/
@@ -431,14 +431,14 @@ module.exports = __webpack_require__.p + "../assets/fonts/cd9612cce58c9029d613.w
 
 /***/ }),
 
-/***/ 58:
-/*!*****************************************!*\
-  !*** ./src/assets/fonts/ sync \.woff2$ ***!
-  \*****************************************/
+/***/ 425:
+/*!*************************************************************!*\
+  !*** ./src/assets/fonts/ sync \.(eot|otf|ttf|woff|woff2)$/ ***!
+  \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./Comfortaa-Bold.woff2": 425,
+	"./Comfortaa-Bold.woff2": 37,
 	"./Comfortaa-Light.woff2": 11,
 	"./Comfortaa-Medium.woff2": 319,
 	"./Comfortaa-Regular.woff2": 529
@@ -462,7 +462,25 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 58;
+webpackContext.id = 425;
+
+/***/ }),
+
+/***/ 307:
+/*!************************************************************!*\
+  !*** ./src/assets/images/ sync \.(png|svg|jpg|jpeg|gif)$/ ***!
+  \************************************************************/
+/***/ ((module) => {
+
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = () => ([]);
+webpackEmptyContext.resolve = webpackEmptyContext;
+webpackEmptyContext.id = 307;
+module.exports = webpackEmptyContext;
 
 /***/ }),
 
@@ -474,7 +492,7 @@ webpackContext.id = 58;
 
 var map = {
 	"./01-elements/title/styles/index.scss": 707,
-	"./03-sections/hero/styles/index.scss": 868
+	"./03-sections/jumbotron/styles/index.scss": 208
 };
 
 
@@ -506,7 +524,7 @@ webpackContext.id = 155;
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/styles/global.scss */ 95);\n\n\nconst requireAll = (r) => r.keys().forEach(r);\n\nrequireAll(__webpack_require__(58));\nrequireAll(__webpack_require__(155));\n\nconst Index = () => {\n  // Register SW\n  // if ('serviceWorker' in navigator) {\n  //   window.addEventListener('load', () => {\n  //     navigator.serviceWorker\n  //       .register('/service-worker.js')\n  //       .then((registration) => {\n  //         console.log('SW registered: ', registration);\n  //       })\n  //       .catch((registrationError) => {\n  //         console.log('SW registration failed: ', registrationError);\n  //       });\n  //   });\n  // }\n\n  console.warn('Index');\n};\n\nIndex();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNTAzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2pzL2VudHJpZXMvaW5kZXguanM/MjQ1ZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgJy9zcmMvc3R5bGVzL2dsb2JhbC5zY3NzJztcblxuY29uc3QgcmVxdWlyZUFsbCA9IChyKSA9PiByLmtleXMoKS5mb3JFYWNoKHIpO1xuXG5yZXF1aXJlQWxsKHJlcXVpcmUuY29udGV4dCgnL3NyYy9hc3NldHMvZm9udHMvJywgdHJ1ZSwgL1xcLndvZmYyJC8pKTtcbnJlcXVpcmVBbGwocmVxdWlyZS5jb250ZXh0KCcvc3JjL2NvbXBvbmVudHMvJywgdHJ1ZSwgL1xcLnNjc3MkLykpO1xuXG5jb25zdCBJbmRleCA9ICgpID0+IHtcbiAgLy8gUmVnaXN0ZXIgU1dcbiAgLy8gaWYgKCdzZXJ2aWNlV29ya2VyJyBpbiBuYXZpZ2F0b3IpIHtcbiAgLy8gICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsICgpID0+IHtcbiAgLy8gICAgIG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyXG4gIC8vICAgICAgIC5yZWdpc3RlcignL3NlcnZpY2Utd29ya2VyLmpzJylcbiAgLy8gICAgICAgLnRoZW4oKHJlZ2lzdHJhdGlvbikgPT4ge1xuICAvLyAgICAgICAgIGNvbnNvbGUubG9nKCdTVyByZWdpc3RlcmVkOiAnLCByZWdpc3RyYXRpb24pO1xuICAvLyAgICAgICB9KVxuICAvLyAgICAgICAuY2F0Y2goKHJlZ2lzdHJhdGlvbkVycm9yKSA9PiB7XG4gIC8vICAgICAgICAgY29uc29sZS5sb2coJ1NXIHJlZ2lzdHJhdGlvbiBmYWlsZWQ6ICcsIHJlZ2lzdHJhdGlvbkVycm9yKTtcbiAgLy8gICAgICAgfSk7XG4gIC8vICAgfSk7XG4gIC8vIH1cblxuICBjb25zb2xlLndhcm4oJ0luZGV4Jyk7XG59O1xuXG5JbmRleCgpO1xuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///503\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/styles/global.scss */ 95);\n// Extract global styles\n\n\nconst requireAll = (r) => r.keys().forEach(r);\n\n// Extract all fonts\nrequireAll(\n  __webpack_require__(425)\n);\n\n/**\n * Extract all global images, if any\n * You can use them as regular strings in pug instead of require statement\n */\nrequireAll(\n  __webpack_require__(307)\n);\n\n// Extract all scss modules\nrequireAll(__webpack_require__(155));\n\nconst Index = () => {\n  /**\n   * Register SW\n   * service-worker.js file is generated on `npm run build`\n   */\n  if ('serviceWorker' in navigator) {\n    window.addEventListener('load', () => {\n      navigator.serviceWorker\n        .register('/service-worker.js')\n        .then((registration) => {\n          console.warn('SW registered: ', registration);\n        })\n        .catch((registrationError) => {\n          console.error('SW registration failed: ', registrationError);\n        });\n    });\n  }\n};\n\n// Index();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNTAzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2pzL2VudHJpZXMvaW5kZXguanM/MjQ1ZiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBFeHRyYWN0IGdsb2JhbCBzdHlsZXNcbmltcG9ydCAnL3NyYy9zdHlsZXMvZ2xvYmFsLnNjc3MnO1xuXG5jb25zdCByZXF1aXJlQWxsID0gKHIpID0+IHIua2V5cygpLmZvckVhY2gocik7XG5cbi8vIEV4dHJhY3QgYWxsIGZvbnRzXG5yZXF1aXJlQWxsKFxuICByZXF1aXJlLmNvbnRleHQoJy9zcmMvYXNzZXRzL2ZvbnRzLycsIHRydWUsIC9cXC4oZW90fG90Znx0dGZ8d29mZnx3b2ZmMikkL2kpXG4pO1xuXG4vKipcbiAqIEV4dHJhY3QgYWxsIGdsb2JhbCBpbWFnZXMsIGlmIGFueVxuICogWW91IGNhbiB1c2UgdGhlbSBhcyByZWd1bGFyIHN0cmluZ3MgaW4gcHVnIGluc3RlYWQgb2YgcmVxdWlyZSBzdGF0ZW1lbnRcbiAqL1xucmVxdWlyZUFsbChcbiAgcmVxdWlyZS5jb250ZXh0KCcvc3JjL2Fzc2V0cy9pbWFnZXMvJywgdHJ1ZSwgL1xcLihwbmd8c3ZnfGpwZ3xqcGVnfGdpZikkL2kpXG4pO1xuXG4vLyBFeHRyYWN0IGFsbCBzY3NzIG1vZHVsZXNcbnJlcXVpcmVBbGwocmVxdWlyZS5jb250ZXh0KCcvc3JjL2NvbXBvbmVudHMvJywgdHJ1ZSwgL1xcLnNjc3MkLykpO1xuXG5jb25zdCBJbmRleCA9ICgpID0+IHtcbiAgLyoqXG4gICAqIFJlZ2lzdGVyIFNXXG4gICAqIHNlcnZpY2Utd29ya2VyLmpzIGZpbGUgaXMgZ2VuZXJhdGVkIG9uIGBucG0gcnVuIGJ1aWxkYFxuICAgKi9cbiAgaWYgKCdzZXJ2aWNlV29ya2VyJyBpbiBuYXZpZ2F0b3IpIHtcbiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsICgpID0+IHtcbiAgICAgIG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyXG4gICAgICAgIC5yZWdpc3RlcignL3NlcnZpY2Utd29ya2VyLmpzJylcbiAgICAgICAgLnRoZW4oKHJlZ2lzdHJhdGlvbikgPT4ge1xuICAgICAgICAgIGNvbnNvbGUud2FybignU1cgcmVnaXN0ZXJlZDogJywgcmVnaXN0cmF0aW9uKTtcbiAgICAgICAgfSlcbiAgICAgICAgLmNhdGNoKChyZWdpc3RyYXRpb25FcnJvcikgPT4ge1xuICAgICAgICAgIGNvbnNvbGUuZXJyb3IoJ1NXIHJlZ2lzdHJhdGlvbiBmYWlsZWQ6ICcsIHJlZ2lzdHJhdGlvbkVycm9yKTtcbiAgICAgICAgfSk7XG4gICAgfSk7XG4gIH1cbn07XG5cbi8vIEluZGV4KCk7XG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///503\n");
 
 /***/ })
 
