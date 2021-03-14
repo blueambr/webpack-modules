@@ -1,0 +1,31 @@
+@font-face {
+  font-family: '#{$font-name} Light';
+  src: url('../assets/fonts/#{$font-path-name}-Light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: '#{$font-name} Regular';
+  src: url('../assets/fonts/#{$font-path-name}-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: '#{$font-name} Medium';
+  src: url('../assets/fonts/#{$font-path-name}-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: '#{$font-name} Bold';
+  src: url('../assets/fonts/#{$font-path-name}-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+}

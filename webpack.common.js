@@ -4,9 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // Helpers
-const filesIntoFilenamesArray = (files) => [...files].map((file) => file.replace(/\.[^/.]+$/, ''));
-const substringAfterChar = (string, char = '+') => string.substring(string.indexOf(char) + 1);
-const substringBeforeChar = (string, char = '+') => string.substring(0, string.indexOf(char));
+const filesIntoFilenamesArray = (files) =>
+  [...files].map((file) => file.replace(/\.[^/.]+$/, ''));
+const substringAfterChar = (string, char = '+') =>
+  string.substring(string.indexOf(char) + 1);
+const substringBeforeChar = (string, char = '+') =>
+  string.substring(0, string.indexOf(char));
 
 // Get JS entries array
 const entriesFiles = fs.readdirSync(path.resolve(__dirname, 'src/js/entries'));
@@ -20,7 +23,13 @@ const pagesFilenames = filesIntoFilenamesArray(pagesFiles);
 const entries = () => {
   const entriesJSObj = {};
 
-  entriesFilenames.map((entry) => (entriesJSObj[entry] = path.resolve(__dirname, `src/js/entries/${entry}.js`)));
+  entriesFilenames.map(
+    (entry) =>
+      (entriesJSObj[entry] = path.resolve(
+        __dirname,
+        `src/js/entries/${entry}.js`
+      ))
+  );
 
   return entriesJSObj;
 };
@@ -60,6 +69,13 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(eot|otf|ttf|woff|woff2)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: '../assets/fonts/[hash][ext][query]',
+        },
+      },
     ],
   },
   plugins: [
@@ -74,7 +90,9 @@ module.exports = {
            */
           chunks: [substringAfterChar(pageFilename) || pageFilename],
           // Output
-          filename: `../${substringBeforeChar(pageFilename) || pageFilename}.html`,
+          filename: `../${
+            substringBeforeChar(pageFilename) || pageFilename
+          }.html`,
         })
     ),
     new MiniCssExtractPlugin({

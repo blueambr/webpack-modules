@@ -1,0 +1,37 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.css]
+indent_size = 2
+
+[*.hbs]
+indent_size = 2
+
+[*.html]
+indent_size = 2
+
+[*.js]
+indent_size = 2
+quote_type = single
+
+[*.json]
+indent_size = 2
+
+[*.jsx]
+indent_size = 2
+quote_type = single
+
+[*.pug]
+indent_size = 2
+
+[*.sass]
+indent_size = 2
+
+[*.scss]
+indent_size = 2

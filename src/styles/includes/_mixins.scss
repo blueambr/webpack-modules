@@ -1,0 +1,99 @@
+// Actions
+@mixin center($axis: xy) {
+  position: absolute;
+
+  @if $axis == xy {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @if $axis == x {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @if $axis == y {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin img() {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Breakpoints, Mobile-first
+@mixin mobile-sm {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+// Fonts
+@function rem($val) {
+  @return $val / 16 + 0rem;
+}
+
+@mixin font($style: 400) {
+  @if $style == 300 {
+    font-family: '#{$font-name} Light', sans-serif;
+  }
+
+  @if $style == 400 {
+    font-family: '#{$font-name} Regular', sans-serif;
+  }
+
+  @if $style == 500 {
+    font-family: '#{$font-name} Medium', sans-serif;
+  }
+
+  @if $style == 700 {
+    font-family: '#{$font-name} Bold', sans-serif;
+  }
+}
+
+// States
+@mixin hf {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin trans($dur: 0.3) {
+  transition: all $dur + s;
+}
+
+// Retina
+@mixin retina {
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 144dpi) {
+    @content;
+  }
+}

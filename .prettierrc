@@ -1,0 +1,16 @@
+{
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": "**/*.pug",
+      "options": {
+        "parser": "pug",
+        "attributeSeparator": "as-needed",
+        "commentPreserveSpaces": "trim-all",
+        "emptyAttributes": "none",
+        "wrapAttributesThreshold": 1
+      }
+    }
+  ]
+}

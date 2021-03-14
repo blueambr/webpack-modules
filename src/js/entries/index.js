@@ -1,6 +1,9 @@
+import '/src/styles/global.scss';
+
 const requireAll = (r) => r.keys().forEach(r);
 
-requireAll(require.context('../../components/', true, /\.scss$/));
+requireAll(require.context('/src/assets/fonts/', true, /\.woff2$/));
+requireAll(require.context('/src/components/', true, /\.scss$/));
 
 const Index = () => {
   // Register SW

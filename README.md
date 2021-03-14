@@ -1,6 +1,6 @@
-# Webpack Modules v.0.0.4
+# Webpack Modules v.0.0.6
 
-> "webpack": "^5.24.2"
+> "webpack": "^5.25.0"
 
 ### Content
 
@@ -42,23 +42,36 @@ You **should** `npx npm-check-updates -u && npm i` as _Webpack Modules_ will alw
 
 ```
 "devDependencies": {
+  "@prettier/plugin-pug": "^1.13.5",
   "autoprefixer": "^10.2.5",
   "css-loader": "^5.1.2",
   "del": "^6.0.0",
+  "eslint": "^7.22.0",
+  "eslint-config-airbnb-base": "^14.2.1",
+  "eslint-config-prettier": "^8.1.0",
+  "eslint-plugin-import": "^2.22.1",
+  "eslint-plugin-prettier": "^3.3.1",
   "fs": "^0.0.1-security",
   "html-webpack-plugin": "^5.3.1",
   "mini-css-extract-plugin": "^1.3.9",
   "postcss": "^8.2.8",
   "postcss-loader": "^5.2.0",
   "postcss-modules": "^4.0.0",
+  "prettier": "^2.2.1",
   "pug3-loader": "^2.4.3",
   "sass": "^1.32.8",
   "sass-loader": "^11.0.1",
+  "stylelint": "^13.12.0",
+  "stylelint-config-standard": "^21.0.0",
+  "stylelint-order": "^4.1.0",
   "webpack": "^5.25.0",
   "webpack-cli": "^4.5.0",
   "webpack-dev-server": "^3.11.2",
   "webpack-merge": "^5.7.3",
   "workbox-webpack-plugin": "^6.1.1"
+},
+"dependencies": {
+  "normalize.css": "^8.0.1"
 }
 ```
 

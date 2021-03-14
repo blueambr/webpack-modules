@@ -1,11 +1,10 @@
-# npm and Yarn
+# npm, Yarn
 node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS or Editor folders
-*.sublime-grunt.cache
+# IDE, OS, Text editor
 *.sublime-project
 *.sublime-workspace
 ._*
@@ -18,23 +17,10 @@ yarn-error.log*
 .vscode
 Thumbs.db
 
-# Server settings
+# Server
 .htaccess
 
 # Misc
-.CVS
-.env.development.local
-.env.local
-.env.production.local
-.env.test.local
-.git
-.hg
-.pnp
-.pnp.js
-.svn
-bower_components
-
-# Numerous always-ignore extensions & files
 *.bak
 *.diff
 *.err
@@ -47,3 +33,14 @@ bower_components
 *.swp
 *.vi
 *~
+.CVS
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+.git
+.hg
+.pnp
+.pnp.js
+.svn
+bower_components
