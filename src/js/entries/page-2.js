@@ -5,7 +5,7 @@ const requireAll = (r) => r.keys().forEach(r);
 requireAll(require.context('/src/assets/fonts/', true, /\.woff2$/));
 requireAll(require.context('/src/components/', true, /\.scss$/));
 
-const About = () => {
+const Page2 = () => {
   // Register SW
   // if ('serviceWorker' in navigator) {
   //   window.addEventListener('load', () => {
@@ -20,7 +20,7 @@ const About = () => {
   //   });
   // }
 
-  console.log('About page');
+  console.warn('Page 2');
 };
 
-About();
+Page2();

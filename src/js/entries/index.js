@@ -20,7 +20,7 @@ const Index = () => {
   //   });
   // }
 
-  console.log('Index page');
+  console.warn('Index');
 };
 
 Index();

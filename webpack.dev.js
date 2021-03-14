@@ -22,4 +22,5 @@ module.exports = merge(common, {
     runtimeChunk: 'single',
     splitChunks: false,
   },
+  target: 'web',
 });

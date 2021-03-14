@@ -1,11 +1,11 @@
 {
-  "homepage": {
-    "title": "Homepage"
+  "index": {
+    "title": "Index"
   },
-  "aboutPage": {
-    "title": "About page"
+  "page2": {
+    "title": "Page 2"
   },
-  "contactPage": {
-    "title": "Contact page"
+  "page3": {
+    "title": "Page 3"
   }
 }

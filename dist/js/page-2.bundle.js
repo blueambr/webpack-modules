@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunk_vgerasimovich_webpack_modules"] = self["webpackChunk_vgerasimovich_webpack_modules"] || []).push([["index"],{
+(self["webpackChunk_vgerasimovich_webpack_modules"] = self["webpackChunk_vgerasimovich_webpack_modules"] || []).push([["page-2"],{
 
 /***/ 455:
 /*!*****************************************!*\
@@ -499,14 +499,14 @@ webpackContext.id = 155;
 
 /***/ }),
 
-/***/ 503:
-/*!*********************************!*\
-  !*** ./src/js/entries/index.js ***!
-  \*********************************/
+/***/ 401:
+/*!**********************************!*\
+  !*** ./src/js/entries/page-2.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/styles/global.scss */ 95);\n\n\nconst requireAll = (r) => r.keys().forEach(r);\n\nrequireAll(__webpack_require__(58));\nrequireAll(__webpack_require__(155));\n\nconst Index = () => {\n  // Register SW\n  // if ('serviceWorker' in navigator) {\n  //   window.addEventListener('load', () => {\n  //     navigator.serviceWorker\n  //       .register('/service-worker.js')\n  //       .then((registration) => {\n  //         console.log('SW registered: ', registration);\n  //       })\n  //       .catch((registrationError) => {\n  //         console.log('SW registration failed: ', registrationError);\n  //       });\n  //   });\n  // }\n\n  console.warn('Index');\n};\n\nIndex();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNTAzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2pzL2VudHJpZXMvaW5kZXguanM/MjQ1ZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgJy9zcmMvc3R5bGVzL2dsb2JhbC5zY3NzJztcblxuY29uc3QgcmVxdWlyZUFsbCA9IChyKSA9PiByLmtleXMoKS5mb3JFYWNoKHIpO1xuXG5yZXF1aXJlQWxsKHJlcXVpcmUuY29udGV4dCgnL3NyYy9hc3NldHMvZm9udHMvJywgdHJ1ZSwgL1xcLndvZmYyJC8pKTtcbnJlcXVpcmVBbGwocmVxdWlyZS5jb250ZXh0KCcvc3JjL2NvbXBvbmVudHMvJywgdHJ1ZSwgL1xcLnNjc3MkLykpO1xuXG5jb25zdCBJbmRleCA9ICgpID0+IHtcbiAgLy8gUmVnaXN0ZXIgU1dcbiAgLy8gaWYgKCdzZXJ2aWNlV29ya2VyJyBpbiBuYXZpZ2F0b3IpIHtcbiAgLy8gICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsICgpID0+IHtcbiAgLy8gICAgIG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyXG4gIC8vICAgICAgIC5yZWdpc3RlcignL3NlcnZpY2Utd29ya2VyLmpzJylcbiAgLy8gICAgICAgLnRoZW4oKHJlZ2lzdHJhdGlvbikgPT4ge1xuICAvLyAgICAgICAgIGNvbnNvbGUubG9nKCdTVyByZWdpc3RlcmVkOiAnLCByZWdpc3RyYXRpb24pO1xuICAvLyAgICAgICB9KVxuICAvLyAgICAgICAuY2F0Y2goKHJlZ2lzdHJhdGlvbkVycm9yKSA9PiB7XG4gIC8vICAgICAgICAgY29uc29sZS5sb2coJ1NXIHJlZ2lzdHJhdGlvbiBmYWlsZWQ6ICcsIHJlZ2lzdHJhdGlvbkVycm9yKTtcbiAgLy8gICAgICAgfSk7XG4gIC8vICAgfSk7XG4gIC8vIH1cblxuICBjb25zb2xlLndhcm4oJ0luZGV4Jyk7XG59O1xuXG5JbmRleCgpO1xuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///503\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/styles/global.scss */ 95);\n\n\nconst requireAll = (r) => r.keys().forEach(r);\n\nrequireAll(__webpack_require__(58));\nrequireAll(__webpack_require__(155));\n\nconst Page2 = () => {\n  // Register SW\n  // if ('serviceWorker' in navigator) {\n  //   window.addEventListener('load', () => {\n  //     navigator.serviceWorker\n  //       .register('/service-worker.js')\n  //       .then((registration) => {\n  //         console.log('SW registered: ', registration);\n  //       })\n  //       .catch((registrationError) => {\n  //         console.log('SW registration failed: ', registrationError);\n  //       });\n  //   });\n  // }\n\n  console.warn('Page 2');\n};\n\nPage2();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNDAxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQHZnZXJhc2ltb3ZpY2gvd2VicGFjay1tb2R1bGVzLy4vc3JjL2pzL2VudHJpZXMvcGFnZS0yLmpzPzA3YWIiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcvc3JjL3N0eWxlcy9nbG9iYWwuc2Nzcyc7XG5cbmNvbnN0IHJlcXVpcmVBbGwgPSAocikgPT4gci5rZXlzKCkuZm9yRWFjaChyKTtcblxucmVxdWlyZUFsbChyZXF1aXJlLmNvbnRleHQoJy9zcmMvYXNzZXRzL2ZvbnRzLycsIHRydWUsIC9cXC53b2ZmMiQvKSk7XG5yZXF1aXJlQWxsKHJlcXVpcmUuY29udGV4dCgnL3NyYy9jb21wb25lbnRzLycsIHRydWUsIC9cXC5zY3NzJC8pKTtcblxuY29uc3QgUGFnZTIgPSAoKSA9PiB7XG4gIC8vIFJlZ2lzdGVyIFNXXG4gIC8vIGlmICgnc2VydmljZVdvcmtlcicgaW4gbmF2aWdhdG9yKSB7XG4gIC8vICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ2xvYWQnLCAoKSA9PiB7XG4gIC8vICAgICBuYXZpZ2F0b3Iuc2VydmljZVdvcmtlclxuICAvLyAgICAgICAucmVnaXN0ZXIoJy9zZXJ2aWNlLXdvcmtlci5qcycpXG4gIC8vICAgICAgIC50aGVuKChyZWdpc3RyYXRpb24pID0+IHtcbiAgLy8gICAgICAgICBjb25zb2xlLmxvZygnU1cgcmVnaXN0ZXJlZDogJywgcmVnaXN0cmF0aW9uKTtcbiAgLy8gICAgICAgfSlcbiAgLy8gICAgICAgLmNhdGNoKChyZWdpc3RyYXRpb25FcnJvcikgPT4ge1xuICAvLyAgICAgICAgIGNvbnNvbGUubG9nKCdTVyByZWdpc3RyYXRpb24gZmFpbGVkOiAnLCByZWdpc3RyYXRpb25FcnJvcik7XG4gIC8vICAgICAgIH0pO1xuICAvLyAgIH0pO1xuICAvLyB9XG5cbiAgY29uc29sZS53YXJuKCdQYWdlIDInKTtcbn07XG5cblBhZ2UyKCk7XG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///401\n");
 
 /***/ })
 
@@ -515,6 +515,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src
 /******/ "use strict";
 /******/ 
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__(503), __webpack_exec__(917));
+/******/ var __webpack_exports__ = (__webpack_exec__(401), __webpack_exec__(917));
 /******/ }
 ]);

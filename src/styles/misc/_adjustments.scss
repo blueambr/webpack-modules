@@ -38,7 +38,7 @@ footer {
   margin-top: auto;
 }
 
-.container {
+:global .container {
   max-width: $container_width;
   padding: $container_padding;
   margin: 0 auto;
