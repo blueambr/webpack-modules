@@ -25,7 +25,7 @@ requireAll(
 );
 
 // Extract all scss modules
-requireAll(require.context('/src/components/', true, /\.scss$/));
+requireAll(require.context('/src/components/', true, /\.scss$/i));
 
 const Index = () => {
   /**

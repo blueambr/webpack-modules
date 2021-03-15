@@ -1,6 +1,6 @@
-# Webpack Modules v.0.0.82
+# Webpack Modules v.0.0.9
 
-> "webpack": "^5.25.0"
+> "webpack": "^5.26.0"
 
 ### Content
 
@@ -38,13 +38,11 @@ Work in progress.
 
 ## Dependencies
 
-You **should** `npx npm-check-updates -u && npm i` as _Webpack Modules_ will always be ok working with the latest versions of the dependencies, so it is **strongly recommended**.
-
 ```
 "devDependencies": {
   "@prettier/plugin-pug": "^1.13.5",
   "autoprefixer": "^10.2.5",
-  "css-loader": "^5.1.2",
+  "css-loader": "^5.1.3",
   "del": "^6.0.0",
   "eslint": "^7.22.0",
   "eslint-config-airbnb-base": "^14.2.1",
@@ -72,11 +70,11 @@ You **should** `npx npm-check-updates -u && npm i` as _Webpack Modules_ will alw
   "stylelint-order": "^4.1.0",
   "stylelint-webpack-plugin": "^2.1.1",
   "trash-cli": "^4.0.0",
-  "webpack": "^5.25.0",
+  "webpack": "^5.26.0",
   "webpack-cli": "^4.5.0",
   "webpack-dev-server": "^3.11.2",
   "webpack-merge": "^5.7.3",
-  "workbox-webpack-plugin": "^6.1.1"
+  "workbox-webpack-plugin": "^6.1.2"
 },
 "dependencies": {
   "normalize.css": "^8.0.1"
