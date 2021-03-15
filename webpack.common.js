@@ -12,7 +12,7 @@ const substringBeforeChar = (string, char = '+') =>
   string.substring(0, string.indexOf(char));
 
 // Get JS entries array
-const entriesFiles = fs.readdirSync(path.resolve(__dirname, 'src/js/entries'));
+const entriesFiles = fs.readdirSync(path.resolve(__dirname, 'src/entries'));
 const entriesFilenames = filesIntoFilenamesArray(entriesFiles);
 
 // Get pages array
@@ -25,10 +25,7 @@ const entries = () => {
 
   entriesFilenames.map(
     (entry) =>
-      (entriesJSObj[entry] = path.resolve(
-        __dirname,
-        `src/js/entries/${entry}.js`
-      ))
+      (entriesJSObj[entry] = path.resolve(__dirname, `src/entries/${entry}.js`))
   );
 
   return entriesJSObj;

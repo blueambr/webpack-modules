@@ -3,15 +3,15 @@ include /components/01-elements/title/index
 - const jumbotronD = require("/src/components/03-sections/jumbotron/data/index.json");
 - const jumbotronS = require("/src/components/03-sections/jumbotron/styles/index.json");
 
-section(class=`${jumbotronS.section}`)
-  div(class=`${jumbotronS.main}`)
+section(class=jumbotronS.section)
+  div(class=jumbotronS.main)
     .container
-      div(class=`${jumbotronS.wrapper}`)
-        div(class=`${jumbotronS.icon}`)
+      div(class=jumbotronS.wrapper)
+        div(class=jumbotronS.icon)
           img(
-            class=`${jumbotronS.img}`
-            src=require("/src/components/03-sections/jumbotron/assets/images/logo.png")
-            alt=`${jumbotronD.index.iconAlt}`
+            class=jumbotronS.img
+            src=require("/src/components/03-sections/jumbotron/static/logo.png")
+            alt=jumbotronD.index.iconAlt
           )
-        div(class=`${jumbotronS.title}`)
+        div(class=jumbotronS.title)
           +title(jumbotronD.index.title)

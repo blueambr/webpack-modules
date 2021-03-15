@@ -1,6 +1,9 @@
 // Extract global styles
 import '/src/styles/global.scss';
 
+// Import JS modules, used at this page
+import Jumbotron from '/src/components/03-sections/jumbotron/js/index';
+
 const requireAll = (r) => r.keys().forEach(r);
 
 // Extract all fonts
@@ -24,18 +27,20 @@ const Index = () => {
    * Register SW
    * service-worker.js file is generated on `npm run build`
    */
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker
-        .register('/service-worker.js')
-        .then((registration) => {
-          console.warn('SW registered: ', registration);
-        })
-        .catch((registrationError) => {
-          console.error('SW registration failed: ', registrationError);
-        });
-    });
-  }
+  // if ('serviceWorker' in navigator) {
+  //   window.addEventListener('load', () => {
+  //     navigator.serviceWorker
+  //       .register('/service-worker.js')
+  //       .then((registration) => {
+  //         console.info('SW registered: ', registration);
+  //       })
+  //       .catch((registrationError) => {
+  //         console.error('SW registration failed: ', registrationError);
+  //       });
+  //   });
+  // }
+
+  Jumbotron();
 };
 
-// Index();
+Index();
