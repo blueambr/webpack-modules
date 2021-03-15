@@ -1,4 +1,4 @@
-# Webpack Modules v.0.0.72
+# Webpack Modules v.0.0.8
 
 > "webpack": "^5.25.0"
 
@@ -51,6 +51,7 @@ You **should** `npx npm-check-updates -u && npm i` as _Webpack Modules_ will alw
   "eslint-config-prettier": "^8.1.0",
   "eslint-plugin-import": "^2.22.1",
   "eslint-plugin-prettier": "^3.3.1",
+  "eslint-webpack-plugin": "^2.5.2",
   "fs": "^0.0.1-security",
   "html-webpack-plugin": "^5.3.1",
   "image-minimizer-webpack-plugin": "^2.2.0",
@@ -69,6 +70,7 @@ You **should** `npx npm-check-updates -u && npm i` as _Webpack Modules_ will alw
   "stylelint": "^13.12.0",
   "stylelint-config-standard": "^21.0.0",
   "stylelint-order": "^4.1.0",
+  "stylelint-webpack-plugin": "^2.1.1",
   "trash-cli": "^4.0.0",
   "webpack": "^5.25.0",
   "webpack-cli": "^4.5.0",

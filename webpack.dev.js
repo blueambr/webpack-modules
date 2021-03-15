@@ -1,6 +1,8 @@
 const del = require('del');
 const path = require('path');
 const { merge } = require('webpack-merge');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
@@ -23,4 +25,15 @@ module.exports = merge(common, {
     splitChunks: false,
   },
   target: 'web',
+  plugins: [
+    new ESLintPlugin({
+      exclude: ['dist', 'node_modules'],
+      fix: true,
+    }),
+    new StylelintPlugin({
+      configFile: '.stylelintrc',
+      files: 'src/**/*.(s(c|a)ss|css)',
+      fix: true,
+    }),
+  ],
 });
