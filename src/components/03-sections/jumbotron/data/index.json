@@ -1,6 +1,4 @@
 {
-  "index": {
-    "title": "Webpack Modules",
-    "iconAlt": "Webpack logo"
-  }
+  "title": "Webpack Modules",
+  "iconAlt": "Webpack logo"
 }

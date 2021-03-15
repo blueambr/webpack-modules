@@ -46,9 +46,9 @@ module.exports = {
         test: /\.pug$/i,
         loader: 'pug3-loader',
         options: {
-          basedir: path.resolve(__dirname, 'src'),
+          basedir: path.resolve(__dirname, 'src/components'),
           pretty: true,
-          root: path.resolve(__dirname, 'src'),
+          root: path.resolve(__dirname, 'src/components'),
         },
       },
       {
@@ -66,7 +66,16 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|svg|jpg|jpeg|gif|ico|xml|webmanifest)$/i,
+        include: [path.resolve(__dirname, 'src/assets/images')],
+        type: 'asset/resource',
+        generator: {
+          filename: '../assets/images/[name][ext][query]',
+        },
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        include: [path.resolve(__dirname, 'src/components')],
         type: 'asset/resource',
         generator: {
           filename: '../assets/images/[hash][ext][query]',

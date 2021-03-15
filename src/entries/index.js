@@ -14,9 +14,14 @@ requireAll(
 /**
  * Extract all global images, if any
  * You can use them as regular strings in pug instead of require statement
+ * ico, xml and webmanifest are favicon specific files
  */
 requireAll(
-  require.context('/src/assets/images/', true, /\.(png|svg|jpg|jpeg|gif)$/i)
+  require.context(
+    '/src/assets/images/',
+    true,
+    /\.(png|svg|jpg|jpeg|gif|ico|xml|webmanifest)$/i
+  )
 );
 
 // Extract all scss modules

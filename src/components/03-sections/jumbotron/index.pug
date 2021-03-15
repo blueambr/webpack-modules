@@ -1,4 +1,4 @@
-include /components/01-elements/title/index
+include /01-elements/title/index
 
 - const jumbotronD = require("/src/components/03-sections/jumbotron/data/index.json");
 - const jumbotronS = require("/src/components/03-sections/jumbotron/styles/index.json");
@@ -11,7 +11,7 @@ section(class=jumbotronS.section)
           img(
             class=jumbotronS.img
             src=require("/src/components/03-sections/jumbotron/static/logo.png")
-            alt=jumbotronD.index.iconAlt
+            alt=jumbotronD.iconAlt
           )
         div(class=jumbotronS.title)
-          +title(jumbotronD.index.title)
+          +title(jumbotronD.title)

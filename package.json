@@ -1,6 +1,6 @@
 {
   "name": "@vgerasimovich/webpack-modules",
-  "version": "0.0.8",
+  "version": "0.0.82",
   "description": "Easy and robust webpack config to handle anything you can imagine, using the best practices",
   "repository": {
     "type": "git",
