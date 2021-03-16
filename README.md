@@ -1,4 +1,4 @@
-# Webpack Modules v.0.0.9
+# Webpack Modules v.0.0.95
 
 > "webpack": "^5.26.0"
 
@@ -69,6 +69,8 @@ Work in progress.
   "stylelint-config-standard": "^21.0.0",
   "stylelint-order": "^4.1.0",
   "stylelint-webpack-plugin": "^2.1.1",
+  "svgo": "^2.2.2",
+  "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
   "webpack": "^5.26.0",
   "webpack-cli": "^4.5.0",

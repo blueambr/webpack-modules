@@ -1,6 +1,6 @@
 {
   "name": "@vgerasimovich/webpack-modules",
-  "version": "0.0.9",
+  "version": "0.0.95",
   "description": "Easy and robust webpack config to handle anything you can imagine, using the best practices",
   "repository": {
     "type": "git",
@@ -21,9 +21,10 @@
   "license": "ISC",
   "bugs": "https://github.com/vgerasimovich/webpack-modules/issues",
   "scripts": {
-    "build": "trash dist && webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js",
-    "start": "webpack serve --config webpack.dev.js"
+    "dev": "npm run sprite && webpack serve --config webpack.dev.js",
+    "start": "npm run sprite && webpack serve --config webpack.dev.js",
+    "build": "trash dist && npm run sprite && webpack --config webpack.prod.js",
+    "sprite": "svgstore -o src/assets/images/sprite.svg src/assets/icons/**/*.svg"
   },
   "sideEffects": [
     "*.css",
@@ -59,6 +60,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-webpack-plugin": "^2.1.1",
+    "svgo": "^2.2.2",
+    "svgstore-cli": "^2.0.0",
     "trash-cli": "^4.0.0",
     "webpack": "^5.26.0",
     "webpack-cli": "^4.5.0",
