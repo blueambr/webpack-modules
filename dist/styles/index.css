@@ -2022,14 +2022,14 @@ template {
 }
 
 .section {
-  padding: rem(20) 0;
+  padding: 1.25rem 0;
 }
 @media screen and (min-width: 1000px) {
   .section.is-medium {
-    padding: rem(30) 0;
+    padding: 1.875rem 0;
   }
   .section.is-large {
-    padding: rem(50) 0;
+    padding: 3.125rem 0;
   }
 }
 * {

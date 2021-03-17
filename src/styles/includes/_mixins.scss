@@ -123,10 +123,6 @@
   height: auto;
 }
 
-@function rem($val) {
-  @return $val / 16 + 0rem;
-}
-
 // States
 @mixin hf {
   &:hover,
