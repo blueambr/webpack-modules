@@ -1,4 +1,4 @@
-@import 'src/styles/includes/includes';
+@import 'src/styles/includes';
 
 .section {
   width: 100%;
@@ -17,7 +17,7 @@
   max-width: rem(150);
   margin: 0 auto;
 
-  @include laptop {
+  @include desktop {
     max-width: rem(200);
   }
 }

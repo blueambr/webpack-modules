@@ -1,7 +1,3 @@
-// Local variables
-$container_width: 890px;
-$container_padding: 0 15px;
-
 * {
   box-sizing: border-box;
 }
@@ -39,9 +35,7 @@ footer {
 }
 
 :global .container {
-  max-width: $container_width;
-  padding: $container_padding;
-  margin: 0 auto;
+  padding: 0 $container-padding;
 }
 
 a,
@@ -103,6 +97,11 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+}
+
+input,
+textarea {
+  min-width: 0;
 }
 
 input {

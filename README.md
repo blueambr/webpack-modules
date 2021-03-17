@@ -1,6 +1,6 @@
-# Webpack Modules v.0.0.95
+# Webpack Modules v.0.0.96
 
-> "webpack": "^5.26.0"
+> "webpack": "^5.26.2"
 
 ### Content
 
@@ -72,13 +72,14 @@ Work in progress.
   "svgo": "^2.2.2",
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
-  "webpack": "^5.26.0",
+  "webpack": "^5.26.2",
   "webpack-cli": "^4.5.0",
   "webpack-dev-server": "^3.11.2",
   "webpack-merge": "^5.7.3",
   "workbox-webpack-plugin": "^6.1.2"
 },
 "dependencies": {
+  "bulma": "^0.9.2",
   "normalize.css": "^8.0.1"
 }
 ```

@@ -128,14 +128,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ 9095:
-/*!********************************!*\
-  !*** ./src/styles/global.scss ***!
-  \********************************/
+/***/ 6994:
+/*!**************************************!*\
+  !*** ./src/styles/global/index.scss ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiOTA5NS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovL0B2Z2VyYXNpbW92aWNoL3dlYnBhY2stbW9kdWxlcy8uL3NyYy9zdHlsZXMvZ2xvYmFsLnNjc3M/ZmZjMiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibWFwcGluZ3MiOiI7QUFBQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///9095\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjk5NC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovL0B2Z2VyYXNpbW92aWNoL3dlYnBhY2stbW9kdWxlcy8uL3NyYy9zdHlsZXMvZ2xvYmFsL2luZGV4LnNjc3M/ZTlkNiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibWFwcGluZ3MiOiI7QUFBQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///6994\n");
+
+/***/ }),
+
+/***/ 9277:
+/*!*******************************!*\
+  !*** ./src/styles/index.scss ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiOTI3Ny5qcyIsInNvdXJjZXMiOlsid2VicGFjazovL0B2Z2VyYXNpbW92aWNoL3dlYnBhY2stbW9kdWxlcy8uL3NyYy9zdHlsZXMvaW5kZXguc2Nzcz81NmUwIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJtYXBwaW5ncyI6IjtBQUFBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///9277\n");
 
 /***/ }),
 
@@ -628,10 +639,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ 2807:
-/*!***************************************!*\
-  !*** ./src/components/ sync \.scss$/ ***!
-  \***************************************/
+/***/ 4407:
+/*!******************************************!*\
+  !*** ./src/components/ sync \.s[ac]ss$/ ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
@@ -657,7 +668,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 2807;
+webpackContext.id = 4407;
 
 /***/ }),
 
@@ -668,7 +679,7 @@ webpackContext.id = 2807;
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/styles/global.scss */ 9095);\n/* harmony import */ var _src_components_03_sections_jumbotron_js_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../src/components/03-sections/jumbotron/js/index */ 3526);\n// Extract global styles\n\n\n// Import JS modules, used at this page\n\n\nconst requireAll = (r) => r.keys().forEach(r);\n\n// Extract all fonts\nrequireAll(\n  __webpack_require__(5425)\n);\n\n/**\n * Extract all global images, if any\n * You can use them as regular strings in pug instead of require statement\n * ico, xml and webmanifest are favicon specific files\n */\nrequireAll(\n  __webpack_require__(9704)\n);\n\n// Extract all scss modules\nrequireAll(__webpack_require__(2807));\n\nconst Index = () => {\n  /**\n   * Register SW\n   * service-worker.js file is generated on `npm run build`\n   */\n  // if ('serviceWorker' in navigator) {\n  //   window.addEventListener('load', () => {\n  //     navigator.serviceWorker\n  //       .register('/service-worker.js')\n  //       .then((registration) => {\n  //         console.info('SW registered: ', registration);\n  //       })\n  //       .catch((registrationError) => {\n  //         console.error('SW registration failed: ', registrationError);\n  //       });\n  //   });\n  // }\n\n  (0,_src_components_03_sections_jumbotron_js_index__WEBPACK_IMPORTED_MODULE_1__.default)();\n};\n\nIndex();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODc5Ny5qcyIsInNvdXJjZXMiOlsid2VicGFjazovL0B2Z2VyYXNpbW92aWNoL3dlYnBhY2stbW9kdWxlcy8uL3NyYy9lbnRyaWVzL2luZGV4LmpzP2I4NjYiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gRXh0cmFjdCBnbG9iYWwgc3R5bGVzXG5pbXBvcnQgJy9zcmMvc3R5bGVzL2dsb2JhbC5zY3NzJztcblxuLy8gSW1wb3J0IEpTIG1vZHVsZXMsIHVzZWQgYXQgdGhpcyBwYWdlXG5pbXBvcnQgSnVtYm90cm9uIGZyb20gJy9zcmMvY29tcG9uZW50cy8wMy1zZWN0aW9ucy9qdW1ib3Ryb24vanMvaW5kZXgnO1xuXG5jb25zdCByZXF1aXJlQWxsID0gKHIpID0+IHIua2V5cygpLmZvckVhY2gocik7XG5cbi8vIEV4dHJhY3QgYWxsIGZvbnRzXG5yZXF1aXJlQWxsKFxuICByZXF1aXJlLmNvbnRleHQoJy9zcmMvYXNzZXRzL2ZvbnRzLycsIHRydWUsIC9cXC4oZW90fG90Znx0dGZ8d29mZnx3b2ZmMikkL2kpXG4pO1xuXG4vKipcbiAqIEV4dHJhY3QgYWxsIGdsb2JhbCBpbWFnZXMsIGlmIGFueVxuICogWW91IGNhbiB1c2UgdGhlbSBhcyByZWd1bGFyIHN0cmluZ3MgaW4gcHVnIGluc3RlYWQgb2YgcmVxdWlyZSBzdGF0ZW1lbnRcbiAqIGljbywgeG1sIGFuZCB3ZWJtYW5pZmVzdCBhcmUgZmF2aWNvbiBzcGVjaWZpYyBmaWxlc1xuICovXG5yZXF1aXJlQWxsKFxuICByZXF1aXJlLmNvbnRleHQoXG4gICAgJy9zcmMvYXNzZXRzL2ltYWdlcy8nLFxuICAgIHRydWUsXG4gICAgL1xcLihwbmd8c3ZnfGpwZ3xqcGVnfGdpZnxpY298eG1sfHdlYm1hbmlmZXN0KSQvaVxuICApXG4pO1xuXG4vLyBFeHRyYWN0IGFsbCBzY3NzIG1vZHVsZXNcbnJlcXVpcmVBbGwocmVxdWlyZS5jb250ZXh0KCcvc3JjL2NvbXBvbmVudHMvJywgdHJ1ZSwgL1xcLnNjc3MkL2kpKTtcblxuY29uc3QgSW5kZXggPSAoKSA9PiB7XG4gIC8qKlxuICAgKiBSZWdpc3RlciBTV1xuICAgKiBzZXJ2aWNlLXdvcmtlci5qcyBmaWxlIGlzIGdlbmVyYXRlZCBvbiBgbnBtIHJ1biBidWlsZGBcbiAgICovXG4gIC8vIGlmICgnc2VydmljZVdvcmtlcicgaW4gbmF2aWdhdG9yKSB7XG4gIC8vICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ2xvYWQnLCAoKSA9PiB7XG4gIC8vICAgICBuYXZpZ2F0b3Iuc2VydmljZVdvcmtlclxuICAvLyAgICAgICAucmVnaXN0ZXIoJy9zZXJ2aWNlLXdvcmtlci5qcycpXG4gIC8vICAgICAgIC50aGVuKChyZWdpc3RyYXRpb24pID0+IHtcbiAgLy8gICAgICAgICBjb25zb2xlLmluZm8oJ1NXIHJlZ2lzdGVyZWQ6ICcsIHJlZ2lzdHJhdGlvbik7XG4gIC8vICAgICAgIH0pXG4gIC8vICAgICAgIC5jYXRjaCgocmVnaXN0cmF0aW9uRXJyb3IpID0+IHtcbiAgLy8gICAgICAgICBjb25zb2xlLmVycm9yKCdTVyByZWdpc3RyYXRpb24gZmFpbGVkOiAnLCByZWdpc3RyYXRpb25FcnJvcik7XG4gIC8vICAgICAgIH0pO1xuICAvLyAgIH0pO1xuICAvLyB9XG5cbiAgSnVtYm90cm9uKCk7XG59O1xuXG5JbmRleCgpO1xuIl0sIm1hcHBpbmdzIjoiOzs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLDJCQUlBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///8797\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_styles_global_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../src/styles/global/index.scss */ 6994);\n/* harmony import */ var _src_styles_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../src/styles/index.scss */ 9277);\n/* harmony import */ var _src_components_03_sections_jumbotron_js_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../src/components/03-sections/jumbotron/js/index */ 3526);\n// Extract base styles\n\n\n\n// Import JS modules, used at this page\n\n\nconst requireAll = (r) => r.keys().forEach(r);\n\n// Extract all fonts\nrequireAll(\n  __webpack_require__(5425)\n);\n\n/**\n * Extract all global images, if any\n * You can use them as regular strings in pug instead of require statement\n * ico, xml and webmanifest are favicon specific files\n */\nrequireAll(\n  __webpack_require__(9704)\n);\n\n// Extract all scss modules\nrequireAll(__webpack_require__(4407));\n\nconst Index = () => {\n  /**\n   * Register SW\n   * service-worker.js file is generated on `npm run build`\n   */\n  // if ('serviceWorker' in navigator) {\n  //   window.addEventListener('load', () => {\n  //     navigator.serviceWorker\n  //       .register('/service-worker.js')\n  //       .then((registration) => {\n  //         console.info('SW registered: ', registration);\n  //       })\n  //       .catch((registrationError) => {\n  //         console.error('SW registration failed: ', registrationError);\n  //       });\n  //   });\n  // }\n\n  (0,_src_components_03_sections_jumbotron_js_index__WEBPACK_IMPORTED_MODULE_2__.default)();\n};\n\nIndex();\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODc5Ny5qcyIsInNvdXJjZXMiOlsid2VicGFjazovL0B2Z2VyYXNpbW92aWNoL3dlYnBhY2stbW9kdWxlcy8uL3NyYy9lbnRyaWVzL2luZGV4LmpzP2I4NjYiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gRXh0cmFjdCBiYXNlIHN0eWxlc1xuaW1wb3J0ICcvc3JjL3N0eWxlcy9nbG9iYWwvaW5kZXguc2Nzcyc7XG5pbXBvcnQgJy9zcmMvc3R5bGVzL2luZGV4LnNjc3MnO1xuXG4vLyBJbXBvcnQgSlMgbW9kdWxlcywgdXNlZCBhdCB0aGlzIHBhZ2VcbmltcG9ydCBKdW1ib3Ryb24gZnJvbSAnL3NyYy9jb21wb25lbnRzLzAzLXNlY3Rpb25zL2p1bWJvdHJvbi9qcy9pbmRleCc7XG5cbmNvbnN0IHJlcXVpcmVBbGwgPSAocikgPT4gci5rZXlzKCkuZm9yRWFjaChyKTtcblxuLy8gRXh0cmFjdCBhbGwgZm9udHNcbnJlcXVpcmVBbGwoXG4gIHJlcXVpcmUuY29udGV4dCgnL3NyYy9hc3NldHMvZm9udHMvJywgdHJ1ZSwgL1xcLihlb3R8b3RmfHR0Znx3b2ZmfHdvZmYyKSQvaSlcbik7XG5cbi8qKlxuICogRXh0cmFjdCBhbGwgZ2xvYmFsIGltYWdlcywgaWYgYW55XG4gKiBZb3UgY2FuIHVzZSB0aGVtIGFzIHJlZ3VsYXIgc3RyaW5ncyBpbiBwdWcgaW5zdGVhZCBvZiByZXF1aXJlIHN0YXRlbWVudFxuICogaWNvLCB4bWwgYW5kIHdlYm1hbmlmZXN0IGFyZSBmYXZpY29uIHNwZWNpZmljIGZpbGVzXG4gKi9cbnJlcXVpcmVBbGwoXG4gIHJlcXVpcmUuY29udGV4dChcbiAgICAnL3NyYy9hc3NldHMvaW1hZ2VzLycsXG4gICAgdHJ1ZSxcbiAgICAvXFwuKHBuZ3xzdmd8anBnfGpwZWd8Z2lmfGljb3x4bWx8d2VibWFuaWZlc3QpJC9pXG4gIClcbik7XG5cbi8vIEV4dHJhY3QgYWxsIHNjc3MgbW9kdWxlc1xucmVxdWlyZUFsbChyZXF1aXJlLmNvbnRleHQoJy9zcmMvY29tcG9uZW50cy8nLCB0cnVlLCAvXFwuc1thY11zcyQvaSkpO1xuXG5jb25zdCBJbmRleCA9ICgpID0+IHtcbiAgLyoqXG4gICAqIFJlZ2lzdGVyIFNXXG4gICAqIHNlcnZpY2Utd29ya2VyLmpzIGZpbGUgaXMgZ2VuZXJhdGVkIG9uIGBucG0gcnVuIGJ1aWxkYFxuICAgKi9cbiAgLy8gaWYgKCdzZXJ2aWNlV29ya2VyJyBpbiBuYXZpZ2F0b3IpIHtcbiAgLy8gICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsICgpID0+IHtcbiAgLy8gICAgIG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyXG4gIC8vICAgICAgIC5yZWdpc3RlcignL3NlcnZpY2Utd29ya2VyLmpzJylcbiAgLy8gICAgICAgLnRoZW4oKHJlZ2lzdHJhdGlvbikgPT4ge1xuICAvLyAgICAgICAgIGNvbnNvbGUuaW5mbygnU1cgcmVnaXN0ZXJlZDogJywgcmVnaXN0cmF0aW9uKTtcbiAgLy8gICAgICAgfSlcbiAgLy8gICAgICAgLmNhdGNoKChyZWdpc3RyYXRpb25FcnJvcikgPT4ge1xuICAvLyAgICAgICAgIGNvbnNvbGUuZXJyb3IoJ1NXIHJlZ2lzdHJhdGlvbiBmYWlsZWQ6ICcsIHJlZ2lzdHJhdGlvbkVycm9yKTtcbiAgLy8gICAgICAgfSk7XG4gIC8vICAgfSk7XG4gIC8vIH1cblxuICBKdW1ib3Ryb24oKTtcbn07XG5cbkluZGV4KCk7XG4iXSwibWFwcGluZ3MiOiI7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsMkJBSUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///8797\n");
 
 /***/ })
 

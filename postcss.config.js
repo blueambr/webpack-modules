@@ -11,6 +11,7 @@ module.exports = {
         const jsonFileName = `${path.dirname(cssFileName)}/index.json`;
         fs.writeFileSync(jsonFileName, JSON.stringify(json));
       },
+      globalModulePaths: [/src\/styles\/global/],
     }),
   ],
 };

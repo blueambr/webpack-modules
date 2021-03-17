@@ -1,5 +1,6 @@
-// Extract global styles
-import '/src/styles/global.scss';
+// Extract base styles
+import '/src/styles/global/index.scss';
+import '/src/styles/index.scss';
 
 // Import JS modules, used at this page
 import Jumbotron from '/src/components/03-sections/jumbotron/js/index';
@@ -25,7 +26,7 @@ requireAll(
 );
 
 // Extract all scss modules
-requireAll(require.context('/src/components/', true, /\.scss$/i));
+requireAll(require.context('/src/components/', true, /\.s[ac]ss$/i));
 
 const Index = () => {
   /**

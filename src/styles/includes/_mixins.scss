@@ -1,4 +1,102 @@
-// Actions
+// Bulma breakpoints
+@mixin mobile {
+  @media screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet), print {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin touch {
+  @media screen and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @if $widescreen-enabled {
+    @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin until-widescreen {
+  @if $widescreen-enabled {
+    @media screen and (max-width: $widescreen - 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin widescreen {
+  @if $widescreen-enabled {
+    @media screen and (min-width: $widescreen) {
+      @content;
+    }
+  }
+}
+
+@mixin widescreen-only {
+  @if $widescreen-enabled and $fullhd-enabled {
+    @media screen and (min-width: $widescreen) and (max-width: $fullhd - 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin until-fullhd {
+  @if $fullhd-enabled {
+    @media screen and (max-width: $fullhd - 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin fullhd {
+  @if $fullhd-enabled {
+    @media screen and (min-width: $fullhd) {
+      @content;
+    }
+  }
+}
+
+// Fonts
+@mixin font($style: 400) {
+  @if $style == 300 {
+    font-family: '#{$font-name} Light', sans-serif;
+  }
+
+  @if $style == 400 {
+    font-family: '#{$font-name} Regular', sans-serif;
+  }
+
+  @if $style == 500 {
+    font-family: '#{$font-name} Medium', sans-serif;
+  }
+
+  @if $style == 700 {
+    font-family: '#{$font-name} Bold', sans-serif;
+  }
+}
+
+// Helpers
 @mixin center($axis: xy) {
   position: absolute;
 
@@ -25,58 +123,8 @@
   height: auto;
 }
 
-// Breakpoints, Mobile-first
-@mixin mobile-sm {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media screen and (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin laptop {
-  @media screen and (min-width: 1025px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: 1440px) {
-    @content;
-  }
-}
-
-// Fonts
 @function rem($val) {
   @return $val / 16 + 0rem;
-}
-
-@mixin font($style: 400) {
-  @if $style == 300 {
-    font-family: '#{$font-name} Light', sans-serif;
-  }
-
-  @if $style == 400 {
-    font-family: '#{$font-name} Regular', sans-serif;
-  }
-
-  @if $style == 500 {
-    font-family: '#{$font-name} Medium', sans-serif;
-  }
-
-  @if $style == 700 {
-    font-family: '#{$font-name} Bold', sans-serif;
-  }
 }
 
 // States
@@ -93,7 +141,8 @@
 
 // Retina
 @mixin retina {
-  @media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 144dpi) {
+  @media screen and (-webkit-min-device-pixel-ratio: 1.5),
+    screen and (min-resolution: 144dpi) {
     @content;
   }
 }

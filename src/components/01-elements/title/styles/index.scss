@@ -1,11 +1,11 @@
-@import 'src/styles/includes/includes';
+@import 'src/styles/includes';
 
 .title {
   @include font(700);
   font-size: rem(40);
   color: $color-title;
 
-  @include laptop {
+  @include desktop {
     font-size: rem(80);
   }
 }
