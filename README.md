@@ -1,4 +1,4 @@
-# Webpack Modules v.0.0.961
+# Webpack Modules v.0.9.1
 
 > "webpack": "^5.26.2"
 
@@ -20,15 +20,79 @@
 5. Navigate to http://localhost:3000/
 6. `npm run build` to create `dist` for production
 
-P.S. Don't forget to remove extra info like keywords, repository, etc. from `package.json`.
+P.S. Don't forget to remove extra info like keywords, repository etc. from `package.json`.
 
 ## What is this?
 
-_Webpack Modules_ is an easy and robust webpack config to handle anything you can imagine, using the best practices.
+_Webpack Modules_ (WM) is an easy and robust webpack config to handle anything you can imagine, using the best practices.
 
-Work in progress.
+It was created as a clean, versatile, modern and "fresh" frontend environment for any purpose use. You and only you are in control of which techonologies to use here and how, though, WM provides an initial setup, which will be described further.
+
+If you work with JS frameworks like React, Next.js, Vue.js etc., consider using their dedicated environments, provided by their developers.
+
+I extended these environments for React and Next.js with a few useful things, while using and updating the original dependencies. You can find them here:
+
+- [create-react-app-extended](https://github.com/vgerasimovich/create-react-app-extended)
+- [create-next-app-extended](https://github.com/vgerasimovich/create-next-app-extended)
 
 ## Out of the box
+
+Here what's included in the initial _Webpack Modules_ setup:
+
+- **Separated webpack config files**
+
+  - `webpack.common.js` has configuration, used in both `dev` and `prod` config files
+  - `webpack.dev.js` is responsible for development environment
+  - `webpack.prod.js` is responsible for production environment
+
+  `npm start` and `npm run dev` run the `dev` config.
+
+  `npm run build` runs the `prod` config.
+
+- **Separated JS files (entries) for every page**
+
+  Stored in `src/entries`.
+
+  Responsible for providing content to webpack and for JS code for particular page.
+
+  They should have the same name as the pages templates in `src/pages`, e.g., `contact.pug` in `src/pages` and `contact.js` in `src/entries`.
+
+  If you want to use the same JS file for different pages, you have to use paired names in `src/pages`, e.g., `contact+about.pug` means that contact page will be using `about.js` file, which was originally created for about page.
+
+- **Pug template engine**
+
+  Used in `src/components` and `src/pages`.
+
+  Responsible for rendering HTML content and creating pages.
+
+  It can require JSON files to use their data inside of its templates. It is the main usage concept in _Webpack Modules_. We use `data/index.json` inside of a component to provide content and automatically generated Sass/SCSS modules inside `styles/index.json` to render the right CSS classnames.
+
+  [Here](https://pugjs.org/language/attributes.html) you may find out more about Pug.
+
+- **Sass/SCSS and PostCSS**
+
+  Used in `src/components` and `src/styles`. PostCSS has a dedicated config file in the root: `postcss.config.js`.
+
+  Responsible for adding needed, optimized and processed styles to a page.
+
+  Features used: Autoprefixer, Sass/SCSS modules.
+
+  Features work automatically. Autoprefixer uses the `.browserslistrc` file in the root. For Sass/SCSS modules dedicated `index.json` files are created inside of the components' `styles` folders, which you then need to use inside of the components' Pug templates. If you want some of the classnames to stay global, you can use `:global` flag in a stylesheet, e.g., `:global .container { display: flex; }` or you can put a stylesheet inside the `src/styles/global` folder and/or import it inside `src/styles/global/index.scss`. You can control, which Sass/SCSS files webpack is using inside the `src/entries` JS files.
+
+  - [More about Sass/SCSS](https://sass-lang.com/)
+  - [More about PostCSS](https://postcss.org/)
+
+- **Bulma and base/global styles**
+
+  Used in `src/styles`.
+
+  Responsible for resetting browser styles, providing functions, variables, mixins and other helpers for flexible, yet generic, layout creation.
+
+  Bulma modules used: Container, Columns, Section.
+
+  You can go through all the files inside the `src/styles` to have an idea of what they are and what they for. You can control, which Sass/SCSS files webpack is using inside the `src/entries` JS files.
+
+  - [More about Bulma](https://bulma.io/)
 
 Work in progress.
 

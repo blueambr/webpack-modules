@@ -25,7 +25,7 @@ requireAll(
   )
 );
 
-// Extract all scss modules
+// Extract all Sass/SCSS modules
 requireAll(require.context('/src/components/', true, /\.s[ac]ss$/i));
 
 const Index = () => {
