@@ -1,15 +1,16 @@
-# Webpack Modules v.0.9.1
+# Webpack Modules v.0.9.3
 
 > "webpack": "^5.26.2"
 
 ### Content
 
-**[How to launch](#how-to-launch)**
-**[What is this?](#what-is-this)**
-**[Out of the box](#out-of-the-box)**
-**[How to modify](#how-to-modify)**
-**[Dependencies](#dependencies)**
-**[License](#license)**
+- **[How to launch](#how-to-launch)**
+- **[What is this?](#what-is-this)**
+- **[Out of the box](#out-of-the-box)**
+- **[Differences between `dev` and `prod`](#differences-between-dev-and-prod)**
+- **[How to modify](#how-to-modify)**
+- **[Dependencies](#dependencies)**
+- **[License](#license)**
 
 ## How to launch:
 
@@ -57,7 +58,7 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   They should have the same name as the pages templates in `src/pages`, e.g., `contact.pug` in `src/pages` and `contact.js` in `src/entries`.
 
-  If you want to use the same JS file for different pages, you have to use paired names in `src/pages`, e.g., `contact+about.pug` means that contact page will be using `about.js` file, which was originally created for about page.
+  If you want to use the same JS file for different pages, you have to use paired names in `src/pages`, e.g., `contact+about.pug` means that contact page will be using `about.js` file, which was originally created for `about.pug` page.
 
 - **Pug template engine**
 
@@ -94,7 +95,57 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   - [More about Bulma](https://bulma.io/)
 
-Work in progress.
+- **Separated CSS files for every page**
+
+  Every JS file in `src/entries` represents a different page. Include needed styles in each one of these files and webpack will create different CSS stylesheets for every page automatically.
+
+- **Assets**
+
+  Used in `src/components` and `src/assets`.
+
+  You should have your assets scoped inside a module, however, there are some cases, where it is not possible. In these cases you should make use of `src/assets` folder.
+
+  Use `require()` in Pug to import scoped assets and where it is not possible — use a regular string, while having needed assets inside `src/assets` directory.
+
+  Sass/SCSS reads scoped and global assets equally good.
+
+- **WebP**
+
+  Automatically converts all PNG and JPG/JPEG images into WebP format on `npm run build`.
+
+  File extension does not change, so you will see regular `.png`, `.jpg`, `.jpeg` in `dist` folder, which, in fact, will be `.webp`.
+
+  It can be disabled in `webpack.prod.js`.
+
+- **SVG sprite**
+
+  Automatically generated from the files in `src/assets/icons` and stored in `src/assets/images`.
+
+  A CLI tool is responsible for it, which is configured in `package.json` `sprite` script. It can be run manually with `npm run sprite` command or automatically, every time you run any other script.
+
+## Differences between `dev` and `prod`
+
+### `dev`
+
+- Automatically cleans `dist` folder. Does not move it to the trash
+- Uses `webpack-dev-server` = Hosts a server and watches for changes
+- Webpack optimization features disabled
+- Runs ESLint and Stylelint webpack plugins
+- JS source maps are inlined. No source maps for CSS
+- Does not minimize or optimize JS and CSS
+- Does not minimize or optimize images, including SVG sprite or any other SVG
+
+### `prod`
+
+- Automatically cleans `dist` folder. Moves it to the trash
+- Does not use any server = Runs one time and stops
+- Webpack optimization features enabled
+- Does not run ESLint and Stylelint webpack plugins
+- JS and CSS source maps have separated files
+- Minimizes and optimizes JS and CSS
+- Minimizes and optimizes all images, including the SVG sprite or any other SVG **AND/OR** converts all PNG and JPG/JPEG images into WebP format without changing the extension (enabled by default)
+- Splits JS into functional, optimized and cached pieces, using `cacheGroups`
+- Creates a Service Worker
 
 ## How to modify
 
@@ -121,6 +172,7 @@ Work in progress.
   "imagemin-mozjpeg": "^9.0.0",
   "imagemin-pngquant": "^9.0.2",
   "imagemin-svgo": "^9.0.0",
+  "imagemin-webp": "^6.0.0",
   "mini-css-extract-plugin": "^1.3.9",
   "postcss": "^8.2.8",
   "postcss-loader": "^5.2.0",

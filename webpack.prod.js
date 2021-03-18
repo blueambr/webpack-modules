@@ -34,11 +34,13 @@ module.exports = merge(common, {
         /**
          * Lossy optimization
          * Feel free to experiment with options to achieve the best result in your case
+         *
+         * If you use WebP — comment out 'mozjpeg' and 'pngquant' plugins and vice versa
          */
         plugins: [
           ['gifsicle', { interlaced: true, optimizationLevel: 3 }],
-          ['mozjpeg', { quality: 30 }],
-          ['pngquant', { quality: [0.3, 0.3] }],
+          // ['mozjpeg', { quality: 30 }],
+          // ['pngquant', { quality: [0.3, 0.3] }],
           [
             'svgo',
             {
@@ -48,6 +50,7 @@ module.exports = merge(common, {
               ]),
             },
           ],
+          ['webp', { quality: 30 }],
         ],
       },
     }),

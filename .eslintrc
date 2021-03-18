@@ -21,11 +21,11 @@
      * Can be "expression" or "declaration"
      * Choose your own or delete to disable
      */
-    "func-style": ["error", "expression"]
+    "func-style": ["error", "expression"],
 
-    // Prettier does this
-    // "indent": ["error", 2],
-    // "quotes": ["error", "single"]
+    // Prettier does this too
+    "indent": ["error", 2],
+    "quotes": ["error", "single"]
   },
   "globals": {
     "Blob": true,
