@@ -1,6 +1,6 @@
-# Webpack Modules v.0.9.3
+# Webpack Modules v.1.0.0
 
-> "webpack": "^5.26.2"
+> "webpack": "^5.26.3"
 
 ### Content
 
@@ -25,9 +25,9 @@ P.S. Don't forget to remove extra info like keywords, repository etc. from `pack
 
 ## What is this?
 
-_Webpack Modules_ (WM) is an easy and robust webpack config to handle anything you can imagine, using the best practices.
+_Webpack Modules_ or _WM_ is an easy and robust webpack config to handle anything you can imagine, using the best practices.
 
-It was created as a clean, versatile, modern and "fresh" frontend environment for any purpose use. You and only you are in control of which techonologies to use here and how, though, WM provides an initial setup, which will be described further.
+It was created as a clean, versatile, modern and "fresh" frontend environment. You and only you are in control of which techonologies to use here and how, however, _WM_ provides an initial setup, which will be described further.
 
 If you work with JS frameworks like React, Next.js, Vue.js etc., consider using their dedicated environments, provided by their developers.
 
@@ -54,11 +54,11 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   Stored in `src/entries`.
 
-  Responsible for providing content to webpack and for JS code for particular page.
+  Responsible for providing content and JS code to webpack. These files represent pages.
 
-  They should have the same name as the pages templates in `src/pages`, e.g., `contact.pug` in `src/pages` and `contact.js` in `src/entries`.
+  They should have the same name as the templates of the pages in `src/pages`, e.g., `contact.pug` in `src/pages` and `contact.js` in `src/entries`.
 
-  If you want to use the same JS file for different pages, you have to use paired names in `src/pages`, e.g., `contact+about.pug` means that contact page will be using `about.js` file, which was originally created for `about.pug` page.
+  If you want to use the same JS file for different pages, you have to use paired names in `src/pages`, e.g., `contact+about.pug` means that "Contact" page will be using `about.js` file, which was originally created for "About" page.
 
 - **Pug template engine**
 
@@ -72,13 +72,13 @@ Here what's included in the initial _Webpack Modules_ setup:
 
 - **Sass/SCSS and PostCSS**
 
-  Used in `src/components` and `src/styles`. PostCSS has a dedicated config file in the root: `postcss.config.js`.
+  Used in `src/components` and `src/styles`. PostCSS has a dedicated config file: `postcss.config.js`.
 
-  Responsible for adding needed, optimized and processed styles to a page.
+  Responsible for adding included (in `src/entries` JS files), optimized and processed styles to a page.
 
   Features used: Autoprefixer, Sass/SCSS modules.
 
-  Features work automatically. Autoprefixer uses the `.browserslistrc` file in the root. For Sass/SCSS modules dedicated `index.json` files are created inside of the components' `styles` folders, which you then need to use inside of the components' Pug templates. If you want some of the classnames to stay global, you can use `:global` flag in a stylesheet, e.g., `:global .container { display: flex; }` or you can put a stylesheet inside the `src/styles/global` folder and/or import it inside `src/styles/global/index.scss`. You can control, which Sass/SCSS files webpack is using inside the `src/entries` JS files.
+  Features work automatically. Autoprefixer uses `.browserslistrc`. For Sass/SCSS modules dedicated `index.json` files are created inside of the components' `styles` folders, which you then need to use inside of the components' Pug templates. If you want some of the classnames to stay global, you can use `:global` flag in a stylesheet, e.g., `:global .container { display: flex; }` or you can put a stylesheet inside the `src/styles/global` folder and/or import it inside `src/styles/global/index.scss`. You can control, which Sass/SCSS files webpack is using inside `src/entries` JS files.
 
   - [More about Sass/SCSS](https://sass-lang.com/)
   - [More about PostCSS](https://postcss.org/)
@@ -91,7 +91,7 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   Bulma modules used: Container, Columns, Section.
 
-  You can go through all the files inside the `src/styles` to have an idea of what they are and what they for. You can control, which Sass/SCSS files webpack is using inside the `src/entries` JS files.
+  You can go through all files inside `src/styles` to have an idea of what they are and what they for. You can control, which Sass/SCSS files webpack is using inside `src/entries` JS files.
 
   - [More about Bulma](https://bulma.io/)
 
@@ -107,17 +107,17 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   Use `require()` in Pug to import scoped assets and where it is not possible — use a regular string, while having needed assets inside `src/assets` directory.
 
-  Sass/SCSS reads scoped and global assets equally good.
+  Sass/SCSS has no problems with either scoped or global assets.
 
 - **WebP**
 
-  Automatically converts all PNG and JPG/JPEG images into WebP format on `npm run build`.
+  PNG and JPG/JPEG images are automatically converted into WebP format on `npm run build`.
 
   File extension does not change, so you will see regular `.png`, `.jpg`, `.jpeg` in `dist` folder, which, in fact, will be `.webp`.
 
-  It can be disabled in `webpack.prod.js`.
+  It can be disabled and switched to a regular image minification in `webpack.prod.js`.
 
-- **SVG sprite**
+- **SVG sprites**
 
   Automatically generated from the files in `src/assets/icons` and stored in `src/assets/images`.
 
@@ -133,7 +133,7 @@ Here what's included in the initial _Webpack Modules_ setup:
 - Runs ESLint and Stylelint webpack plugins
 - JS source maps are inlined. No source maps for CSS
 - Does not minimize or optimize JS and CSS
-- Does not minimize or optimize images, including SVG sprite or any other SVG
+- Does not minimize or optimize images, including SVG sprites or any other SVG
 
 ### `prod`
 
@@ -143,13 +143,15 @@ Here what's included in the initial _Webpack Modules_ setup:
 - Does not run ESLint and Stylelint webpack plugins
 - JS and CSS source maps have separated files
 - Minimizes and optimizes JS and CSS
-- Minimizes and optimizes all images, including the SVG sprite or any other SVG **AND/OR** converts all PNG and JPG/JPEG images into WebP format without changing the extension (enabled by default)
+- Minimizes and optimizes all images, including SVG sprites or any other SVG. By default converts all PNG and JPG/JPEG images into WebP format without changing their extensions. Can be disabled and switched to a regular image minification in `webpack.prod.js`
 - Splits JS into functional, optimized and cached pieces, using `cacheGroups`
 - Creates a Service Worker
 
 ## How to modify
 
-Work in progress.
+In order to be able to understand and modify webpack config files, you have to be acquainted with webpack principles. You can do it by accessing ["Guides"](https://webpack.js.org/guides/) or ["Configuration"](https://webpack.js.org/configuration/) sections of webpack documentation.
+
+To change loaders, plugins or their options you have to search for their analogues or documentation on the internet. _Webpack Modules_ does not use any custom logic (only a few helper functions) in webpack config, so you should be able to easily change it to your needs, having option to completely override the whole functionality and concept.
 
 ## Dependencies
 
@@ -188,7 +190,7 @@ Work in progress.
   "svgo": "^2.2.2",
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
-  "webpack": "^5.26.2",
+  "webpack": "^5.26.3",
   "webpack-cli": "^4.5.0",
   "webpack-dev-server": "^3.11.2",
   "webpack-merge": "^5.7.3",

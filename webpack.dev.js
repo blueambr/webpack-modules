@@ -32,7 +32,7 @@ module.exports = merge(common, {
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc',
-      files: 'src/**/*.(s(c|a)ss|css)',
+      files: 'src/**/*.(s(a|c)ss|css)',
       fix: true,
     }),
   ],

@@ -1,6 +1,6 @@
 {
   "name": "@vgerasimovich/webpack-modules",
-  "version": "0.9.3",
+  "version": "1.0.0",
   "description": "Easy and robust webpack config to handle anything you can imagine, using the best practices",
   "repository": {
     "type": "git",
@@ -64,7 +64,7 @@
     "svgo": "^2.2.2",
     "svgstore-cli": "^2.0.0",
     "trash-cli": "^4.0.0",
-    "webpack": "^5.26.2",
+    "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3",
