@@ -42,6 +42,7 @@
       "flex-grow",
       "justify-content",
       "align-items",
+      "flex-basis",
       "align-self",
       "vertical-align",
       "overflow",

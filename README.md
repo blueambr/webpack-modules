@@ -1,12 +1,13 @@
-# Webpack Modules v.1.0.0
+# Webpack Modules v.1.1.0
 
-> "webpack": "^5.26.3"
+> "webpack": "^5.27.2"
 
 ### Content
 
 - **[How to launch](#how-to-launch)**
 - **[What is this?](#what-is-this)**
 - **[Out of the box](#out-of-the-box)**
+- **[Pre-commit](#pre-commit)**
 - **[Differences between `dev` and `prod`](#differences-between-dev-and-prod)**
 - **[How to modify](#how-to-modify)**
 - **[Dependencies](#dependencies)**
@@ -123,6 +124,36 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   A CLI tool is responsible for it, which is configured in `package.json` `sprite` script. It can be run manually with `npm run sprite` command or automatically, every time you run any other script.
 
+## Pre-commit
+
+_Webpack Modules_ has a pre-commit feature, based on [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). It looks like this:
+
+**lint-staged** in `package.json`:
+
+```
+"lint-staged": {
+  "src/**/*.{css,sass,scss}": [
+    "pretty-quick --pattern './src/**/*.{css,sass,scss}'",
+    "stylelint './src/**/*.{css,sass,scss}' --fix"
+  ],
+  "src/**/*.{js,jsx}": [
+    "pretty-quick --pattern './src/**/*.{js,jsx}'",
+    "eslint './src/**/*.{js,jsx}' --fix"
+  ],
+  "src/**/*.pug": [
+    "pretty-quick --pattern './src/**/*.pug'"
+  ]
+}
+```
+
+**pre-commit** in `.husky/pre-commit`:
+
+```
+npm run lint
+```
+
+And it can be configured in any preferrable way. Enjoy!
+
 ## Differences between `dev` and `prod`
 
 ### `dev`
@@ -190,7 +221,7 @@ To change loaders, plugins or their options you have to search for their analogu
   "svgo": "^2.2.2",
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
-  "webpack": "^5.26.3",
+  "webpack": "^5.27.2",
   "webpack-cli": "^4.5.0",
   "webpack-dev-server": "^3.11.2",
   "webpack-merge": "^5.7.3",
