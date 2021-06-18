@@ -1,6 +1,6 @@
-# Webpack Modules v.1.1.0
+# Webpack Modules v.1.1.1
 
-> "webpack": "^5.27.2"
+> "webpack": "^5.39.1"
 
 ### Content
 
@@ -32,10 +32,9 @@ It was created as a clean, versatile, modern and "fresh" frontend environment. Y
 
 If you work with JS frameworks like React, Next.js, Vue.js etc., consider using their dedicated environments, provided by their developers.
 
-I extended these environments for React and Next.js with a few useful things, while using and updating the original dependencies. You can find them here:
+I extended such environment for Next.js with a few useful things, while using and updating the original dependencies. You can find them here:
 
-- [create-react-app-extended](https://github.com/vgerasimovich/create-react-app-extended)
-- [create-next-app-extended](https://github.com/vgerasimovich/create-next-app-extended)
+- [create-next-app-extended](https://github.com/hotepp/create-next-app-extended)
 
 ## Out of the box
 
@@ -188,47 +187,47 @@ To change loaders, plugins or their options you have to search for their analogu
 
 ```
 "devDependencies": {
-  "@prettier/plugin-pug": "^1.13.5",
-  "autoprefixer": "^10.2.5",
-  "css-loader": "^5.1.3",
+  "@prettier/plugin-pug": "^1.15.3",
+  "autoprefixer": "^10.2.6",
+  "css-loader": "^5.2.6",
   "del": "^6.0.0",
-  "eslint": "^7.22.0",
+  "eslint": "^7.28.0",
   "eslint-config-airbnb-base": "^14.2.1",
-  "eslint-config-prettier": "^8.1.0",
-  "eslint-plugin-import": "^2.22.1",
-  "eslint-plugin-prettier": "^3.3.1",
-  "eslint-webpack-plugin": "^2.5.2",
+  "eslint-config-prettier": "^8.3.0",
+  "eslint-plugin-import": "^2.23.4",
+  "eslint-plugin-prettier": "^3.4.0",
+  "eslint-webpack-plugin": "^2.5.4",
   "fs": "^0.0.1-security",
   "html-webpack-plugin": "^5.3.1",
-  "husky": "^5.2.0",
+  "husky": "^6.0.0",
   "image-minimizer-webpack-plugin": "^2.2.0",
   "imagemin-gifsicle": "^7.0.0",
   "imagemin-mozjpeg": "^9.0.0",
   "imagemin-pngquant": "^9.0.2",
   "imagemin-svgo": "^9.0.0",
   "imagemin-webp": "^6.0.0",
-  "lint-staged": "^10.5.4",
-  "mini-css-extract-plugin": "^1.3.9",
-  "postcss": "^8.2.8",
-  "postcss-loader": "^5.2.0",
-  "postcss-modules": "^4.0.0",
-  "prettier": "^2.2.1",
-  "pretty-quick": "^3.1.0",
+  "lint-staged": "^11.0.0",
+  "mini-css-extract-plugin": "^1.6.0",
+  "postcss": "^8.3.5",
+  "postcss-loader": "^6.1.0",
+  "postcss-modules": "^4.1.3",
+  "prettier": "^2.3.1",
+  "pretty-quick": "^3.1.1",
   "pug3-loader": "^2.4.3",
-  "sass": "^1.32.8",
-  "sass-loader": "^11.0.1",
-  "stylelint": "^13.12.0",
-  "stylelint-config-standard": "^21.0.0",
+  "sass": "^1.32.9",
+  "sass-loader": "^12.1.0",
+  "stylelint": "^13.13.1",
+  "stylelint-config-standard": "^22.0.0",
   "stylelint-order": "^4.1.0",
-  "stylelint-webpack-plugin": "^2.1.1",
-  "svgo": "^2.2.2",
+  "stylelint-webpack-plugin": "^2.2.0",
+  "svgo": "^2.3.0",
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
-  "webpack": "^5.27.2",
-  "webpack-cli": "^4.5.0",
+  "webpack": "^5.39.1",
+  "webpack-cli": "^4.7.2",
   "webpack-dev-server": "^3.11.2",
-  "webpack-merge": "^5.7.3",
-  "workbox-webpack-plugin": "^6.1.2"
+  "webpack-merge": "^5.8.0",
+  "workbox-webpack-plugin": "^6.1.5"
 },
 "dependencies": {
   "bulma": "^0.9.2",
@@ -238,6 +237,6 @@ To change loaders, plugins or their options you have to search for their analogu
 
 ## License
 
-Copyright © 2021 Vlad Gerasimovich <vlad.gerasimovich.micro@outlook.com>
+Copyright © 2021 Vlad Gerasimovich <hotepp@pm.me>
 
 Licensed under the ISC license.
