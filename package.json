@@ -1,6 +1,6 @@
 {
   "name": "@hotepp/webpack-modules",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Easy and robust webpack config to handle anything you can imagine, using the best practices",
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-# Webpack Modules v.1.1.1
+# Webpack Modules v.1.1.2
 
 > "webpack": "^5.39.1"
 
@@ -191,7 +191,7 @@ To change loaders, plugins or their options you have to search for their analogu
   "autoprefixer": "^10.2.6",
   "css-loader": "^5.2.6",
   "del": "^6.0.0",
-  "eslint": "^7.28.0",
+  "eslint": "^7.29.0",
   "eslint-config-airbnb-base": "^14.2.1",
   "eslint-config-prettier": "^8.3.0",
   "eslint-plugin-import": "^2.23.4",
@@ -214,7 +214,7 @@ To change loaders, plugins or their options you have to search for their analogu
   "prettier": "^2.3.1",
   "pretty-quick": "^3.1.1",
   "pug3-loader": "^2.4.3",
-  "sass": "^1.32.9",
+  "sass": "^1.35.1",
   "sass-loader": "^12.1.0",
   "stylelint": "^13.13.1",
   "stylelint-config-standard": "^22.0.0",
@@ -230,7 +230,7 @@ To change loaders, plugins or their options you have to search for their analogu
   "workbox-webpack-plugin": "^6.1.5"
 },
 "dependencies": {
-  "bulma": "^0.9.2",
+  "bulma": "^0.9.3",
   "normalize.css": "^8.0.1"
 }
 ```
