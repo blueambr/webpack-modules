@@ -187,7 +187,7 @@
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunk_vgerasimovich_webpack_modules"] = self["webpackChunk_vgerasimovich_webpack_modules"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunk_hotepp_webpack_modules"] = self["webpackChunk_hotepp_webpack_modules"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
