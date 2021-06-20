@@ -36,4 +36,5 @@ module.exports = merge(common, {
       fix: true,
     }),
   ],
+  stats: 'errors-warnings',
 });
