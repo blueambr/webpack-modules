@@ -1,3 +1,7 @@
+# Build
+dist
+out
+
 # npm, Yarn
 node_modules
 npm-debug.log*
