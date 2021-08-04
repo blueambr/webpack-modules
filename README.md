@@ -1,4 +1,4 @@
-# Webpack Modules v.1.1.4
+# Webpack Modules v.1.2.0
 
 > "webpack": "^5.48.0"
 
@@ -59,6 +59,12 @@ Here what's included in the initial _Webpack Modules_ setup:
   They should have the same name as the templates of the pages in `src/pages`, e.g., `contact.pug` in `src/pages` and `contact.js` in `src/entries`.
 
   If you want to use the same JS file for different pages, you have to use paired names in `src/pages`, e.g., `contact+about.pug` means that "Contact" page will be using `about.js` file, which was originally created for "About" page.
+
+- **TypeScript support**
+
+  If you see a JS file, it can be a TS file. Yes, that simple.
+
+  Make sure to set up a `tsconfig.json` to your liking.
 
 - **Pug template engine**
 
@@ -224,6 +230,8 @@ To change loaders, plugins or their options you have to search for their analogu
   "svgo": "^2.3.1",
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
+  "ts-loader": "^9.2.5",
+  "typescript": "^4.3.5",
   "webpack": "^5.48.0",
   "webpack-cli": "^4.7.2",
   "webpack-dev-server": "^3.11.2",

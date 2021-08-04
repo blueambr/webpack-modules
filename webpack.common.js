@@ -13,7 +13,6 @@ const substringBeforeChar = (string, char = '+') =>
 
 // Get JS entries array
 const entriesFiles = fs.readdirSync(path.resolve(__dirname, 'src/entries'));
-const entriesFilenames = filesIntoFilenamesArray(entriesFiles);
 
 // Get pages array
 const pagesFiles = fs.readdirSync(path.resolve(__dirname, 'src/pages'));
@@ -23,10 +22,14 @@ const pagesFilenames = filesIntoFilenamesArray(pagesFiles);
 const entries = () => {
   const entriesJSObj = {};
 
-  entriesFilenames.map(
-    (entry) =>
-      (entriesJSObj[entry] = path.resolve(__dirname, `src/entries/${entry}.js`))
-  );
+  entriesFiles.map((entry) => {
+    const entryFilename = entry.replace(/\.[^/.]+$/, '');
+
+    return (entriesJSObj[entryFilename] = path.resolve(
+      __dirname,
+      `src/entries/${entry}`
+    ));
+  });
 
   return entriesJSObj;
 };
@@ -42,6 +45,11 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.[tj]s[x]?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.pug$/i,
         loader: 'pug3-loader',
