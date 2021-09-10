@@ -1,4 +1,3 @@
-const { extendDefaultPlugins } = require('svgo');
 const { merge } = require('webpack-merge');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
@@ -44,10 +43,15 @@ module.exports = merge(common, {
           [
             'svgo',
             {
-              plugins: extendDefaultPlugins([
-                { name: 'removeUselessDefs', active: false },
-                { name: 'removeViewBox', active: false },
-              ]),
+              plugins: [
+                {
+                  name: 'preset-default',
+                  overrides: {
+                    removeUselessDefs: false,
+                    removeViewBox: false,
+                  },
+                },
+              ],
             },
           ],
           ['webp', { quality: 30 }],

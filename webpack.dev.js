@@ -9,12 +9,16 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'eval-cheap-module-source-map',
   devServer: {
-    before: () => {
+    devMiddleware: {
+      writeToDisk: true,
+    },
+    onBeforeSetupMiddleware: () => {
       del(path.resolve(__dirname, 'dist'));
     },
-    contentBase: path.resolve(__dirname, 'dist'),
     port: 3000,
-    writeToDisk: true,
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
   },
   output: {
     filename: '[name].bundle.js',
