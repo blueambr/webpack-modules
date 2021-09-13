@@ -1,17 +1,16 @@
-include /01-elements/title/index
-
+- const jumbotronTitle = require("/src/components/01-elements/title/index.pug");
 - const jumbotronD = require("/src/components/03-sections/jumbotron/data/index.json");
 - const jumbotronS = require("/src/components/03-sections/jumbotron/styles/index.json");
 
-section(class=jumbotronS.section)
-  div(class=jumbotronS.main)
-    .container
-      div(class=jumbotronS.wrapper)
-        div(class=jumbotronS.icon)
-          img(
-            class=jumbotronS.img
-            src=require("/src/components/03-sections/jumbotron/static/logo.png")
-            alt=jumbotronD.iconAlt
-          )
-        div(class=jumbotronS.title)
-          +title(jumbotronD.title)
+mixin jumbotron(props = {})
+  section(class=jumbotronS.section)
+    div(class=jumbotronS.main)
+      .container
+        div(class=jumbotronS.wrapper)
+          div(class=jumbotronS.icon)
+            img(
+              class=jumbotronS.img
+              src=require("/src/components/03-sections/jumbotron/static/logo.png")
+              alt=jumbotronD.iconAlt
+            )
+          div(class=jumbotronS.title)!= jumbotronTitle({ props: { text: jumbotronD.title } })

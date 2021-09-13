@@ -3,7 +3,7 @@ import '/src/styles/global/index.scss';
 import '/src/styles/index.scss';
 
 // Import JS modules, used at this page
-import Jumbotron from '/src/components/03-sections/jumbotron/js/index';
+import JumbotronJS from '/src/components/03-sections/jumbotron/js/index';
 
 const requireAll = (r) => r.keys().forEach(r);
 
@@ -46,7 +46,7 @@ const Index = () => {
   //   });
   // }
 
-  Jumbotron();
+  JumbotronJS();
 };
 
 Index();

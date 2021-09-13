@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         test: /\.pug$/i,
-        loader: 'pug3-loader',
+        loader: 'storypug/lib/webpack-loader.js',
         options: {
           basedir: path.resolve(__dirname, 'src/components'),
           pretty: true,
