@@ -1,4 +1,3 @@
-const del = require('del');
 const path = require('path');
 const { merge } = require('webpack-merge');
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -11,9 +10,6 @@ module.exports = merge(common, {
   devServer: {
     devMiddleware: {
       writeToDisk: true,
-    },
-    onBeforeSetupMiddleware: () => {
-      del(path.resolve(__dirname, 'dist'));
     },
     port: 3000,
     static: {
