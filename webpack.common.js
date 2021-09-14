@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         test: /\.pug$/i,
-        loader: 'storypug/lib/webpack-loader.js',
+        loader: 'pug3-loader',
         options: {
           basedir: path.resolve(__dirname, 'src/components'),
           pretty: true,
@@ -120,4 +120,11 @@ module.exports = {
       chunkFilename: '../styles/chunks/[id].css',
     }),
   ],
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      path.resolve(__dirname, 'src/components'),
+      'node_modules',
+    ],
+  },
 };

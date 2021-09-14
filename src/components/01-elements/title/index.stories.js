@@ -11,9 +11,9 @@ export default {
 
 const Template = (props) => title({ props });
 
-export const Regular = Template.bind({});
-Regular.args = {
-  text: 'Regular',
+export const Jumbotron = Template.bind({});
+Jumbotron.args = {
+  text: 'Webpack Modules',
   isAccent: false,
 };
 

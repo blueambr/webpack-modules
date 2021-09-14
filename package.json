@@ -23,11 +23,11 @@
   "scripts": {
     "dev": "npm run sprite && webpack serve --config webpack.dev.js",
     "start": "npm run sprite && webpack serve --config webpack.dev.js",
+    "sb": "start-storybook -p 6006 --no-open",
     "build": "trash dist && npm run sprite && webpack --config webpack.prod.js",
+    "build-sb": "build-storybook",
     "sprite": "svgstore -o src/assets/images/sprite.svg src/assets/icons/**/*.svg",
-    "lint": "lint-staged",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "lint": "lint-staged"
   },
   "sideEffects": [
     "*.css",
