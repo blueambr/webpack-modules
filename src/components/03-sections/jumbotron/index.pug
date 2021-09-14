@@ -1,16 +1,16 @@
-- const jumbotronTitle = require("01-elements/title/index.pug");
-- const jumbotronD = require("03-sections/jumbotron/data/index.json");
-- const jumbotronS = require("03-sections/jumbotron/styles/index.json");
+- const title = require("01-elements/title/index.pug");
+- const data = require("03-sections/jumbotron/data/index.json");
+- const styles = require("03-sections/jumbotron/styles/index.json");
 
 mixin jumbotron(props = {})
-  section(class=jumbotronS.section)
-    div(class=jumbotronS.main)
+  section(class=styles.section)
+    div(class=styles.main)
       .container
-        div(class=jumbotronS.wrapper)
-          div(class=jumbotronS.icon)
+        div(class=styles.wrapper)
+          div(class=styles.icon)
             img(
-              class=jumbotronS.img
+              class=styles.img
               src=require("03-sections/jumbotron/static/logo.png")
-              alt=jumbotronD.iconAlt
+              alt=data.iconAlt
             )
-          div(class=jumbotronS.title)!= jumbotronTitle(props ? { props } : { props: { text: jumbotronD.title } })
+          div(class=styles.title)!= title(props ? { props } : { props: { text: data.title } })
