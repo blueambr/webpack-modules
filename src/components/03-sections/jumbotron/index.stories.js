@@ -6,16 +6,14 @@ import './styles/index.scss';
 export default {
   title: 'Sections/Jumbotron',
   argTypes: {
-    text: { control: 'text' },
-    isAccent: { control: 'boolean' },
+    text: { name: 'Title', control: 'text' },
+    isColored: { name: 'Colored Title?', control: 'boolean' },
   },
 };
 
-const Template = (props) => {
-  JumbotronJS();
+JumbotronJS();
 
-  return jumbotron({ props });
-};
+const Template = (props) => jumbotron({ props });
 
 export const Jumbotron = Template.bind({});
 Jumbotron.args = {

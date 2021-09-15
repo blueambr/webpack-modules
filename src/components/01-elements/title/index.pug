@@ -1,4 +1,4 @@
 - const styles = require("01-elements/title/styles/index.json");
 
-mixin title(props = {text: 'Title', isAccent: false})
-  h1(class=`${styles.title} ${props.isAccent ? styles.title_accent : ''}`)= props.text
+mixin title(props = {text: 'Title', isColored: false})
+  h1(class=`${styles.title} ${props.isColored ? styles.title_colored : ''}`)= props.text

@@ -4,8 +4,8 @@ import './styles/index.scss';
 export default {
   title: 'Elements/Title',
   argTypes: {
-    text: { control: 'text' },
-    isAccent: { control: 'boolean' },
+    text: { name: 'Title', control: 'text' },
+    isColored: { name: 'Colored?', control: 'boolean' },
   },
 };
 
@@ -14,11 +14,11 @@ const Template = (props) => title({ props });
 export const Jumbotron = Template.bind({});
 Jumbotron.args = {
   text: 'Webpack Modules',
-  isAccent: false,
+  isColored: false,
 };
 
-export const Accent = Template.bind({});
-Accent.args = {
-  text: 'Accent',
-  isAccent: true,
+export const Colored = Template.bind({});
+Colored.args = {
+  text: 'Colored Title',
+  isColored: true,
 };

@@ -1,4 +1,5 @@
 import '/src/styles/global/index.scss';
+import '/src/styles/global/swiper.scss';
 import '/src/styles/index.scss';
 
 export const parameters = {
@@ -9,6 +10,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  layout: 'fullscreen',
   options: {
     storySort: {
       method: 'alphabetical',

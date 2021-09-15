@@ -9,7 +9,9 @@ module.exports = {
       name: 'storypug',
       options: {
         loaderOptions: {
+          basedir: path.resolve(__dirname, '../src/components'),
           pretty: true,
+          root: path.resolve(__dirname, '../src/components'),
         },
       },
     },

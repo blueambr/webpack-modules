@@ -1,9 +1,11 @@
 // Extract base styles
 import '/src/styles/global/index.scss';
+import '/src/styles/global/swiper.scss';
 import '/src/styles/index.scss';
 
 // Import JS modules, used at this page
-import JumbotronJS from '/src/components/03-sections/jumbotron/js/index';
+import JumbotronJS from '03-sections/jumbotron/js/index';
+import SliderJS from '03-sections/slider/js/index';
 
 const requireAll = (r) => r.keys().forEach(r);
 
@@ -47,6 +49,7 @@ const Index = () => {
   // }
 
   JumbotronJS();
+  SliderJS();
 };
 
 Index();
