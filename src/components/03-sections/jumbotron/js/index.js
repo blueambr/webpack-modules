@@ -1,5 +1,5 @@
-const Jumbotron = () => {
+const JumbotronJS = () => {
   console.info('Jumbotron JS module has been loaded!');
 };
 
-export default Jumbotron;
+export default JumbotronJS;

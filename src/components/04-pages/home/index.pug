@@ -1,0 +1,6 @@
+- const jumbotron = require("03-sections/jumbotron/index.pug");
+- const slider = require("03-sections/slider/index.pug");
+
+mixin home(props = {})
+  != jumbotron({ props })
+  != slider({ props })

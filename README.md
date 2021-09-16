@@ -1,4 +1,4 @@
-# Webpack Modules v.1.3.2
+# Webpack Modules v.2.0.0
 
 > "webpack": "^5.52.1"
 
@@ -10,6 +10,7 @@
 - **[Pre-commit](#pre-commit)**
 - **[Differences between `dev` and `prod`](#differences-between-dev-and-prod)**
 - **[How to modify](#how-to-modify)**
+- **[Storybook, huh?](#storybook-huh)**
 - **[Dependencies](#dependencies)**
 - **[License](#license)**
 
@@ -18,21 +19,21 @@
 1. `git clone`
 2. `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git` to update the origin remote with your own repository / `git remote rm origin` to remove the origin remote
 3. `npm i`
-4. `npm start` / `npm run dev`
-5. Navigate to http://localhost:3000/
-6. `npm run build` to create `dist` for production
+4. `npm start` / `npm run dev` to run a regular webpack environment; `npm run sb` to run _Storybook_
+5. Navigate to http://localhost:3000/ or to http://localhost:4000/, if you run _Storybook_
+6. `npm run build` to create `dist` for production; `npm run build:sb` to create a _Storybook_ build
 
-P.S. Don't forget to remove extra info like keywords, repository etc. from `package.json`.
+P.S. Don't forget to remove extra info like keywords, repository, packages you won't be using etc. from `package.json`.
 
 ## What is this?
 
-_Webpack Modules_ or _WM_ is an easy and robust webpack config to handle anything you can imagine, using the best practices.
+_Webpack Modules_ or _WM_ is an easy and robust webpack config to handle anything you can imagine, using the best practices. Now with optional _Storybook_.
 
 It was created as a clean, versatile, modern and "fresh" frontend environment. You and only you are in control of which techonologies to use here and how, however, _WM_ provides an initial setup, which will be described further.
 
 If you work with JS frameworks like React, Next.js, Vue.js etc., consider using their dedicated environments, provided by their developers.
 
-I extended such environment for Next.js with a few useful things, while using and updating the original dependencies. You can find them here:
+I extended such environment for Next.js with a few useful things, while using and updating the original dependencies. You can find it here:
 
 - [create-next-app-extended](https://github.com/hotepp/create-next-app-extended)
 
@@ -129,6 +130,14 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   A CLI tool is responsible for it, which is configured in `package.json` `sprite` script. It can be run manually with `npm run sprite` command or automatically, every time you run any other script.
 
+- **Storybook (🆕 in 2.0.0)**
+
+  The best UI non-framework is here! Integrated and configured, while still being optional and flexible just as you always wanted. All the info you need is located [right here](https://storybook.js.org/). And [here](#storybook-huh) is what you need to know about _Storybook_ in Webpack Modules.
+
+  `npm run sb` to run it.
+
+  `npm run build:sb` to build it.
+
 ## Pre-commit
 
 _Webpack Modules_ has a pre-commit feature, based on [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). It looks like this:
@@ -189,12 +198,36 @@ In order to be able to understand and modify webpack config files, you have to b
 
 To change loaders, plugins or their options you have to search for their analogues or documentation on the internet. _Webpack Modules_ does not use any custom logic (only a few helper functions) in webpack config, so you should be able to easily change it to your needs, having option to completely override the whole functionality and concept.
 
+## Storybook, huh?
+
+Yes, _Storybook_! In order to make it work I had to rack my brain a bit, but the result was definitely worth it. What we have is two almost absolutely separated environments being Webpack Modules with its webpack configs and _Storybook_ with its webpack configs (hidden in its packages, but available through its config files in the `.storybook` folder). The reason we need two of them is that _Storybook_ never was about **building** websites, it is about **showing** them, while Webpack Modules being able to **show** websites is everything about **building** them.
+
+In order to deliver the best experience possible to our clients and to our non-frontend colleagues we have to make an effort to help them feel welcomed and _Storybook_ does exactly that.
+
+To make it work with _WM_ I made use of the [storypug](https://storybook.js.org/addons/storypug) addon. While being quite simple, it is powerful and is the base of this integration, so make sure to check out how to work with it.
+
+For the presentation purposes I've extended the basic page/components example. Now we also have the `04-pages` folder in `components`. This folder exists exclusively for _Storybook_. This way we have a place to display components inside pages. To check out how to work with _WM_ and _Storybook_ together you can and should browse the example components I've created. You can run _WM_ instance and _Storybook_ instance simultaneously to test the things out. I have also added [Swiper](https://swiperjs.com/) with the `slider` component to show a way to work with packages and dependencies.
+
+Have in mind, that the way I work with _Storybook_ and _WM_ in the example is only an example. It is something you can use as a starting point, but I'm sure there is plenty space to make it better and that's what I will be doing in the future. Different projects have different requirements and that's where _WM_ flexibility will come in handy.
+
+You can use either _WM_ or _Storybook_ and even delete one of them, if you want, at all, if you don't need it. Just make sure you know what you are doing and it is exactly what you need 😉
+
+As a final note I want to remind, that it is quite important, nice and useful to have a UI for display purposes, but it is much more important to have a working environment, which gets things done. And it is exactly the purpose of this integration, so while working on the website, don't forget to deliver some stories with it and while working on stories, don't forget, that the website won't build itself.
+
 ## Dependencies
 
 ```
 "devDependencies": {
+  "@babel/core": "^7.15.5",
   "@prettier/plugin-pug": "^1.16.6",
+  "@storybook/addon-actions": "^6.4.0-alpha.34",
+  "@storybook/addon-essentials": "^6.4.0-alpha.34",
+  "@storybook/addon-links": "^6.4.0-alpha.34",
+  "@storybook/builder-webpack5": "^6.4.0-alpha.34",
+  "@storybook/html": "^6.4.0-alpha.34",
+  "@storybook/manager-webpack5": "^6.4.0-alpha.34",
   "autoprefixer": "^10.3.4",
+  "babel-loader": "^8.2.2",
   "css-loader": "^6.2.0",
   "eslint": "^7.32.0",
   "eslint-config-airbnb-base": "^14.2.1",
@@ -219,9 +252,12 @@ To change loaders, plugins or their options you have to search for their analogu
   "prettier": "^2.4.0",
   "pretty-quick": "^3.1.1",
   "pug": "^3.0.2",
+  "pug-runtime": "^3.0.1",
   "pug3-loader": "^2.4.3",
   "sass": "^1.40.1",
   "sass-loader": "^12.1.0",
+  "storypug": "^1.0.0-rc.8",
+  "style-loader": "^3.2.1",
   "stylelint": "^13.13.1",
   "stylelint-config-standard": "^22.0.0",
   "stylelint-order": "^4.1.0",
@@ -239,7 +275,8 @@ To change loaders, plugins or their options you have to search for their analogu
 },
 "dependencies": {
   "bulma": "^0.9.3",
-  "normalize.css": "^8.0.1"
+  "normalize.css": "^8.0.1",
+  "swiper": "^7.0.5"
 },
 ```
 

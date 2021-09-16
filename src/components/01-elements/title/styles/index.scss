@@ -8,4 +8,8 @@
   @include desktop {
     font-size: rem(80);
   }
+
+  &_colored {
+    color: $color-primary;
+  }
 }

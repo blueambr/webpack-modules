@@ -1,6 +1,7 @@
 # Build
 dist
 out
+storybook-static
 
 # npm, Yarn
 node_modules

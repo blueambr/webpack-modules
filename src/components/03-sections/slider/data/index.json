@@ -1,0 +1,16 @@
+{
+  "slides": [
+    {
+      "title": "WM Slide #1",
+      "bg": "linear-gradient(to right, #e8cbc0, #636fa4)"
+    },
+    {
+      "title": "WM Slide #2",
+      "bg": "linear-gradient(to right, #373b44, #4286f4)"
+    },
+    {
+      "title": "WM Slide #3",
+      "bg": "linear-gradient(to right, #004ff9, #fff94c)"
+    }
+  ]
+}

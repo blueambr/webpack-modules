@@ -1,0 +1,21 @@
+@import 'src/styles/includes';
+
+.slide {
+  padding: rem(60) 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  > :global(.container) {
+    height: 100%;
+  }
+}
