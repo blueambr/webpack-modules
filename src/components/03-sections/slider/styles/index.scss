@@ -1,23 +1,21 @@
 @import 'src/styles/includes';
 
-.main {
+.slide {
   padding: rem(60) 0;
-  background-image: $color-gradient;
-}
-
-.icon {
-  max-width: rem(150);
-  margin: 0 auto;
-
-  @include desktop {
-    max-width: rem(200);
-  }
-}
-
-.img {
-  @include img;
 }
 
 .title {
   text-align: center;
+}
+
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  > :global(.container) {
+    height: 100%;
+  }
 }

@@ -5,14 +5,15 @@
 mixin slider(props = {})
   section(class=styles.section)
     div(class=styles.main)
-      .container
-        div(class=styles.wrapper)
-          .swiper
-            .swiper-wrapper
-              each slide in (props ? props.slides : data.slides)
-                .swiper-slide
-                  div(class=styles.slide)
-                    div(class=styles.title)!= title({ props: { text: slide.title } })
+      .swiper
+        .swiper-wrapper
+          each slide in (props ? props.slides : data.slides)
+            .swiper-slide
+              div(class=styles.slide style={ "background-image": slide.bg })
+                .container
+                  div(class=styles.title)!= title({ props: { text: slide.title } })
+        div(class=styles.controls)
+          .container
             .swiper-pagination
             .swiper-button-prev
             .swiper-button-next
