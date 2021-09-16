@@ -10,6 +10,7 @@
 - **[Pre-commit](#pre-commit)**
 - **[Differences between `dev` and `prod`](#differences-between-dev-and-prod)**
 - **[How to modify](#how-to-modify)**
+- **[Storybook, huh?](#storybook-huh)**
 - **[Dependencies](#dependencies)**
 - **[License](#license)**
 
