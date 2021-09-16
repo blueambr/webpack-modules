@@ -206,9 +206,11 @@ In order to deliver the best experience possible to our clients and to our non-f
 
 To make it work with _WM_ I made use of the [storypug](https://storybook.js.org/addons/storypug) addon. While being quite simple, it is powerful and is the base of this integration, so make sure to check out how to work with it.
 
-For the presentation purposes I've extended the basic page/components example. Now we also have the `04-pages` folder in `components`. This folder exists exclusively for _Storybook_. This way we have a place to display components inside pages. To check out how to work with _WM_ and _Storybook_ together you can and should browse the example components I've created. You can run _WM_ instance and _Storybook_ instance simultaneously to test the things out.
+For the presentation purposes I've extended the basic page/components example. Now we also have the `04-pages` folder in `components`. This folder exists exclusively for _Storybook_. This way we have a place to display components inside pages. To check out how to work with _WM_ and _Storybook_ together you can and should browse the example components I've created. You can run _WM_ instance and _Storybook_ instance simultaneously to test the things out. I have also added [Swiper](https://swiperjs.com/) with the `slider` component to show a way to work with packages and dependencies.
 
 Have in mind, that the way I work with _Storybook_ and _WM_ in the example is only an example. It is something you can use as a starting point, but I'm sure there is plenty space to make it better and that's what I will be doing in the future. Different projects have different requirements and that's where _WM_ flexibility will come in handy.
+
+You can use either _WM_ or _Storybook_ and even delete one of them, if you want, at all, if you don't need it. Just make sure you know what you are doing and it is exactly what you need 😉
 
 As a final note I want to remind, that it is quite important, nice and useful to have a UI for display purposes, but it is much more important to have a working environment, which gets things done. And it is exactly the purpose of this integration, so while working on the website, don't forget to deliver some stories with it and while working on stories, don't forget, that the website won't build itself.
 
