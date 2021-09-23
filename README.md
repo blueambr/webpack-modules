@@ -1,4 +1,4 @@
-# Webpack Modules v.2.0.1
+# Webpack Modules v.2.1.0
 
 > "webpack": "^5.53.0"
 
@@ -8,6 +8,7 @@
 - **[What is this?](#what-is-this)**
 - **[Out of the box](#out-of-the-box)**
 - **[Pre-commit](#pre-commit)**
+- **[Conventional Changelog](#conventional-changelog)**
 - **[Differences between `dev` and `prod`](#differences-between-dev-and-prod)**
 - **[How to modify](#how-to-modify)**
 - **[Storybook, huh?](#storybook-huh)**
@@ -167,6 +168,21 @@ npm run lint
 ```
 
 And it can be configured in any preferrable way. Enjoy!
+
+## Conventional Changelog
+
+I recommend using the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) approach for committing your work to Git. If you use it, your commits will be very descriptive and themselves could tell the story of your project to anyone.
+
+On top of this [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-cli) was built. I included the CLI version of it here, in the `version` npm script. It generates a nice `CHANGELOG.md` for your nice commits.
+
+The recommended commit approach for using this would be:
+
+1. Make changes
+2. Commit those changes
+3. Run the `npm version [patch|minor|major]` command (more about it [here](https://docs.npmjs.com/cli/v6/commands/npm-version))
+4. Push
+
+The `npm version` script will automatically bump the project's version in `package.json` and commit it, together with our newly generated `CHANGELOG.md`.
 
 ## Differences between `dev` and `prod`
 
