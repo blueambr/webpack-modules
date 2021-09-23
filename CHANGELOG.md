@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/hotepp/webpack-modules/compare/v2.1.1...v2.1.2) (2021-09-23)
+
+
+### Bug Fixes
+
+* postcss global modules determination in windows ([e7db37c](https://github.com/hotepp/webpack-modules/commit/e7db37c8513e542dc019be30c34eb00703e4c99b))
+
+
+
 ## [2.1.1](https://github.com/hotepp/webpack-modules/compare/v2.1.0...v2.1.1) (2021-09-23)
 
 
