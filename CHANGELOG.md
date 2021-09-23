@@ -1,3 +1,13 @@
+# [2.1.0](https://github.com/hotepp/webpack-modules/compare/2.0.1...2.1.0) (2021-09-23)
+
+
+### Features
+
+* add Conventional Changelog section to README.md ([6456d02](https://github.com/hotepp/webpack-modules/commit/6456d025d910eee200d1310eea5f0c2c733b2fd4))
+* add conventional-changelog ([166c15a](https://github.com/hotepp/webpack-modules/commit/166c15a578ef95e9edd3b1f242151d877514cdca))
+
+
+
 ## [2.0.1](https://github.com/hotepp/webpack-modules/compare/2.0.0...2.0.1) (2021-09-23)
 
 
