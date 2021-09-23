@@ -1,6 +1,6 @@
 # Webpack Modules v.2.0.0
 
-> "webpack": "^5.52.1"
+> "webpack": "^5.53.0"
 
 ### Content
 
@@ -226,9 +226,9 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "@storybook/builder-webpack5": "^6.4.0-alpha.34",
   "@storybook/html": "^6.4.0-alpha.34",
   "@storybook/manager-webpack5": "^6.4.0-alpha.34",
-  "autoprefixer": "^10.3.4",
+  "autoprefixer": "^10.3.5",
   "babel-loader": "^8.2.2",
-  "css-loader": "^6.2.0",
+  "css-loader": "^6.3.0",
   "eslint": "^7.32.0",
   "eslint-config-airbnb-base": "^14.2.1",
   "eslint-config-prettier": "^8.3.0",
@@ -246,28 +246,28 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "imagemin-webp": "^6.0.0",
   "lint-staged": "^11.1.2",
   "mini-css-extract-plugin": "^2.3.0",
-  "postcss": "^8.3.6",
+  "postcss": "^8.3.7",
   "postcss-loader": "^6.1.1",
   "postcss-modules": "^4.2.2",
-  "prettier": "^2.4.0",
+  "prettier": "^2.4.1",
   "pretty-quick": "^3.1.1",
   "pug": "^3.0.2",
   "pug-runtime": "^3.0.1",
   "pug3-loader": "^2.4.3",
-  "sass": "^1.40.1",
+  "sass": "^1.42.1",
   "sass-loader": "^12.1.0",
   "storypug": "^1.0.0-rc.8",
-  "style-loader": "^3.2.1",
+  "style-loader": "^3.3.0",
   "stylelint": "^13.13.1",
   "stylelint-config-standard": "^22.0.0",
   "stylelint-order": "^4.1.0",
   "stylelint-webpack-plugin": "^3.0.1",
-  "svgo": "^2.6.0",
+  "svgo": "^2.6.1",
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
-  "ts-loader": "^9.2.5",
+  "ts-loader": "^9.2.6",
   "typescript": "^4.4.3",
-  "webpack": "^5.52.1",
+  "webpack": "^5.53.0",
   "webpack-cli": "^4.8.0",
   "webpack-dev-server": "^4.2.1",
   "webpack-merge": "^5.8.0",
@@ -276,8 +276,8 @@ As a final note I want to remind, that it is quite important, nice and useful to
 "dependencies": {
   "bulma": "^0.9.3",
   "normalize.css": "^8.0.1",
-  "swiper": "^7.0.5"
-},
+  "swiper": "^7.0.6"
+}
 ```
 
 ## License
