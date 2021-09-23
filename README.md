@@ -1,4 +1,4 @@
-# Webpack Modules v.2.0.0
+# Webpack Modules v.2.0.1
 
 > "webpack": "^5.53.0"
 
@@ -132,7 +132,7 @@ Here what's included in the initial _Webpack Modules_ setup:
 
 - **Storybook (🆕 in 2.0.0)**
 
-  The best UI non-framework is here! Integrated and configured, while still being optional and flexible just as you always wanted. All the info you need is located [right here](https://storybook.js.org/). And [here](#storybook-huh) is what you need to know about _Storybook_ in Webpack Modules.
+  The best UI non-framework is here! Integrated and configured, while still being optional and flexible just as you always wanted. All the info you need is located [right here](https://storybook.js.org/). And [here](#storybook-huh) is what you need to know about _Storybook_ in _Webpack Modules_.
 
   `npm run sb` to run it.
 
@@ -200,7 +200,7 @@ To change loaders, plugins or their options you have to search for their analogu
 
 ## Storybook, huh?
 
-Yes, _Storybook_! In order to make it work I had to rack my brain a bit, but the result was definitely worth it. What we have is two almost absolutely separated environments being Webpack Modules with its webpack configs and _Storybook_ with its webpack configs (hidden in its packages, but available through its config files in the `.storybook` folder). The reason we need two of them is that _Storybook_ never was about **building** websites, it is about **showing** them, while Webpack Modules being able to **show** websites is everything about **building** them.
+Yes, _Storybook_! In order to make it work I had to rack my brain a bit, but the result was definitely worth it. What we have is two almost absolutely separated environments being _Webpack Modules_ with its webpack configs and _Storybook_ with its webpack configs (hidden in its packages, but available through its config files in the `.storybook` folder). The reason we need two of them is that _Storybook_ never was about **building** websites, it is about **showing** them, while _Webpack Modules_ being able to **show** websites is everything about **building** them.
 
 In order to deliver the best experience possible to our clients and to our non-frontend colleagues we have to make an effort to help them feel welcomed and _Storybook_ does exactly that.
 
