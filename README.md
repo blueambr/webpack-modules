@@ -244,6 +244,7 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "@storybook/manager-webpack5": "^6.4.0-alpha.34",
   "autoprefixer": "^10.3.5",
   "babel-loader": "^8.2.2",
+  "conventional-changelog-cli": "^2.1.1",
   "css-loader": "^6.3.0",
   "eslint": "^7.32.0",
   "eslint-config-airbnb-base": "^14.2.1",
