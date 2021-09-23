@@ -1,3 +1,13 @@
+## [2.1.1](https://github.com/hotepp/webpack-modules/compare/v2.1.0...v2.1.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* bump version in README.md ([dd179f9](https://github.com/hotepp/webpack-modules/commit/dd179f99bd283a9a00915498d4d5c2d6b7a0fcca))
+* update README.md dependencies list ([4afa560](https://github.com/hotepp/webpack-modules/commit/4afa5603a42099974b5df7f6afa542363f3891d4))
+
+
+
 # [2.1.0](https://github.com/hotepp/webpack-modules/compare/2.0.1...2.1.0) (2021-09-23)
 
 
