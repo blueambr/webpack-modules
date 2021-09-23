@@ -14,9 +14,9 @@ const substringBeforeChar = (string, char = '+') =>
 // Get JS entries array
 const entriesFiles = fs.readdirSync(path.resolve(__dirname, 'src/entries'));
 
-// Get pages array
-const pagesFiles = fs.readdirSync(path.resolve(__dirname, 'src/pages'));
-const pagesFilenames = filesIntoFilenamesArray(pagesFiles);
+// Get views array
+const viewsFiles = fs.readdirSync(path.resolve(__dirname, 'src/views'));
+const viewsFilenames = filesIntoFilenamesArray(viewsFiles);
 
 // JS entries array into object
 const entries = () => {
@@ -99,19 +99,19 @@ module.exports = {
     ],
   },
   plugins: [
-    ...pagesFilenames.map(
-      (pageFilename) =>
+    ...viewsFilenames.map(
+      (viewFilename) =>
         new HtmlWebpackPlugin({
-          // Get page
-          template: path.resolve(__dirname, `src/pages/${pageFilename}.pug`),
+          // Get view
+          template: path.resolve(__dirname, `src/views/${viewFilename}.pug`),
           /**
-           * Use a specified in a page's name JS file, if specified
-           * Otherwise use a JS file with the same name as a page
+           * Use a specified in a view's name JS file, if specified
+           * Otherwise use a JS file with the same name as a view
            */
-          chunks: [substringAfterChar(pageFilename) || pageFilename],
+          chunks: [substringAfterChar(viewFilename) || viewFilename],
           // Output
           filename: `../${
-            substringBeforeChar(pageFilename) || pageFilename
+            substringBeforeChar(viewFilename) || viewFilename
           }.html`,
         })
     ),
