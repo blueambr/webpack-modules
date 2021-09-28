@@ -1,6 +1,6 @@
-# Webpack Modules v.2.1.2
+# Webpack Modules v.2.1.3
 
-> "webpack": "^5.53.0"
+> "webpack": "^5.55.0"
 
 ### Content
 
@@ -17,14 +17,25 @@
 
 ## How to launch:
 
-1. `git clone`
-2. `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git` to update the origin remote with your own repository / `git remote rm origin` to remove the origin remote
-3. `npm i`
-4. `npm start` / `npm run dev` to run a regular webpack environment; `npm run sb` to run _Storybook_
-5. Navigate to http://localhost:3000/ or to http://localhost:4000/, if you run _Storybook_
-6. `npm run build` to create `dist` for production; `npm run build:sb` to create a _Storybook_ build
+### Cloning
 
-P.S. Don't forget to remove extra info like keywords, repository, packages you won't be using etc. from `package.json`.
+1. `git clone git@github.com:hotepp/webpack-modules.git webpack-modules`: cloning the repo
+2. `cd webpack-modules`: going to the cloned copy of the repo
+3. `sudo rm -R .git`: removing everything git-related from the cloned repo; be careful with `sudo`, you only want to delete the `.git` folder with everything inside of it, but nothing more
+4. `git init`: creating our own git system
+5. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
+6. `git add .`: adding everything to our first git commit
+7. `git commit -m "init"`: making our first git commit
+8. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
+
+P.S. Don't forget to remove the extra info like keywords, repository, packages you won't be using, reset the version etc. in `package.json`.
+
+### Running
+
+1. `npm i`
+2. `npm start` / `npm run dev` to run a regular webpack environment; `npm run sb` to run _Storybook_
+3. Navigate to http://localhost:3000/ or to http://localhost:4000/, if you run _Storybook_
+4. `npm run build` to create `dist` for production; `npm run build:sb` to create a _Storybook_ build
 
 ## What is this?
 
@@ -235,14 +246,14 @@ As a final note I want to remind, that it is quite important, nice and useful to
 ```
 "devDependencies": {
   "@babel/core": "^7.15.5",
-  "@prettier/plugin-pug": "^1.16.6",
+  "@prettier/plugin-pug": "^1.16.7",
   "@storybook/addon-actions": "^6.4.0-alpha.34",
   "@storybook/addon-essentials": "^6.4.0-alpha.34",
   "@storybook/addon-links": "^6.4.0-alpha.34",
   "@storybook/builder-webpack5": "^6.4.0-alpha.34",
   "@storybook/html": "^6.4.0-alpha.34",
   "@storybook/manager-webpack5": "^6.4.0-alpha.34",
-  "autoprefixer": "^10.3.5",
+  "autoprefixer": "^10.3.6",
   "babel-loader": "^8.2.2",
   "conventional-changelog-cli": "^2.1.1",
   "css-loader": "^6.3.0",
@@ -263,7 +274,7 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "imagemin-webp": "^6.0.0",
   "lint-staged": "^11.1.2",
   "mini-css-extract-plugin": "^2.3.0",
-  "postcss": "^8.3.7",
+  "postcss": "^8.3.8",
   "postcss-loader": "^6.1.1",
   "postcss-modules": "^4.2.2",
   "prettier": "^2.4.1",
@@ -279,14 +290,14 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "stylelint-config-standard": "^22.0.0",
   "stylelint-order": "^4.1.0",
   "stylelint-webpack-plugin": "^3.0.1",
-  "svgo": "^2.6.1",
+  "svgo": "^2.7.0",
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
   "ts-loader": "^9.2.6",
   "typescript": "^4.4.3",
-  "webpack": "^5.53.0",
+  "webpack": "^5.55.0",
   "webpack-cli": "^4.8.0",
-  "webpack-dev-server": "^4.2.1",
+  "webpack-dev-server": "^4.3.0",
   "webpack-merge": "^5.8.0",
   "workbox-webpack-plugin": "^6.3.0"
 },
