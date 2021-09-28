@@ -58,9 +58,9 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   Responsible for providing content and JS code to webpack. These files represent pages.
 
-  They should have the same name as the templates of the pages in `src/pages`, e.g., `contact.pug` in `src/pages` and `contact.js` in `src/entries`.
+  They should have the same name as the templates of the views in `src/views`, e.g., `contact.pug` in `src/views` and `contact.js` in `src/entries`.
 
-  If you want to use the same JS file for different pages, you have to use paired names in `src/pages`, e.g., `contact+about.pug` means that "Contact" page will be using `about.js` file, which was originally created for "About" page.
+  If you want to use the same JS file for different pages, you have to use paired names in `src/views`, e.g., `contact+about.pug` means that "Contact" page will be using `about.js` file, which was originally created for "About" page.
 
 - **TypeScript support**
 
@@ -70,7 +70,7 @@ Here what's included in the initial _Webpack Modules_ setup:
 
 - **Pug template engine**
 
-  Used in `src/components` and `src/pages`.
+  Used in `src/components` and `src/views`.
 
   Responsible for rendering HTML content and creating pages.
 
