@@ -23,10 +23,11 @@
 2. `cd webpack-modules`: going to the cloned copy of the repo
 3. `sudo rm -R .git && sudo rm CHANGELOG.md`: removing everything git-related from the cloned repo; be careful with `sudo`, you only want to delete the `.git` folder with everything inside of it and the `CHANGELOG.md` file, but nothing more
 4. `git init`: creating our own git system
-5. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
-6. `git add .`: adding everything to our first git commit
-7. `git commit -m "init"`: making our first git commit
-8. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
+5. `git branch -M main`: rename the branch
+6. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
+7. `git add .`: adding everything to our first git commit
+8. `git commit -m "init"`: making our first git commit
+9. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
 
 P.S. Don't forget to remove the extra info like keywords, repository, packages you won't be using, reset the version etc. in `package.json`.
 
