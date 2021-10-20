@@ -1,6 +1,6 @@
-# Webpack Modules v.2.1.3
+# Webpack Modules v.2.1.4
 
-> "webpack": "^5.55.0"
+> "webpack": "^5.59.0"
 
 ### Content
 
@@ -21,7 +21,7 @@
 
 1. `git clone git@github.com:hotepp/webpack-modules.git webpack-modules`: cloning the repo
 2. `cd webpack-modules`: going to the cloned copy of the repo
-3. `sudo rm -R .git`: removing everything git-related from the cloned repo; be careful with `sudo`, you only want to delete the `.git` folder with everything inside of it, but nothing more
+3. `sudo rm -R .git && sudo rm CHANGELOG.md`: removing everything git-related from the cloned repo; be careful with `sudo`, you only want to delete the `.git` folder with everything inside of it and the `CHANGELOG.md` file, but nothing more
 4. `git init`: creating our own git system
 5. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
 6. `git add .`: adding everything to our first git commit
@@ -32,7 +32,7 @@ P.S. Don't forget to remove the extra info like keywords, repository, packages y
 
 ### Running
 
-1. `npm i`
+1. `npm i` or `npm i --legacy-peer-deps`, if `npm i` throws errors
 2. `npm start` / `npm run dev` to run a regular webpack environment; `npm run sb` to run _Storybook_
 3. Navigate to http://localhost:3000/ or to http://localhost:4000/, if you run _Storybook_
 4. `npm run build` to create `dist` for production; `npm run build:sb` to create a _Storybook_ build
@@ -150,6 +150,10 @@ Here what's included in the initial _Webpack Modules_ setup:
 
   `npm run build:sb` to build it.
 
+- **Conventional Changelog (🆕 in 2.1.0)**
+
+  Automatically generated `CHANGELOG.md` file using `npm version` script, if [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) approach is being used.
+
 ## Pre-commit
 
 _Webpack Modules_ has a pre-commit feature, based on [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). It looks like this:
@@ -245,7 +249,7 @@ As a final note I want to remind, that it is quite important, nice and useful to
 
 ```
 "devDependencies": {
-  "@babel/core": "^7.15.5",
+  "@babel/core": "^7.15.8",
   "@prettier/plugin-pug": "^1.16.7",
   "@storybook/addon-actions": "^6.4.0-alpha.34",
   "@storybook/addon-essentials": "^6.4.0-alpha.34",
@@ -253,37 +257,37 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "@storybook/builder-webpack5": "^6.4.0-alpha.34",
   "@storybook/html": "^6.4.0-alpha.34",
   "@storybook/manager-webpack5": "^6.4.0-alpha.34",
-  "autoprefixer": "^10.3.6",
+  "autoprefixer": "^10.3.7",
   "babel-loader": "^8.2.2",
   "conventional-changelog-cli": "^2.1.1",
-  "css-loader": "^6.3.0",
-  "eslint": "^7.32.0",
+  "css-loader": "^6.4.0",
+  "eslint": "^8.0.1",
   "eslint-config-airbnb-base": "^14.2.1",
   "eslint-config-prettier": "^8.3.0",
-  "eslint-plugin-import": "^2.24.2",
+  "eslint-plugin-import": "^2.25.2",
   "eslint-plugin-prettier": "^4.0.0",
   "eslint-webpack-plugin": "^3.0.1",
   "fs": "^0.0.1-security",
-  "html-webpack-plugin": "^5.3.2",
+  "html-webpack-plugin": "^5.4.0",
   "husky": "^7.0.2",
   "image-minimizer-webpack-plugin": "^2.2.0",
   "imagemin-gifsicle": "^7.0.0",
   "imagemin-mozjpeg": "^9.0.0",
   "imagemin-pngquant": "^9.0.2",
-  "imagemin-svgo": "^9.0.0",
+  "imagemin-svgo": "^10.0.0",
   "imagemin-webp": "^6.0.0",
-  "lint-staged": "^11.1.2",
-  "mini-css-extract-plugin": "^2.3.0",
-  "postcss": "^8.3.8",
-  "postcss-loader": "^6.1.1",
+  "lint-staged": "^11.2.3",
+  "mini-css-extract-plugin": "^2.4.2",
+  "postcss": "^8.3.9",
+  "postcss-loader": "^6.2.0",
   "postcss-modules": "^4.2.2",
   "prettier": "^2.4.1",
   "pretty-quick": "^3.1.1",
   "pug": "^3.0.2",
   "pug-runtime": "^3.0.1",
   "pug3-loader": "^2.4.3",
-  "sass": "^1.42.1",
-  "sass-loader": "^12.1.0",
+  "sass": "^1.43.2",
+  "sass-loader": "^12.2.0",
   "storypug": "^1.0.0-rc.8",
   "style-loader": "^3.3.0",
   "stylelint": "^13.13.1",
@@ -294,17 +298,17 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "svgstore-cli": "^2.0.0",
   "trash-cli": "^4.0.0",
   "ts-loader": "^9.2.6",
-  "typescript": "^4.4.3",
-  "webpack": "^5.55.0",
-  "webpack-cli": "^4.8.0",
-  "webpack-dev-server": "^4.3.0",
+  "typescript": "^4.4.4",
+  "webpack": "^5.59.0",
+  "webpack-cli": "^4.9.1",
+  "webpack-dev-server": "^4.3.1",
   "webpack-merge": "^5.8.0",
   "workbox-webpack-plugin": "^6.3.0"
 },
 "dependencies": {
   "bulma": "^0.9.3",
   "normalize.css": "^8.0.1",
-  "swiper": "^7.0.6"
+  "swiper": "^7.0.9"
 }
 ```
 
