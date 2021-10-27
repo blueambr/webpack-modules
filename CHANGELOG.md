@@ -1,3 +1,12 @@
+## [2.1.6](https://github.com/hotepp/webpack-modules/compare/v2.1.5...v2.1.6) (2021-10-27)
+
+
+### Bug Fixes
+
+* .stylelintrc formatting ([78e5bc6](https://github.com/hotepp/webpack-modules/commit/78e5bc621d807882f61da4896ff8aecfc5ddb7ec))
+
+
+
 ## [2.1.5](https://github.com/hotepp/webpack-modules/compare/2.1.4...2.1.5) (2021-10-27)
 
 
