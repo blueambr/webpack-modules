@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  @include font();
+  @include font;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -111,11 +111,11 @@ input {
   }
 
   &[type='number'] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
-      -webkit-appearance: none;
+      appearance: none;
       margin: 0;
     }
   }

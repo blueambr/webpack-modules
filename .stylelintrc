@@ -1,22 +1,42 @@
 {
-  "extends": ["stylelint-config-standard"],
-  "plugins": ["stylelint-order"],
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
+		"alpha-value-notation": "number",
     "at-rule-empty-line-before": [
       "always",
       {
-        "except": ["blockless-after-blockless", "first-nested"],
-        "ignore": ["after-comment"]
+        "except": [
+          "blockless-after-blockless",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
       }
     ],
     "at-rule-no-unknown": null,
     "color-hex-length": "long",
+		"color-function-notation": null,
+    "custom-property-no-missing-var-function": null,
     "declaration-colon-newline-after": null,
     "declaration-empty-line-before": "never",
     "length-zero-no-unit": null,
+		"max-line-length": null,
+    "media-feature-name-no-vendor-prefix": null,
     "no-descending-specificity": null,
     "number-leading-zero": "always",
+		"selector-class-pattern": null,
+    "selector-id-pattern": null,
     "selector-pseudo-class-no-unknown": null,
+		"string-quotes": "single",
+    "value-no-vendor-prefix": null,
+    "scss/dollar-variable-pattern": null,
+		"scss/double-slash-comment-empty-line-before": null,
     "order/properties-order": [
       "position",
       "z-index",
@@ -39,6 +59,7 @@
       "overflow",
       "overflow-x",
       "overflow-y",
+      "box-orient",
       "box-sizing",
       "order",
       "min-width",
@@ -94,10 +115,12 @@
       "font-weight",
       "font-size",
       "letter-spacing",
+      "line-clamp",
       "line-height",
       "color",
       "fill",
       "stroke",
+      "object-fit",
       "background",
       "background-image",
       "background-color",
@@ -105,6 +128,7 @@
       "background-size",
       "background-repeat",
       "background-attachment",
+      "object-fit",
       "transform",
       "transform-style",
       "transform-origin",
@@ -202,6 +226,14 @@
       },
       {
         "type": "rule",
+        "selector": "^&::marker"
+      },
+      {
+        "type": "rule",
+        "selector": "^&::first-letter"
+      },
+      {
+        "type": "rule",
         "selector": "^&:first-child"
       },
       {
@@ -215,6 +247,14 @@
       {
         "type": "rule",
         "selector": "^&:last-child"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:not(.*)"
+      },
+      {
+        "type": "rule",
+        "selector": "^:global"
       },
       {
         "type": "rule",
@@ -239,6 +279,10 @@
       {
         "type": "rule",
         "selector": "^&(.*)"
+      },
+      {
+        "type": "rule",
+        "selector": "^(.*)"
       }
     ]
   }
