@@ -1,4 +1,4 @@
-# Webpack Modules v.2.1.7
+# Webpack Modules v.2.1.8
 
 > "webpack": "^5.64.4"
 
@@ -26,8 +26,10 @@
 5. `git branch -M main`: rename the branch
 6. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
 7. `git add .`: adding everything to our first git commit
-8. `git commit -m "init"`: making our first git commit
-9. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
+8. `git commit -m "feat: init wm"`: making our first git commit
+9. Update the version in the `package.json` file: `"version": "0.0.0"`
+10. `npm version minor`: start versioning our repo
+11. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
 
 P.S. Don't forget to remove the extra info like keywords, repository, packages you won't be using, reset the version etc. in `package.json`.
 
