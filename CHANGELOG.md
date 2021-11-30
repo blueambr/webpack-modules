@@ -1,3 +1,12 @@
+## [2.1.8](https://github.com/hotepp/webpack-modules/compare/v2.1.7...v2.1.8) (2021-11-30)
+
+
+### Bug Fixes
+
+* update repo cloning instructions ([9eb1525](https://github.com/hotepp/webpack-modules/commit/9eb1525c8552a234a4e398cf9e4bb48392676b4d))
+
+
+
 ## [2.1.7](https://github.com/hotepp/webpack-modules/compare/2.1.6...2.1.7) (2021-11-30)
 
 
