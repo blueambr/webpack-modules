@@ -1,6 +1,6 @@
-# Webpack Modules v.2.1.6
+# Webpack Modules v.2.1.7
 
-> "webpack": "^5.60.0"
+> "webpack": "^5.64.4"
 
 ### Content
 
@@ -250,24 +250,24 @@ As a final note I want to remind, that it is quite important, nice and useful to
 
 ```
 "devDependencies": {
-  "@babel/core": "^7.15.8",
-  "@prettier/plugin-pug": "^1.17.1",
-  "@storybook/addon-actions": "^6.4.0-alpha.34",
-  "@storybook/addon-essentials": "^6.4.0-alpha.34",
-  "@storybook/addon-links": "^6.4.0-alpha.34",
-  "@storybook/builder-webpack5": "^6.4.0-alpha.34",
-  "@storybook/html": "^6.4.0-alpha.34",
-  "@storybook/manager-webpack5": "^6.4.0-alpha.34",
-  "autoprefixer": "^10.3.7",
+  "@babel/core": "^7.16.0",
+  "@prettier/plugin-pug": "^1.18.0",
+  "@storybook/addon-actions": "^6.4.1",
+  "@storybook/addon-essentials": "^6.4.1",
+  "@storybook/addon-links": "^6.4.1",
+  "@storybook/builder-webpack5": "^6.4.1",
+  "@storybook/html": "^6.4.1",
+  "@storybook/manager-webpack5": "^6.4.1",
+  "autoprefixer": "^10.4.0",
   "babel-loader": "^8.2.3",
   "conventional-changelog-cli": "^2.1.1",
-  "css-loader": "^6.5.0",
-  "eslint": "^8.1.0",
-  "eslint-config-airbnb-base": "^14.2.1",
+  "css-loader": "^6.5.1",
+  "eslint": "^8.3.0",
+  "eslint-config-airbnb-base": "^15.0.0",
   "eslint-config-prettier": "^8.3.0",
-  "eslint-plugin-import": "^2.25.2",
+  "eslint-plugin-import": "^2.25.3",
   "eslint-plugin-prettier": "^4.0.0",
-  "eslint-webpack-plugin": "^3.1.0",
+  "eslint-webpack-plugin": "^3.1.1",
   "fs": "^0.0.1-security",
   "html-webpack-plugin": "^5.5.0",
   "husky": "^7.0.4",
@@ -277,39 +277,39 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "imagemin-pngquant": "^9.0.2",
   "imagemin-svgo": "^10.0.0",
   "imagemin-webp": "^6.0.0",
-  "lint-staged": "^11.2.6",
-  "mini-css-extract-plugin": "^2.4.3",
-  "postcss": "^8.3.11",
-  "postcss-loader": "^6.2.0",
+  "lint-staged": "^12.1.2",
+  "mini-css-extract-plugin": "^2.4.5",
+  "postcss": "^8.4.4",
+  "postcss-loader": "^6.2.1",
   "postcss-modules": "^4.2.2",
-  "prettier": "^2.4.1",
-  "pretty-quick": "^3.1.1",
+  "prettier": "^2.5.0",
+  "pretty-quick": "^3.1.2",
   "pug": "^3.0.2",
   "pug-runtime": "^3.0.1",
   "pug3-loader": "^2.4.3",
-  "sass": "^1.43.4",
-  "sass-loader": "^12.2.0",
+  "sass": "^1.44.0",
+  "sass-loader": "^12.3.0",
   "storypug": "^1.0.0-rc.8",
   "style-loader": "^3.3.1",
-  "stylelint": "^14.0.1",
-  "stylelint-config-standard-scss": "^2.0.0",
+  "stylelint": "^14.1.0",
+  "stylelint-config-standard-scss": "^3.0.0",
   "stylelint-order": "^5.0.0",
-  "stylelint-webpack-plugin": "^3.0.1",
-  "svgo": "^2.7.0",
-  "svgstore-cli": "^2.0.0",
-  "trash-cli": "^4.0.0",
+  "stylelint-webpack-plugin": "^3.1.0",
+  "svgo": "^2.8.0",
+  "svgstore-cli": "^2.0.1",
+  "trash-cli": "^5.0.0",
   "ts-loader": "^9.2.6",
-  "typescript": "^4.4.4",
-  "webpack": "^5.60.0",
+  "typescript": "^4.5.2",
+  "webpack": "^5.64.4",
   "webpack-cli": "^4.9.1",
-  "webpack-dev-server": "^4.3.1",
+  "webpack-dev-server": "^4.6.0",
   "webpack-merge": "^5.8.0",
-  "workbox-webpack-plugin": "^6.3.0"
+  "workbox-webpack-plugin": "^6.4.1"
 },
 "dependencies": {
   "bulma": "^0.9.3",
   "normalize.css": "^8.0.1",
-  "swiper": "^7.2.0"
+  "swiper": "^7.3.1"
 }
 ```
 
