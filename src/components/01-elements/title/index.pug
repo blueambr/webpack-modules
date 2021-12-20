@@ -1,4 +1,11 @@
-- const styles = require("01-elements/title/styles/index.json");
+- const styles = require('01-elements/title/styles/index.json');
 
-mixin title(props = {text: 'Title', isColored: false})
-  h1(class=`${styles.title} ${props.isColored ? styles.title_colored : ''}`)= props.text
+mixin title(props = {text: 'Title', tag: 'div', isColored: false})
+  if props.tag === 'div h1'
+    div(class=`${styles.h1} ${props.isColored ? styles.colored : ''}`)!= props.text
+  if props.tag === 'h1'
+    h1(class=`${styles.h1} ${props.isColored ? styles.colored : ''}`)!= props.text
+  if props.tag === 'div h2'
+    div(class=`${styles.h2} ${props.isColored ? styles.colored : ''}`)!= props.text
+  if props.tag === 'h2'
+    h2(class=`${styles.h2} ${props.isColored ? styles.colored : ''}`)!= props.text

@@ -1,17 +1,18 @@
-- const data = require("03-sections/slider/data/index.json");
-- const styles = require("03-sections/slider/styles/index.json");
-- const title = require("01-elements/title/index.pug");
+- const title = require('01-elements/title/index.pug');
+- const styles = require('03-sections/slider/styles/index.json');
 
 mixin slider(props = {})
+  - const data = props.sb ? props : props.data;
+
   section(class=styles.section)
     div(class=styles.main)
       .swiper
         .swiper-wrapper
-          each slide in (props ? props.slides : data.slides)
+          each slide in data.slides
             .swiper-slide
-              div(class=styles.slide style={ "background-image": slide.bg })
+              div(class=styles.slide, style={ 'background-image': slide.bg })
                 .container
-                  div(class=styles.title)!= title({ props: { text: slide.title } })
+                  div(class=styles.title)!= title({ props: slide.title })
         div(class=styles.controls)
           .container
             .swiper-pagination

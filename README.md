@@ -1,6 +1,6 @@
 # Webpack Modules v.2.1.8
 
-> "webpack": "^5.64.4"
+> "webpack": "^5.65.0"
 
 ### Content
 
@@ -252,19 +252,19 @@ As a final note I want to remind, that it is quite important, nice and useful to
 
 ```
 "devDependencies": {
-  "@babel/core": "^7.16.0",
-  "@prettier/plugin-pug": "^1.18.0",
-  "@storybook/addon-actions": "^6.4.1",
-  "@storybook/addon-essentials": "^6.4.1",
-  "@storybook/addon-links": "^6.4.1",
-  "@storybook/builder-webpack5": "^6.4.1",
-  "@storybook/html": "^6.4.1",
-  "@storybook/manager-webpack5": "^6.4.1",
+  "@babel/core": "^7.16.5",
+  "@prettier/plugin-pug": "^1.19.0",
+  "@storybook/addon-actions": "^6.4.9",
+  "@storybook/addon-essentials": "^6.4.9",
+  "@storybook/addon-links": "^6.4.9",
+  "@storybook/builder-webpack5": "^6.4.9",
+  "@storybook/html": "^6.4.9",
+  "@storybook/manager-webpack5": "^6.4.9",
   "autoprefixer": "^10.4.0",
   "babel-loader": "^8.2.3",
   "conventional-changelog-cli": "^2.1.1",
   "css-loader": "^6.5.1",
-  "eslint": "^8.3.0",
+  "eslint": "^8.5.0",
   "eslint-config-airbnb-base": "^15.0.0",
   "eslint-config-prettier": "^8.3.0",
   "eslint-plugin-import": "^2.25.3",
@@ -273,24 +273,25 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "fs": "^0.0.1-security",
   "html-webpack-plugin": "^5.5.0",
   "husky": "^7.0.4",
-  "image-minimizer-webpack-plugin": "^2.2.0",
+  "image-minimizer-webpack-plugin": "^3.1.2",
+  "imagemin": "^8.0.1",
   "imagemin-gifsicle": "^7.0.0",
-  "imagemin-mozjpeg": "^9.0.0",
+  "imagemin-mozjpeg": "^10.0.0",
   "imagemin-pngquant": "^9.0.2",
-  "imagemin-svgo": "^10.0.0",
-  "imagemin-webp": "^6.0.0",
-  "lint-staged": "^12.1.2",
+  "imagemin-svgo": "^10.0.1",
+  "imagemin-webp": "^7.0.0",
+  "lint-staged": "^12.1.3",
   "mini-css-extract-plugin": "^2.4.5",
-  "postcss": "^8.4.4",
+  "postcss": "^8.4.5",
   "postcss-loader": "^6.2.1",
   "postcss-modules": "^4.2.2",
-  "prettier": "^2.5.0",
+  "prettier": "^2.5.1",
   "pretty-quick": "^3.1.2",
   "pug": "^3.0.2",
   "pug-runtime": "^3.0.1",
   "pug3-loader": "^2.4.3",
-  "sass": "^1.44.0",
-  "sass-loader": "^12.3.0",
+  "sass": "^1.45.0",
+  "sass-loader": "^12.4.0",
   "storypug": "^1.0.0-rc.8",
   "style-loader": "^3.3.1",
   "stylelint": "^14.1.0",
@@ -301,17 +302,17 @@ As a final note I want to remind, that it is quite important, nice and useful to
   "svgstore-cli": "^2.0.1",
   "trash-cli": "^5.0.0",
   "ts-loader": "^9.2.6",
-  "typescript": "^4.5.2",
-  "webpack": "^5.64.4",
+  "typescript": "^4.5.4",
+  "webpack": "^5.65.0",
   "webpack-cli": "^4.9.1",
   "webpack-dev-server": "^4.6.0",
   "webpack-merge": "^5.8.0",
-  "workbox-webpack-plugin": "^6.4.1"
+  "workbox-webpack-plugin": "^6.4.2"
 },
 "dependencies": {
   "bulma": "^0.9.3",
   "normalize.css": "^8.0.1",
-  "swiper": "^7.3.1"
+  "swiper": "^7.3.3"
 }
 ```
 

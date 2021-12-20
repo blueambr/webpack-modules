@@ -1,15 +1,16 @@
 @import 'src/styles/includes';
 
-.title {
+.h1 {
   @include font(700);
+  word-break: break-word;
   font-size: rem(40);
   color: $color-title;
 
   @include desktop {
     font-size: rem(80);
   }
+}
 
-  &_colored {
-    color: $color-primary;
-  }
+.colored {
+  color: $color-primary;
 }

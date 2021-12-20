@@ -5,6 +5,7 @@
     "camelcase": 0,
     "func-names": 0,
     "no-console": ["warn", { "allow": ["error", "info", "warn"] }],
+    "no-param-reassign": 0,
     "no-plusplus": 0,
     "no-return-assign": 0,
     "no-undef": 0,

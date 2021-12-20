@@ -1,0 +1,13 @@
+:global .is-hidden {
+  &-touch {
+    @include touch {
+      display: none;
+    }
+  }
+
+  &-desktop {
+    @include desktop {
+      display: none;
+    }
+  }
+}

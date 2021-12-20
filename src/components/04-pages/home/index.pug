@@ -1,6 +1,8 @@
-- const jumbotron = require("03-sections/jumbotron/index.pug");
-- const slider = require("03-sections/slider/index.pug");
+- const jumbotron = require('03-sections/jumbotron/index.pug');
+- const jumbotronData = require('03-sections/jumbotron/data/index.json');
+- const slider = require('03-sections/slider/index.pug');
+- const sliderData = require('03-sections/slider/data/index.json');
 
 mixin home(props = {})
-  != jumbotron({ props })
-  != slider({ props })
+  != jumbotron({ props: { ...props, data: jumbotronData } })
+  != slider({ props: { ...props, data: sliderData } })

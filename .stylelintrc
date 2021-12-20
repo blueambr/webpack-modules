@@ -36,6 +36,7 @@
       "bottom",
       "left",
       "display",
+      "table-layout",
       "visibility",
       "opacity",
       "flex",
@@ -69,6 +70,9 @@
       "margin-right",
       "margin-bottom",
       "margin-left",
+      "list-style",
+      "border-collapse",
+      "border-spacing",
       "border",
       "border-top",
       "border-right",
@@ -187,15 +191,15 @@
       },
       {
         "type": "rule",
-        "selector": "^&:hover"
-      },
-      {
-        "type": "rule",
         "selector": "^&:active"
       },
       {
         "type": "rule",
         "selector": "^&:focus"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:hover"
       },
       {
         "type": "at-rule",

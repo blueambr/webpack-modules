@@ -1,6 +1,5 @@
 // Extract base styles
 import '/src/styles/global/index.scss';
-import '/src/styles/global/swiper.scss';
 import '/src/styles/index.scss';
 
 // Import JS modules, used at this page
@@ -10,22 +9,14 @@ import SliderJS from '03-sections/slider/js/index';
 const requireAll = (r) => r.keys().forEach(r);
 
 // Extract all fonts
-requireAll(
-  require.context('/src/assets/fonts/', true, /\.(eot|otf|ttf|woff|woff2)$/i)
-);
+requireAll(require.context('/src/assets/fonts/', true, /\.(eot|otf|ttf|woff|woff2)$/i));
 
 /**
  * Extract all global images, if any
  * You can use them as regular strings in pug instead of require statement
  * ico, xml and webmanifest are favicon specific files
  */
-requireAll(
-  require.context(
-    '/src/assets/images/',
-    true,
-    /\.(png|svg|jpg|jpeg|gif|ico|xml|webmanifest)$/i
-  )
-);
+requireAll(require.context('/src/assets/images/', true, /\.(png|svg|jpg|jpeg|gif|ico|xml|webmanifest)$/i));
 
 // Extract all Sass/SCSS modules
 requireAll(require.context('/src/components/', true, /\.s[ac]ss$/i));

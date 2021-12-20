@@ -1,4 +1,7 @@
 {
-  "title": "Webpack Modules",
+  "title": {
+    "text": "Webpack Modules",
+    "tag": "h1"
+  },
   "iconAlt": "Webpack logo"
 }
