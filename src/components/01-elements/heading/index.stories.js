@@ -12,15 +12,15 @@ export default {
 
 const Template = (props) => heading({ props });
 
-export const Default = Template.bind({});
-Default.args = {
+export const Heading1 = Template.bind({});
+Heading1.args = {
   text: 'Heading 1',
   tag: 'h1',
   isColored: false,
 };
 
-export const Colored = Template.bind({});
-Colored.args = {
+export const ColoredHeading1 = Template.bind({});
+ColoredHeading1.args = {
   text: 'Colored Heading 1',
   tag: 'h1',
   isColored: true,
