@@ -1,3 +1,21 @@
+# [2.2.0](https://github.com/hotepp/webpack-modules/compare/v2.1.8...v2.2.0) (2021-12-21)
+
+
+### Bug Fixes
+
+* update heading element story ([593a5ed](https://github.com/hotepp/webpack-modules/commit/593a5ed850e2b4162fcf085563a1f8ad0c785934))
+* update README.md ([42d6444](https://github.com/hotepp/webpack-modules/commit/42d644477f025a8130ee2ee954079ba8402870b5))
+* update README.md ([57e0197](https://github.com/hotepp/webpack-modules/commit/57e01972e2c79de666ffe2ee7d80095798e9cead))
+
+
+### Features
+
+* update the components structure; add the icon, img elements; update the storybook config; update README.md; update package.json and its scripts ([a327c81](https://github.com/hotepp/webpack-modules/commit/a327c8163cff3e96c44bf57c179beda66a57b3f4))
+* update the example template structure ([503ab3b](https://github.com/hotepp/webpack-modules/commit/503ab3b917f6d40d51d1a60fe9663ed294651189))
+* update the packages, update the webpack prod config ([0e1ac7e](https://github.com/hotepp/webpack-modules/commit/0e1ac7eab4a5a5361f96d34e4b5087a53acd0d3b))
+
+
+
 ## [2.1.8](https://github.com/hotepp/webpack-modules/compare/v2.1.7...v2.1.8) (2021-11-30)
 
 
