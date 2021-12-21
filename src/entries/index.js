@@ -3,6 +3,7 @@ import '/src/styles/global/index.scss';
 import '/src/styles/index.scss';
 
 // Import JS modules, used at this page
+import ImgJS from '01-elements/img/js/index';
 import JumbotronJS from '03-sections/jumbotron/js/index';
 import SliderJS from '03-sections/slider/js/index';
 
@@ -39,6 +40,7 @@ const Index = () => {
   //   });
   // }
 
+  ImgJS();
   JumbotronJS();
   SliderJS();
 };

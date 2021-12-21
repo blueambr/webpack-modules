@@ -1,4 +1,4 @@
-- const title = require('01-elements/title/index.pug');
+- const heading = require('01-elements/heading/index.pug');
 - const styles = require('03-sections/slider/styles/index.json');
 
 mixin slider(props = {})
@@ -10,9 +10,10 @@ mixin slider(props = {})
         .swiper-wrapper
           each slide in data.slides
             .swiper-slide
-              div(class=styles.slide, style={ 'background-image': slide.bg })
+              .section.is-medium(class=styles.slide, style={ 'background-image': slide.bg })
                 .container
-                  div(class=styles.title)!= title({ props: slide.title })
+                  div(class=styles.slide__wrapper)
+                    div(class=styles.heading)!= heading({ props: slide.heading })
         div(class=styles.controls)
           .container
             .swiper-pagination

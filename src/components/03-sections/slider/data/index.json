@@ -1,21 +1,21 @@
 {
   "slides": [
     {
-      "title": {
+      "heading": {
         "text": "WM Slide #1",
         "tag": "div h1"
       },
       "bg": "linear-gradient(to right, #e8cbc0, #636fa4)"
     },
     {
-      "title": {
+      "heading": {
         "text": "WM Slide #2",
         "tag": "div h1"
       },
       "bg": "linear-gradient(to right, #373b44, #4286f4)"
     },
     {
-      "title": {
+      "heading": {
         "text": "WM Slide #3",
         "tag": "div h1"
       },

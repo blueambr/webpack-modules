@@ -1,11 +1,10 @@
 @import 'src/styles/includes';
 
-.main {
-  padding: rem(60) 0;
+.section {
   background-image: $color-gradient;
 }
 
-.icon {
+.image {
   max-width: rem(150);
   margin: 0 auto;
 
@@ -14,10 +13,6 @@
   }
 }
 
-.img {
-  @include img;
-}
-
-.title {
+.heading {
   text-align: center;
 }

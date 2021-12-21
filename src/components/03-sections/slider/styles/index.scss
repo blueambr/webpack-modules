@@ -1,11 +1,15 @@
 @import 'src/styles/includes';
 
-.slide {
-  padding: rem(60) 0;
+.heading {
+  text-align: center;
 }
 
-.title {
-  text-align: center;
+.slide {
+  &__wrapper {
+    @include touch {
+      padding: rem(20) 0;
+    }
+  }
 }
 
 .controls {

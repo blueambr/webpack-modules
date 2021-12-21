@@ -22,17 +22,19 @@
   "license": "ISC",
   "bugs": "https://github.com/hotepp/webpack-modules/issues",
   "scripts": {
-    "dev": "trash dist && npm run sprite && webpack serve --config webpack.dev.js",
-    "start": "trash dist && npm run sprite && webpack serve --config webpack.dev.js",
-    "sb": "start-storybook -p 4000 --no-open",
     "build": "trash dist && npm run sprite && webpack --config webpack.prod.js",
-    "build:sb": "build-storybook",
-    "sprite": "svgstore -o src/assets/images/sprite.svg src/assets/icons/**/*.svg",
+    "build:sb": "npm run sprite && build-storybook",
+    "dev": "trash dist && npm run sprite && webpack serve --config webpack.dev.js",
     "lint": "lint-staged",
+    "sb": "npm run sprite && start-storybook -p 4000 --no-open",
+    "sprite": "svgstore -o src/assets/images/sprite.svg src/assets/icons/**/*.svg",
+    "start": "npm run dev",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "sideEffects": [
     "*.css",
+    "*.pcss",
+    "*.sass",
     "*.scss"
   ],
   "devDependencies": {
@@ -95,15 +97,16 @@
   },
   "dependencies": {
     "bulma": "^0.9.3",
+    "lazysizes": "^5.3.2",
     "normalize.css": "^8.0.1",
     "swiper": "^7.3.3"
   },
   "lint-staged": {
-    "src/**/*.{css,sass,scss}": [
+    "src/**/*.{css,pcss,sass,scss}": [
       "pretty-quick --pattern './src/**/*.{css,sass,scss}'",
       "stylelint './src/**/*.{css,sass,scss}' --fix"
     ],
-    "src/**/*.{js,jsx}": [
+    "src/**/*.{js,ts,jsx,tsx}": [
       "pretty-quick --pattern './src/**/*.{js,jsx}'",
       "eslint './src/**/*.{js,jsx}' --fix"
     ],

@@ -1,0 +1,5 @@
+- const styles = require('01-elements/icon/styles/index.json');
+
+mixin icon(props = {icon: 'envelope'})
+  svg(class=styles.icon)
+    use(xlink:href=`/assets/images/sprite.svg#${props.icon}`)

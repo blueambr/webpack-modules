@@ -1,0 +1,7 @@
+- const styles = require('01-elements/heading/styles/index.json');
+
+mixin heading(props = {})
+  if props.tag === 'div h1'
+    div(class=`${styles.h1} ${props.isColored ? styles.colored : ''}`)!= props.text
+  if props.tag === 'h1'
+    h1(class=`${styles.h1} ${props.isColored ? styles.colored : ''}`)!= props.text

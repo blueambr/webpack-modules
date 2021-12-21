@@ -1,13 +1,13 @@
-- const title = require('01-elements/title/index.pug');
+- const heading = require('01-elements/heading/index.pug');
+- const img = require('01-elements/img/index.pug');
 - const styles = require('03-sections/jumbotron/styles/index.json');
 
 mixin jumbotron(props = {})
   - const data = props.sb ? props : props.data;
 
-  section(class=styles.section)
+  section.section.is-medium(class=styles.section)
     div(class=styles.main)
       .container
         div(class=styles.wrapper)
-          div(class=styles.icon)
-            img(class=styles.img, src=require('03-sections/jumbotron/static/logo.png'), alt=data.iconAlt)
-          div(class=styles.title)!= title({ props: data.title })
+          div(class=styles.image)!= img({ props: data.image })
+          div(class=styles.heading)!= heading({ props: data.heading })

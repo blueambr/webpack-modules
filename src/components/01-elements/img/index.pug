@@ -1,0 +1,9 @@
+- const styles = require('01-elements/img/styles/index.json');
+
+mixin img(props = {})
+  img(
+    class=`${styles.img} lazyload`,
+    data-srcset=`${props.src600 ? `${require(`/src/components/${props.componentFolder}/${props.component}/static/${props.src600}`)} 600w,` : ''} ${props.src900 ? `${require(`/src/components/${props.componentFolder}/${props.component}/static/${props.src900}`)} 900w,` : ''} ${props.src1440 ? `${require(`/src/components/${props.componentFolder}/${props.component}/static/${props.src1440}`)} 1440w` : ''}`,
+    data-src=require(`/src/components/${props.componentFolder}/${props.component}/static/${props.src1440 || props.src900 || props.src600}`),
+    alt=props.alt
+  )

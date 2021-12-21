@@ -1,7 +1,12 @@
 {
-  "title": {
+  "heading": {
     "text": "Webpack Modules",
     "tag": "h1"
   },
-  "iconAlt": "Webpack logo"
+  "image": {
+    "componentFolder": "03-sections",
+    "component": "jumbotron",
+    "src600": "600.png",
+    "alt": "Webpack logo"
+  }
 }

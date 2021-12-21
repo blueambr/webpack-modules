@@ -1,0 +1,6 @@
+@import 'src/styles/includes';
+
+.img {
+  @include img;
+  object-fit: cover;
+}
