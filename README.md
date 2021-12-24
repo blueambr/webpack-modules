@@ -1,4 +1,4 @@
-# Webpack Modules v.2.2.0
+# Webpack Modules v.2.2.1
 
 > "webpack": "^5.65.0"
 
@@ -12,6 +12,7 @@
 - **[Differences between `dev` and `prod`](#differences-between-dev-and-prod)**
 - **[How to modify](#how-to-modify)**
 - **[Storybook](#storybook)**
+- **[Snippets](#snippets)**
 - **[Dependencies](#dependencies)**
 - **[License](#license)**
 
@@ -247,6 +248,30 @@ Have in mind, that the way the example components are made with _Storybook_ and 
 You can use either _WM_ or _Storybook_ and even delete one of them, if you want, at all, if you don't need it. Just make sure you know what you are doing and it is exactly what you need 😉
 
 As a final note I want to remind, that it is quite important, nice and useful to have a UI for display purposes, but it is much more important to have a working environment, which gets things done. And it is exactly the purpose of this integration, so while working on the website, don't forget to deliver some stories with it and while working on the stories, don't forget, that the website won't build itself.
+
+## Snippets
+
+Make use of snippets in your text editor/IDE.
+
+Here is the info on [how to create custom snippets in Visual Studio Code](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets).
+
+### Element creation
+
+```
+"Create a div with a class attribute (WM)": {
+  "scope": "jade,pug",
+  "prefix": "div",
+  "body": ["div$2(class=styles.$1)$0"],
+  "description": "Create a div with a class attribute (WM)"
+}
+```
+
+How to use:
+
+1. Type `div`, then press `Tab`
+2. Type the needed class, then press `Tab`
+3. Switch the `div` tag for any other tag you need, if you need it, then press `Tab`
+4. Continue by adding needed attributes, if you need them, or the content for the created element
 
 ## Dependencies
 
