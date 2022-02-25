@@ -261,7 +261,7 @@ Here is the info on [how to create custom snippets in Visual Studio Code](https:
 "Create a div with a class attribute (WM)": {
   "scope": "jade,pug",
   "prefix": "div",
-  "body": ["div$2(class=styles.$1)$0"],
+  "body": ["${2:div}(class=styles.$1)$0"],
   "description": "Create a div with a class attribute (WM)"
 }
 ```
@@ -343,6 +343,6 @@ How to use:
 
 ## License
 
-Copyright © 2021 Vlad Gerasimovich <hotepp@pm.me>
+Copyright © Vlad Gerasimovich <hotepp@pm.me>
 
 Licensed under the ISC license.
