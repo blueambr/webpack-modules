@@ -1,0 +1,11 @@
+.block {
+  &:not(:last-child) {
+    margin-bottom: rem(24);
+  }
+
+  &-sm {
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+}

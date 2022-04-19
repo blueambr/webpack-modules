@@ -1,27 +1,30 @@
-import heading from './index.pug';
+import pug from './index.pug';
 import './styles/index.scss';
 
 export default {
   title: 'Elements/Heading',
   argTypes: {
-    text: { name: 'Text', control: 'text' },
-    tag: { name: 'Tag', options: { 'div h1': 'div h1', h1: 'h1' }, control: 'radio' },
-    isColored: { name: 'Colored?', control: 'boolean' },
+    text: { name: 'Text', defaultValue: 'Heading', control: 'text' },
+    tag: { name: 'Tag', options: { h1: 'h1', h2: 'h2' }, defaultValue: 'h1', control: 'radio' },
+    color: {
+      name: 'Color',
+      options: { Default: 'default', Primary: 'primary' },
+      defaultValue: 'default',
+      control: 'radio',
+    },
   },
 };
 
-const Template = (props) => heading({ props });
+const Template = (props) => pug({ props });
 
 export const Heading1 = Template.bind({});
 Heading1.args = {
   text: 'Heading 1',
-  tag: 'h1',
-  isColored: false,
 };
 
-export const ColoredHeading1 = Template.bind({});
-ColoredHeading1.args = {
-  text: 'Colored Heading 1',
-  tag: 'h1',
-  isColored: true,
+export const Heading2ColorPrimary = Template.bind({});
+Heading2ColorPrimary.args = {
+  text: 'Heading 2 Color Primary',
+  tag: 'h2',
+  color: 'primary',
 };

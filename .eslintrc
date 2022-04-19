@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb-base", "prettier"],
+  "extends": ["airbnb-base", "prettier", "plugin:storybook/recommended"],
   "plugins": ["prettier"],
   "rules": {
     "camelcase": 0,

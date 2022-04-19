@@ -82,6 +82,10 @@
       "border-style",
       "border-color",
       "border-radius",
+      "border-top-color",
+      "border-right-color",
+      "border-bottom-color",
+      "border-left-color",
       "border-top-right-radius",
       "border-bottom-right-radius",
       "border-bottom-left-radius",
@@ -115,6 +119,7 @@
       "color",
       "fill",
       "stroke",
+      "stroke-width",
       "object-fit",
       "background",
       "background-image",
@@ -191,7 +196,7 @@
       },
       {
         "type": "rule",
-        "selector": "^&:active"
+        "selector": "^&:hover"
       },
       {
         "type": "rule",
@@ -199,12 +204,78 @@
       },
       {
         "type": "rule",
-        "selector": "^&:hover"
+        "selector": "^&:active"
       },
       {
         "type": "at-rule",
         "name": "include",
         "parameter": "hf",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "mobile",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "tablet",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "tablet-only",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "touch",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "desktop",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "desktop-only",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "until-widescreen",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "widescreen",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "widescreen-only",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "until-fullhd",
+        "hasBlock": true
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "fullhd",
         "hasBlock": true
       },
       {

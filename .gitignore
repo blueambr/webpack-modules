@@ -1,3 +1,5 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # Build
 build
 dist
@@ -10,6 +12,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .npm
+.pnpm-debug.log*
 .yarn-integrity
 
 # IDE, OS, Text editor
@@ -29,6 +32,7 @@ Thumbs.db
 .htaccess
 .next
 .nuxt
+.vercel
 
 # Misc
 bower_components
@@ -43,8 +47,7 @@ sw.*
 .env
 .env.development.local
 .env.local
-.env.production.local
-.env.test.local
+.env*.local
 .eslintcache
 .git
 .grunt
@@ -62,6 +65,7 @@ sw.*
 *.exe
 *.log
 *.orig
+*.pem
 *.pid
 *.pid.lock
 *.rej

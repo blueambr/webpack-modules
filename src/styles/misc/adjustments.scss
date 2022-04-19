@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  min-height: 100%;
+  min-height: 100vh;
   line-height: 1.42;
   color: $color-text;
   background-color: $color-bg;
@@ -35,7 +35,7 @@ footer {
   margin-top: auto;
 }
 
-:global .container {
+.container {
   padding: 0 $container-padding;
 }
 
@@ -47,7 +47,9 @@ textarea {
 }
 
 a {
+  word-break: break-word;
   text-decoration: none;
+  color: $color-text;
 }
 
 blockquote,
@@ -64,6 +66,7 @@ ol,
 p,
 ul {
   margin: 0;
+  word-break: break-word;
 }
 
 button,

@@ -1,4 +1,4 @@
-import img from './index.pug';
+import pug from './index.pug';
 import ImgJS from './js';
 import './styles/index.scss';
 
@@ -8,7 +8,7 @@ export default {
 
 ImgJS();
 
-const Template = (props) => img({ props });
+const Template = (props) => pug({ props });
 
 export const Image = Template.bind({});
 Image.args = {

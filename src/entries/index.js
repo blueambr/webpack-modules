@@ -1,5 +1,4 @@
 // Extract base styles
-import '/src/styles/global/index.scss';
 import '/src/styles/index.scss';
 
 // Import JS modules, used at this page

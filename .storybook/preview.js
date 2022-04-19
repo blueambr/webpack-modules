@@ -1,5 +1,3 @@
-import '/src/styles/global/index.scss';
-import '/src/styles/global/swiper.scss';
 import '/src/styles/index.scss';
 
 const requireAll = (r) => r.keys().forEach(r);

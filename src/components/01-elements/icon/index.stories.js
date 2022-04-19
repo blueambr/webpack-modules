@@ -1,4 +1,4 @@
-import icon from './index.pug';
+import pug from './index.pug';
 import './styles/index.scss';
 
 export default {
@@ -21,7 +21,7 @@ export default {
   },
 };
 
-const Template = (props) => icon({ props });
+const Template = (props) => pug({ props });
 
 export const JS = Template.bind({});
 JS.args = {

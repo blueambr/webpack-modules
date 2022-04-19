@@ -3,21 +3,21 @@
     {
       "heading": {
         "text": "WM Slide #1",
-        "tag": "div h1"
+        "tag": "h2"
       },
       "bg": "linear-gradient(to right, #e8cbc0, #636fa4)"
     },
     {
       "heading": {
         "text": "WM Slide #2",
-        "tag": "div h1"
+        "tag": "h2"
       },
       "bg": "linear-gradient(to right, #373b44, #4286f4)"
     },
     {
       "heading": {
         "text": "WM Slide #3",
-        "tag": "div h1"
+        "tag": "h2"
       },
       "bg": "linear-gradient(to right, #004ff9, #fff94c)"
     }

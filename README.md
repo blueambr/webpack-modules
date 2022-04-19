@@ -1,6 +1,6 @@
-# Webpack Modules v.2.2.1
+# Webpack Modules v.2.3.0
 
-> "webpack": "^5.65.0"
+> "webpack": "^5.72.0"
 
 ### Content
 
@@ -24,13 +24,12 @@
 2. `cd webpack-modules`: going to the cloned copy of the repo
 3. `sudo rm -R .git && sudo rm CHANGELOG.md`: removing everything git-related from the cloned repo; be careful with `sudo`, you only want to delete the `.git` folder with everything inside of it and the `CHANGELOG.md` file, but nothing more
 4. `git init`: creating our own git system
-5. `git branch -M main`: rename the branch
-6. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
-7. `git add .`: adding everything to our first git commit
-8. `git commit -m "feat: init wm"`: making our first git commit
-9. Update the version in the `package.json` file: `"version": "0.0.0"`
-10. `npm version minor`: start versioning our repo
-11. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
+5. `git remote add origin https://github.com/USERNAME/REPOSITORY.git`: setting our own repository as the remote origin
+6. `git add .`: adding everything to our first git commit
+7. `git commit -m "feat(init): project start"`: making our first git commit
+8. `npm version minor`: start versioning right away and create the CHANGELOG.md file
+9. `git branch -M main`: rename the branch
+10. `git push -u origin main`: pushing our first git commit to the `main` branch of our repo
 
 P.S. Don't forget to remove the extra info like keywords, repository, packages you won't be using, reset the version etc. in `package.json`.
 
@@ -51,7 +50,7 @@ If you work with JS frameworks like React, Next.js, Vue.js etc., consider using 
 
 I extended such environment for Next.js with a few useful things, while using and updating the original dependencies. You can find it here:
 
-- [create-next-app-extended](https://github.com/hotepp/create-next-app-extended)
+- [Next Story](https://github.com/hotepp/next-story)
 
 ## Out of the box
 
@@ -197,7 +196,7 @@ On top of this [Conventional Changelog](https://github.com/conventional-changelo
 The recommended commit approach for using this would be:
 
 1. Make changes
-2. Commit those changes
+2. Commit these changes
 3. Run the `npm version [patch|minor|major]` command (more about it [here](https://docs.npmjs.com/cli/v6/commands/npm-version))
 4. Push
 
@@ -277,72 +276,80 @@ How to use:
 
 ```
 "devDependencies": {
-  "@babel/core": "^7.16.5",
-  "@prettier/plugin-pug": "^1.19.0",
-  "@storybook/addon-actions": "^6.4.9",
-  "@storybook/addon-essentials": "^6.4.9",
-  "@storybook/addon-links": "^6.4.9",
-  "@storybook/builder-webpack5": "^6.4.9",
-  "@storybook/html": "^6.4.9",
-  "@storybook/manager-webpack5": "^6.4.9",
-  "autoprefixer": "^10.4.0",
-  "babel-loader": "^8.2.3",
-  "conventional-changelog-cli": "^2.1.1",
-  "css-loader": "^6.5.1",
-  "eslint": "^8.5.0",
+  "@babel/core": "^7.17.9",
+  "@prettier/plugin-pug": "^1.20.1",
+  "@storybook/addon-actions": "^6.4.22",
+  "@storybook/addon-essentials": "^6.4.22",
+  "@storybook/addon-interactions": "^6.4.22",
+  "@storybook/addon-links": "^6.4.22",
+  "@storybook/builder-webpack5": "^6.4.22",
+  "@storybook/html": "^6.4.22",
+  "@storybook/manager-webpack5": "^6.4.22",
+  "@storybook/testing-library": "^0.0.10",
+  "autoprefixer": "^10.4.4",
+  "babel-loader": "^8.2.4",
+  "conventional-changelog-cli": "^2.2.2",
+  "css-loader": "^6.7.1",
+  "eslint": "^8.13.0",
   "eslint-config-airbnb-base": "^15.0.0",
-  "eslint-config-prettier": "^8.3.0",
-  "eslint-plugin-import": "^2.25.3",
+  "eslint-config-prettier": "^8.5.0",
+  "eslint-plugin-import": "^2.26.0",
   "eslint-plugin-prettier": "^4.0.0",
+  "eslint-plugin-storybook": "^0.5.10",
   "eslint-webpack-plugin": "^3.1.1",
   "fs": "^0.0.1-security",
   "html-webpack-plugin": "^5.5.0",
   "husky": "^7.0.4",
-  "image-minimizer-webpack-plugin": "^3.1.2",
+  "image-minimizer-webpack-plugin": "^3.2.3",
   "imagemin": "^8.0.1",
   "imagemin-gifsicle": "^7.0.0",
   "imagemin-mozjpeg": "^10.0.0",
   "imagemin-pngquant": "^9.0.2",
   "imagemin-svgo": "^10.0.1",
   "imagemin-webp": "^7.0.0",
-  "lint-staged": "^12.1.3",
-  "mini-css-extract-plugin": "^2.4.5",
-  "postcss": "^8.4.5",
+  "lint-staged": "^12.3.8",
+  "mini-css-extract-plugin": "^2.6.0",
+  "postcss": "^8.4.12",
   "postcss-loader": "^6.2.1",
-  "postcss-modules": "^4.2.2",
-  "prettier": "^2.5.1",
-  "pretty-quick": "^3.1.2",
+  "postcss-modules": "^4.3.1",
+  "prettier": "^2.6.2",
+  "pretty-quick": "^3.1.3",
   "pug": "^3.0.2",
   "pug-runtime": "^3.0.1",
   "pug3-loader": "^2.4.3",
-  "sass": "^1.45.0",
-  "sass-loader": "^12.4.0",
+  "sass": "^1.50.0",
+  "sass-loader": "^12.6.0",
   "storypug": "^1.0.0-rc.8",
   "style-loader": "^3.3.1",
-  "stylelint": "^14.1.0",
+  "stylelint": "^14.7.1",
   "stylelint-config-standard-scss": "^3.0.0",
   "stylelint-order": "^5.0.0",
-  "stylelint-webpack-plugin": "^3.1.0",
+  "stylelint-webpack-plugin": "^3.2.0",
   "svgo": "^2.8.0",
   "svgstore-cli": "^2.0.1",
   "trash-cli": "^5.0.0",
-  "ts-loader": "^9.2.6",
-  "typescript": "^4.5.4",
-  "webpack": "^5.65.0",
-  "webpack-cli": "^4.9.1",
-  "webpack-dev-server": "^4.6.0",
+  "ts-loader": "^9.2.8",
+  "typescript": "^4.6.3",
+  "webpack": "^5.72.0",
+  "webpack-cli": "^4.9.2",
+  "webpack-dev-server": "^4.8.1",
   "webpack-merge": "^5.8.0",
-  "workbox-webpack-plugin": "^6.4.2"
+  "workbox-webpack-plugin": "^6.5.3"
 },
 "dependencies": {
   "bulma": "^0.9.3",
+  "lazysizes": "^5.3.2",
   "normalize.css": "^8.0.1",
-  "swiper": "^7.3.3"
+  "swiper": "^8.1.1"
 }
 ```
 
 ## License
 
-Copyright © Vlad Gerasimovich <hotepp@pm.me>
+Copyright © Vlad Gerasimovich <hotepp@pm.me> (Webpack Modules)
+
+Copyright © JS Foundation and other contributors (Webpack)
+
+Copyright © Kadira, Inc. <hello@kadira.io> (Storybook)
 
 Licensed under the ISC license.

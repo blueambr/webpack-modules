@@ -1,4 +1,12 @@
-:global .is-hidden {
+.is-hidden {
+  display: none;
+
+  &-mobile {
+    @include mobile {
+      display: none;
+    }
+  }
+
   &-touch {
     @include touch {
       display: none;

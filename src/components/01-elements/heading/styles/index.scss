@@ -1,8 +1,7 @@
 @import 'src/styles/includes';
 
-.h1 {
+h1.heading {
   @include font(700);
-  word-break: break-word;
   font-size: rem(40);
   color: $color-title;
 
@@ -11,6 +10,20 @@
   }
 }
 
-.colored {
-  color: $color-primary;
+h2.heading {
+  @include font(700);
+  font-size: rem(32);
+  color: $color-title;
+
+  @include desktop {
+    font-size: rem(72);
+  }
+}
+
+.heading {
+  &.color {
+    &_primary {
+      color: $color-primary;
+    }
+  }
 }
