@@ -1,3 +1,17 @@
+# [2.3.0](https://github.com/hotepp/webpack-modules/compare/2.2.1...2.3.0) (2022-04-19)
+
+
+### Bug Fixes
+
+* update the Element creation snippet in README.md ([1d7abe8](https://github.com/hotepp/webpack-modules/commit/1d7abe8a1df910b1f21af426cf0d23d821f3a887))
+
+
+### Features
+
+* update styles, postcss.config.js, stories, dependencies, storybook config, .editorconfig, .eslintrc, .gitignore ([e7217b5](https://github.com/hotepp/webpack-modules/commit/e7217b549d6337b1cb03a43c06267a23015c8950))
+
+
+
 ## [2.2.1](https://github.com/hotepp/webpack-modules/compare/v2.2.0...v2.2.1) (2021-12-24)
 
 
