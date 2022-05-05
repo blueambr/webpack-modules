@@ -1,3 +1,13 @@
+## [2.3.1](https://github.com/hotepp/webpack-modules/compare/v2.3.0...v2.3.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* includes before plugins in styles ([2fbc168](https://github.com/hotepp/webpack-modules/commit/2fbc168018b428f9956eb1e12e3bdd2aee05dea7))
+* update dependencies ([6014f7f](https://github.com/hotepp/webpack-modules/commit/6014f7f9306699bba01dab569047e29897d4a00f))
+
+
+
 # [2.3.0](https://github.com/hotepp/webpack-modules/compare/2.2.1...2.3.0) (2022-04-19)
 
 

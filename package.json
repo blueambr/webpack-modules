@@ -1,6 +1,6 @@
 {
   "name": "@hotepp/webpack-modules",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Easy and robust webpack config to handle anything you can imagine, using the best practices. Now with optional Storybook.",
   "repository": {
     "type": "git",
